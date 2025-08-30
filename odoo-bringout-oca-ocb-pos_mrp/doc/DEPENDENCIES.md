@@ -2,5 +2,5 @@
 
 This addon depends on:
 
-- [point_of_sale](../../../../../oca-ocb-sale/odoo-bringout-oca-ocb-point_of_sale)
-- [mrp](../../../../../oca-ocb-mrp/odoo-bringout-oca-ocb-mrp)
+- [point_of_sale](https://github.com/bringout/oca-ocb-sale)
+- [mrp](https://github.com/bringout/oca-ocb-mrp)

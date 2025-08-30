@@ -2,6 +2,6 @@
 
 This addon depends on:
 
-- [pos_stripe](../../../../odoo-bringout-oca-ocb-pos_stripe)
-- [pos_restaurant](../../../../odoo-bringout-oca-ocb-pos_restaurant)
+- [pos_stripe](https://github.com/bringout/oca-ocb-pos)
+- [pos_restaurant](https://github.com/bringout/oca-ocb-pos)
 - [payment_stripe](../../odoo-bringout-oca-ocb-payment_stripe)

@@ -2,5 +2,5 @@
 
 This addon depends on:
 
-- [pos_epson_printer](../../../../odoo-bringout-oca-ocb-pos_epson_printer)
-- [pos_restaurant](../../../../odoo-bringout-oca-ocb-pos_restaurant)
+- [pos_epson_printer](https://github.com/bringout/oca-ocb-pos)
+- [pos_restaurant](https://github.com/bringout/oca-ocb-pos)
