@@ -20,11 +20,13 @@ msgstr ""
 msgid " Use a printer connected to the IoT Box"
 msgstr " Koristi štampač povezan sa IoT Box-om"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_floor_kanban
 msgid "<strong>Floor Name: </strong>"
 msgstr "$ 8.50"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_floor_kanban
 msgid "<strong>Point of Sale: </strong>"
@@ -36,28 +38,31 @@ msgid ""
 "A restaurant floor represents the place where customers are served, this is where you can\n"
 "                define and position the tables."
 msgstr ""
+"Sprat restorana predstavlja mjesto gdje se služe kupci, ovdje možete\n"
+"                definisati i postaviti stolove."
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__active
-#: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__active
 msgid "Active"
 msgstr "Aktivan"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml
 #, python-format
 msgid "Add"
-msgstr "<span>Gotovina (USD):</span>"
+msgstr "Dodaj"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/ProductScreen/ControlButtons/OrderlineNoteButton.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/ProductScreen/ControlButtons/OrderlineNoteButton.js
 #, python-format
 msgid "Add Internal Note"
 msgstr "Dodaj unutrašnju napomenu"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model_terms:ir.actions.act_window,help:pos_restaurant.action_restaurant_floor_form
 msgid "Add a new restaurant floor"
@@ -68,17 +73,18 @@ msgstr "Dodaj novi kat restorana"
 msgid "Add a new restaurant order printer"
 msgstr "Dodaj novi štampač narudžbi restorana"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/TipScreen.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/TipScreen.xml
 #, python-format
 msgid "Add a tip"
 msgstr "Dodaj napojnicu"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/FloorScreen.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/FloorScreen.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/FloorScreen.xml
 #, python-format
 msgid "Add button"
 msgstr "Dodaj gumb"
@@ -95,8 +101,7 @@ msgstr "Dodaj napojnicu nakon plaćanja (specifično za Sjevernu Ameriku)"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/PaymentScreen/PaymentScreenPaymentLines.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/PaymentScreen/PaymentScreenPaymentLines.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/PaymentScreen/PaymentScreenPaymentLines.xml
 #, python-format
 msgid "Adjust Amount"
 msgstr "Prilagodi iznos"
@@ -107,6 +112,8 @@ msgid ""
 "Adjust the amount authorized by payment terminals to add a tip after the "
 "customers left or at the end of the day."
 msgstr ""
+"Prilagodi iznos odobren od strane terminala za plaćanje za dodavanje "
+"napojnice nakon što su kupci otišli ili na kraju dana."
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.res_config_settings_view_form
@@ -128,62 +135,68 @@ msgstr "Dodaj napomene na linije narudžbe"
 msgid "Allows to print the Bill before payment."
 msgstr "Omogućava štampanje računa prije plaćanja."
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/TipScreen.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/TipScreen.xml
 #, python-format
 msgid "Amount"
 msgstr "Iznos"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table__name
 msgid "An internal identification of a table"
 msgstr "Interna identifikacija stola"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_printer__name
 msgid "An internal identification of the printer"
 msgstr "Interna identifikacija štampača"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_table_form
 msgid "Appearance"
 msgstr "Izgled"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_floor_form
-#: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_floor_search
 msgid "Archived"
 msgstr "Arhivirano"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js
 #, python-format
 msgid "Are you sure ?"
-msgstr "Dozvoli štampanje računa prije plaćanja"
+msgstr "Da li ste sigurni ?"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/SplitBillScreen/SplitBillScreen.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/TipScreen.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/SplitBillScreen/SplitBillScreen.xml
 #, python-format
 msgid "Back"
 msgstr "Natrag"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/ChromeWidgets/BackToFloorButton.xml:0
-#: code:addons/pos_restaurant/static/src/xml/ChromeWidgets/BackToFloorButton.xml:0
+#: code:addons/pos_restaurant/static/src/xml/ChromeWidgets/BackToFloorButton.xml
 #, python-format
 msgid "Back to floor"
 msgstr "Nazad na sprat"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__background_color
 msgid "Background Color"
 msgstr "Pozadinska boja"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__background_image
 msgid "Background Image"
@@ -194,63 +207,63 @@ msgstr "Pozadinska slika"
 msgid "Bacon Burger"
 msgstr "Bacon Burger"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/ProductScreen/ControlButtons/PrintBillButton.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/ProductScreen/ControlButtons/PrintBillButton.xml
 #, python-format
 msgid "Bill"
 msgstr "Ulaz RN"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/BillScreen.xml:0
-#: model:ir.model.fields,field_description:pos_restaurant.field_pos_config__iface_printbill
+#: code:addons/pos_restaurant/static/src/xml/Screens/BillScreen.xml
 #, python-format
 msgid "Bill Printing"
 msgstr "Štampanje računa"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/SplitBillScreen/SplitBillScreen.xml:0
-#: model:ir.model.fields,field_description:pos_restaurant.field_pos_config__iface_splitbill
+#: code:addons/pos_restaurant/static/src/xml/Screens/SplitBillScreen/SplitBillScreen.xml
 #, python-format
 msgid "Bill Splitting"
 msgstr "Razdvajanje računa"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/ProductScreen/ControlButtons/TableGuestsButton.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/ProductScreen/ControlButtons/TableGuestsButton.js
 #, python-format
 msgid "Blocked action"
 msgstr "Blokirana akcija"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml
 #, python-format
 msgid "Blue"
 msgstr "Plava"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/multiprint.xml:0
+#: code:addons/pos_restaurant/static/src/xml/multiprint.xml
 #, python-format
 msgid "CANCELLED"
 msgstr "OTKAZANO"
 
 #. module: pos_restaurant
 #. odoo-python
-#: code:addons/pos_restaurant/models/pos_config.py:0
+#: code:addons/pos_restaurant/models/pos_config.py
 #, python-format
 msgid "Cash %s"
 msgstr "Gotovina %s"
 
 #. module: pos_restaurant
 #. odoo-python
-#: code:addons/pos_restaurant/models/pos_config.py:0
+#: code:addons/pos_restaurant/models/pos_config.py
 #, python-format
 msgid "Cash Bar"
 msgstr "Gotovinski bar"
@@ -265,19 +278,18 @@ msgstr "Cheese Burger"
 msgid "Chicken Curry Sandwich"
 msgstr "Sendvič sa piletinom i karijem"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml
 #, python-format
 msgid "Close"
 msgstr "Zatvori"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/PaymentScreen/PaymentScreen.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/PaymentScreen/PaymentScreen.xml
 #, python-format
 msgid "Close Tab"
 msgstr "Zatvori karticu"
@@ -292,34 +304,34 @@ msgstr "Club sendvič"
 msgid "Coca-Cola"
 msgstr "Coca-Cola"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__color
 msgid "Color"
 msgstr "Boja"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model,name:pos_restaurant.model_res_config_settings
 msgid "Config Settings"
 msgstr "Postavke"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__create_uid
-#: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_printer__create_uid
-#: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__create_uid
 msgid "Created by"
 msgstr "Kreirao"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__create_date
-#: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_printer__create_date
-#: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__create_date
 msgid "Created on"
 msgstr "Kreirano"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml
 #, python-format
 msgid "Delete"
 msgstr "Obriši"
@@ -329,13 +341,13 @@ msgstr "Obriši"
 msgid "Design floors and assign orders to tables"
 msgstr "Dizajniraj spratove i dodjeli narudžbe stolovima"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__display_name
-#: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_printer__display_name
-#: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__display_name
 msgid "Display Name"
 msgstr "Prikazani naziv"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:pos.category,name:pos_restaurant.drinks
 msgid "Drinks"
@@ -343,15 +355,15 @@ msgstr "Pića"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/ChromeWidgets/TicketButton.js:0
+#: code:addons/pos_restaurant/static/src/js/ChromeWidgets/TicketButton.js
 #, python-format
 msgid "Due to a connection error, the orders are not synchronized."
 msgstr "Zbog greške sa konekcijom, narudžbe nisu sinhronizirane."
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml
 #, python-format
 msgid "Duplicate"
 msgstr "Dupliciraj"
@@ -364,16 +376,20 @@ msgid ""
 "                An Order Printer will only print updates for products belonging to one of\n"
 "                its categories."
 msgstr ""
+"Svaki štampač narudžbi ima IP adresu koja definiše IoT Box/Hardverski\n"
+"                Proxy gdje se može pronaći štampač, i listu kategorija proizvoda.\n"
+"                Štampač narudžbi će štampati samo ažuriranja za proizvode koji pripadaju jednoj od\n"
+"                njegojih kategorija."
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.res_config_settings_view_form
 msgid "Early Receipt Printing"
 msgstr "Rano štampanje računa"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/FloorScreen.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/FloorScreen.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/FloorScreen.xml
 #, python-format
 msgid "Edit"
 msgstr "Uredi"
@@ -385,30 +401,32 @@ msgstr "Omogućava dijeljenje računa u prodajnom mjestu."
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/ProductScreen/ControlButtons/SubmitOrderButton.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/ProductScreen/ControlButtons/SubmitOrderButton.js
 #, python-format
 msgid "Failed in printing the changes in the order"
 msgstr "Neuspjeh u štampanju promjena u narudžbi"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__floor_id
 msgid "Floor"
 msgstr "Prostor"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__name
 msgid "Floor Name"
 msgstr "Naziv prostora"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.actions.act_window,name:pos_restaurant.action_restaurant_floor_form
-#: model:ir.ui.menu,name:pos_restaurant.menu_restaurant_floor_all
 msgid "Floor Plans"
 msgstr "Prostorni planovi"
 
 #. module: pos_restaurant
 #. odoo-python
-#: code:addons/pos_restaurant/models/pos_restaurant.py:0
+#: code:addons/pos_restaurant/models/pos_restaurant.py
 #, python-format
 msgid "Floor: %s - PoS Config: %s \n"
 msgstr "Sprat: %s - Konfiguracija prodajnog mjesta: %s \\ \n"
@@ -428,6 +446,7 @@ msgstr "Spratovi i stolovi"
 msgid "Floors & Tables Map"
 msgstr "Mapa spratova i stolova"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:pos.category,name:pos_restaurant.food
 msgid "Food"
@@ -435,7 +454,7 @@ msgstr "Hrana"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/ReceiptScreen/OrderReceipt.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/ReceiptScreen/OrderReceipt.xml
 #, python-format
 msgid "For convenience, we are providing the following gratuity calculations:"
 msgstr "Radi praktičnosti, pružamo sljedeće kalkulacije napojnica:"
@@ -445,53 +464,53 @@ msgstr "Radi praktičnosti, pružamo sljedeće kalkulacije napojnica:"
 msgid "Funghi"
 msgstr "Funghi"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml
 #, python-format
 msgid "Green"
 msgstr "Zeleno"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml
 #, python-format
 msgid "Grey"
 msgstr "Sivo"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/ProductScreen/ControlButtons/TableGuestsButton.xml:0
-#: model:ir.model.fields,field_description:pos_restaurant.field_pos_order__customer_count
+#: code:addons/pos_restaurant/static/src/xml/Screens/ProductScreen/ControlButtons/TableGuestsButton.xml
 #, python-format
 msgid "Guests"
 msgstr "Gostiju"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/ProductScreen/ControlButtons/TableGuestsButton.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/ProductScreen/ControlButtons/TableGuestsButton.js
 #, python-format
 msgid "Guests ?"
 msgstr "Gosti ?"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/ReceiptScreen/OrderReceipt.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/ReceiptScreen/OrderReceipt.xml
 #, python-format
 msgid "Guests:"
 msgstr "Gosti:"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__height
 msgid "Height"
 msgstr "Visina"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__position_h
 msgid "Horizontal Position"
@@ -504,16 +523,19 @@ msgstr "Horizontalna pozicija"
 msgid "ID"
 msgstr "ID"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table__active
 msgid ""
 "If false, the table is deactivated and will not be available in the point of"
 " sale"
 msgstr ""
+"Ako je neaktivno, sto će biti deaktiviran i neće biti dostupan u POS-u"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/ProductScreen/ControlButtons/OrderlineNoteButton.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/ProductScreen/ControlButtons/OrderlineNoteButton.xml
 #, python-format
 msgid "Internal Note"
 msgstr "Interna bilješka"
@@ -523,11 +545,13 @@ msgstr "Interna bilješka"
 msgid "Internal Note added by the waiter."
 msgstr "Unutrašnja napomena dodana od strane konobara."
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_config__iface_orderline_notes
 msgid "Internal Notes"
 msgstr "Interne bilješke"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_config__module_pos_restaurant
 msgid "Is a Bar/Restaurant"
@@ -535,7 +559,7 @@ msgstr "Je Bar/Restoran"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/PaymentScreen/PaymentScreen.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/PaymentScreen/PaymentScreen.xml
 #, python-format
 msgid "Keep Open"
 msgstr "Ostavi otvoreno"
@@ -550,24 +574,21 @@ msgstr "Napomene kuhinje"
 msgid "Kitchen Printers"
 msgstr "Štampači kuhinje"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor____last_update
-#: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_printer____last_update
-#: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table____last_update
 msgid "Last Modified on"
 msgstr "Zadnje mijenjano"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__write_uid
-#: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_printer__write_uid
-#: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__write_uid
 msgid "Last Updated by"
 msgstr "Zadnji ažurirao"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__write_date
-#: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_printer__write_date
-#: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__write_date
 msgid "Last Updated on"
 msgstr "Zadnje ažurirano"
 
@@ -578,10 +599,7 @@ msgstr "Dozvoli prilagođene napomene na linijama narudžbe."
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml
 #, python-format
 msgid "Light grey"
 msgstr "Svijetlo siva"
@@ -628,89 +646,89 @@ msgstr "Mozzarella sendvič"
 msgid "Multiprint Resume"
 msgstr "Nastavak višestruke štampe"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/multiprint.xml:0
+#: code:addons/pos_restaurant/static/src/xml/multiprint.xml
 #, python-format
 msgid "NEW"
-msgstr "LED lampa"
+msgstr "NOVI"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/multiprint.xml:0
-#: code:addons/pos_restaurant/static/src/xml/multiprint.xml:0
+#: code:addons/pos_restaurant/static/src/xml/multiprint.xml
 #, python-format
 msgid "NOTE"
 msgstr "ZABILJEŠKA"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/TipScreen.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/TipScreen.xml
 #, python-format
 msgid "No Tip"
 msgstr "Bez napojnice"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/ProductScreen/Orderline.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/ProductScreen/Orderline.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/ProductScreen/Orderline.xml
 #, python-format
 msgid "Note"
 msgstr "Upravljaj narudžbama stolova"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/ProductScreen/ControlButtons/PrintBillButton.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/ProductScreen/ControlButtons/PrintBillButton.js
 #, python-format
 msgid "Nothing to Print"
 msgstr "Ništa za ispis"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js
 #, python-format
 msgid "Number of Seats ?"
 msgstr "Broj mjesta ?"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/ChromeWidgets/TicketButton.js:0
-#: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js:0
-#: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js:0
-#: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js:0
-#: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js:0
-#: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js:0
+#: code:addons/pos_restaurant/static/src/js/ChromeWidgets/TicketButton.js
 #, python-format
 msgid "Offline"
 msgstr "Odspojen"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/BillScreen.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/BillScreen.xml
 #, python-format
 msgid "Ok"
 msgstr "Uredu"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/TicketScreen.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/TicketScreen.js
 #, python-format
 msgid "Open"
 msgstr "Otvori"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml
 #, python-format
 msgid "Orange"
 msgstr "Narančasta"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/ProductScreen/ControlButtons/SubmitOrderButton.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/ProductScreen/ControlButtons/SubmitOrderButton.xml
 #, python-format
 msgid "Order"
 msgstr "Nalog"
@@ -720,11 +738,9 @@ msgstr "Nalog"
 msgid "Order Printer"
 msgstr "Štampač narudžbi"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.actions.act_window,name:pos_restaurant.action_restaurant_printer_form
-#: model:ir.model.fields,field_description:pos_restaurant.field_pos_config__printer_ids
-#: model:ir.model.fields,field_description:pos_restaurant.field_res_config_settings__pos_printer_ids
-#: model:ir.ui.menu,name:pos_restaurant.menu_restaurant_printer_all
 msgid "Order Printers"
 msgstr "Štampači narudžbi"
 
@@ -734,7 +750,10 @@ msgid ""
 "Order Printers are used by restaurants and bars to print the\n"
 "                order updates in the kitchen/bar when the waiter updates the order."
 msgstr ""
+"Štampači narudžbi se koriste u restoranima i barovima za štampanje\n"
+"                ažuriranja narudžbi u kuhinji/baru kada konobar ažurira narudžbu."
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_printer_form
 msgid "POS Printer"
@@ -742,7 +761,7 @@ msgstr "POS Štampač"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/ReceiptScreen/OrderReceipt.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/ReceiptScreen/OrderReceipt.xml
 #, python-format
 msgid "PRO FORMA"
 msgstr "PRO FORMA"
@@ -750,45 +769,52 @@ msgstr "PRO FORMA"
 #. module: pos_restaurant
 #: model:product.template,name:pos_restaurant.pos_food_4formaggi_product_template
 msgid "Pasta 4 formaggi "
-msgstr "Pasta 4 formaggi "
+msgstr "Pasta 4 formaggi"
 
 #. module: pos_restaurant
 #: model:product.template,name:pos_restaurant.pos_food_bolo_product_template
 msgid "Pasta Bolognese"
 msgstr "PoS"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/SplitBillScreen/SplitBillScreen.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/SplitBillScreen/SplitBillScreen.xml
 #, python-format
 msgid "Payment"
 msgstr "Plaćanje"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__pos_config_id
 msgid "Point of Sale"
 msgstr "POS Kasa"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model,name:pos_restaurant.model_pos_config
 msgid "Point of Sale Configuration"
 msgstr "Postavke prodajnog mjesta"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model,name:pos_restaurant.model_pos_order_line
 msgid "Point of Sale Order Lines"
 msgstr "Stavke narudžbe na prodajnom mjestu"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model,name:pos_restaurant.model_pos_order
 msgid "Point of Sale Orders"
 msgstr "Narudžbe POS-a"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model,name:pos_restaurant.model_pos_payment
 msgid "Point of Sale Payments"
 msgstr "Plaćanja na prodajnom mjestu"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model,name:pos_restaurant.model_pos_session
 msgid "Point of Sale Session"
@@ -824,9 +850,10 @@ msgstr "Upravljanje stolovima prodajnog mjesta"
 msgid "Pos Set Tip After Payment"
 msgstr "Postavi napojnicu nakon plaćanja prodajnog mjesta"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/BillScreen.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/BillScreen.xml
 #, python-format
 msgid "Print"
 msgstr "Ispis"
@@ -841,6 +868,7 @@ msgstr "Štampaj narudžbe u kuhinji, u baru, itd."
 msgid "Printed Product Categories"
 msgstr "Štampane kategorije proizvoda"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_printer__name
 msgid "Printer Name"
@@ -851,6 +879,7 @@ msgstr "Naziv štampača"
 msgid "Printer Type"
 msgstr "Tip štampača"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.res_config_settings_view_form
 msgid "Printers"
@@ -858,49 +887,50 @@ msgstr "Štampači"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/ProductScreen/ControlButtons/SubmitOrderButton.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/ProductScreen/ControlButtons/SubmitOrderButton.js
 #, python-format
 msgid "Printing failed"
 msgstr "Štampanje neuspješno"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/TipScreen.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/TipScreen.js
 #, python-format
 msgid "Printing is not supported on some browsers"
 msgstr "Ispisivanje nije podržano u nekim preglednicima"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/TipScreen.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/TipScreen.js
 #, python-format
 msgid ""
 "Printing is not supported on some browsers due to no default printing "
 "protocol is available. It is possible to print your tickets by making use of"
 " an IoT Box."
 msgstr ""
+"Ispisivanje nije podržano u nekim preglednicima jer nije dostupan zadani "
+"protokol ispisa. Moguće je ispisati karte koristeći IoT Box."
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_printer__proxy_ip
 msgid "Proxy IP Address"
 msgstr "IP adresa proxy"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml
 #, python-format
 msgid "Purple"
 msgstr "Ljubičasta"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml
 #, python-format
 msgid "Red"
 msgstr "Crveno"
@@ -914,15 +944,14 @@ msgstr "Uklanjanje stola se ne može naknadno otkazati"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml
 #, python-format
 msgid "Rename"
 msgstr "Preimenuj"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/TipScreen.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/TipScreen.xml
 #, python-format
 msgid "Reprint receipts"
 msgstr "Ponovo štampaj račune"
@@ -932,19 +961,19 @@ msgstr "Ponovo štampaj račune"
 msgid "Restaurant &amp; Bar"
 msgstr "Restoran i bar"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model,name:pos_restaurant.model_restaurant_floor
-#: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_floor_form
 msgid "Restaurant Floor"
 msgstr "Prostor restorana"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_config__floor_ids
-#: model:ir.model.fields,field_description:pos_restaurant.field_res_config_settings__pos_floor_ids
-#: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_floor_tree
 msgid "Restaurant Floors"
 msgstr "Prostori restorana"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_printer
 msgid "Restaurant Order Printers"
@@ -955,26 +984,29 @@ msgstr "Restoranski štampači narudžbi"
 msgid "Restaurant Printer"
 msgstr "Restoranski štampač"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model,name:pos_restaurant.model_restaurant_table
-#: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_table_form
 msgid "Restaurant Table"
 msgstr "Restoranski sto"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/PaymentScreen/PaymentScreenPaymentLines.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/PaymentScreen/PaymentScreenPaymentLines.xml
 #, python-format
 msgid "Reverse"
 msgstr "Obrnuto"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/PaymentScreen/PaymentScreenPaymentLines.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/PaymentScreen/PaymentScreenPaymentLines.xml
 #, python-format
 msgid "Reverse Payment"
 msgstr "Obrni Plaćanje"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields.selection,name:pos_restaurant.selection__restaurant_table__shape__round
 msgid "Round"
@@ -982,8 +1014,7 @@ msgstr "Okrugli"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml
 #, python-format
 msgid "Round Shape"
 msgstr "Okrugli oblik"
@@ -993,23 +1024,24 @@ msgstr "Okrugli oblik"
 msgid "Salmon and Avocado"
 msgstr "Losos i avokado"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__seats
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml
 #, python-format
 msgid "Seats"
 msgstr "Mjesta"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__sequence
 msgid "Sequence"
 msgstr "Sekvenca"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/TipReceipt.xml:0
+#: code:addons/pos_restaurant/static/src/xml/TipReceipt.xml
 #, python-format
 msgid "Served by"
 msgstr "Poslužio"
@@ -1021,20 +1053,21 @@ msgstr "Postavi napojnicu nakon plaćanja"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/TicketScreen.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/TipScreen.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/TicketScreen.xml
 #, python-format
 msgid "Settle"
 msgstr "Naplati"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__shape
 msgid "Shape"
 msgstr "Oblik"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/TipReceipt.xml:0
+#: code:addons/pos_restaurant/static/src/xml/TipReceipt.xml
 #, python-format
 msgid "Signature"
 msgstr "Potpis"
@@ -1049,9 +1082,10 @@ msgstr "Preskoči liniju pri slanju računa štampačima kuhinje."
 msgid "Spicy Tuna Sandwich"
 msgstr "Ljuti tuna sendvič"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/ProductScreen/ControlButtons/SplitBillButton.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/ProductScreen/ControlButtons/SplitBillButton.xml
 #, python-format
 msgid "Split"
 msgstr "Razdvoji"
@@ -1061,6 +1095,7 @@ msgstr "Razdvoji"
 msgid "Split total or order lines"
 msgstr "Podijeli ukupno ili linije narudžbe"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields.selection,name:pos_restaurant.selection__restaurant_table__shape__square
 msgid "Square"
@@ -1068,44 +1103,43 @@ msgstr "Kvadrat"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml
 #, python-format
 msgid "Square Shape"
 msgstr "Kvadratni oblik"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/TipReceipt.xml:0
+#: code:addons/pos_restaurant/static/src/xml/TipReceipt.xml
 #, python-format
 msgid "Subtotal"
 msgstr "Podukupno"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/TicketScreen.js:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/TicketScreen.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/TicketScreen.xml:0
-#: model:ir.model.fields,field_description:pos_restaurant.field_pos_order__table_id
+#: code:addons/pos_restaurant/static/src/js/Screens/TicketScreen.js
 #, python-format
 msgid "Table"
 msgstr "Upravljanje stolovima"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__name
 msgid "Table Name"
 msgstr "Naziv stola"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js
 #, python-format
 msgid "Table Name ?"
 msgstr "Naziv stola ?"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__table_ids
-#: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_floor_form
 msgid "Tables"
 msgstr "Stolovi"
 
@@ -1118,7 +1152,7 @@ msgstr "Tel:"
 
 #. module: pos_restaurant
 #. odoo-python
-#: code:addons/pos_restaurant/models/pos_restaurant.py:0
+#: code:addons/pos_restaurant/models/pos_restaurant.py
 #, python-format
 msgid "The %s is already used in another Pos Config."
 msgstr "%s se već koristi u drugoj konfiguraciji prodajnog mjesta."
@@ -1126,7 +1160,9 @@ msgstr "%s se već koristi u drugoj konfiguraciji prodajnog mjesta."
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_printer__proxy_ip
 msgid "The IP Address or hostname of the Printer's hardware proxy"
-msgstr "Boja pozadine raspoređa sprata (mora biti specificirana u html-kompatibilnom formatu)"
+msgstr ""
+"Boja pozadine raspoređa sprata (mora biti specificirana u html-kompatibilnom"
+" formatu)"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_pos_order__customer_count
@@ -1145,7 +1181,6 @@ msgstr "Zadani broj kupaca služenih za ovim stolom."
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_pos_config__floor_ids
-#: model:ir.model.fields,help:pos_restaurant.field_res_config_settings__pos_floor_ids
 msgid "The restaurant floors served by this point of sale."
 msgstr "Spratovi restorana koje služi ovo prodajno mjesto."
 
@@ -1158,7 +1193,7 @@ msgstr "Stol gdje je služena ova narudžba"
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table__color
 msgid ""
 "The table's color, expressed as a valid 'background' CSS property value"
-msgstr ""
+msgstr "Boja stola, izražena kao važeći 'background' CSS svojstvo"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table__height
@@ -1171,12 +1206,13 @@ msgid ""
 "The table's horizontal position from the left side to the table's center, in"
 " pixels"
 msgstr ""
+"Horizontalna pozicija stola od lijeve strane do centra stola, u pikselima"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table__position_v
 msgid ""
 "The table's vertical position from the top to the table's center, in pixels"
-msgstr ""
+msgstr "Vertikalna pozicija stola od vrha do centra stola, u pikselima"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table__width
@@ -1185,126 +1221,127 @@ msgstr "Širina stola u pikselima"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/ProductScreen/ControlButtons/PrintBillButton.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/ProductScreen/ControlButtons/PrintBillButton.js
 #, python-format
 msgid "There are no order lines"
 msgstr "Nema linija narudžbe"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/FloorScreen.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/FloorScreen.xml
 #, python-format
 msgid "This floor has no tables yet, use the"
 msgstr "Ovaj sprat još nema stolova, koristi"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/TipScreen.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/TipScreen.js
 #, python-format
 msgid ""
 "This order is not yet synced to server. Make sure it is synced then try "
 "again."
 msgstr ""
+"Ova narudžba još nije sinhronizirana sa serverom. Uvjerite se da je "
+"sinhronizirana pa pokušajte ponovo."
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml
 #, python-format
 msgid "Tint"
 msgstr "Nijansa"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/TicketScreen.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/TicketScreen.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/TicketScreen.xml
 #, python-format
 msgid "Tip"
 msgstr "Savjet"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/TipReceipt.xml:0
+#: code:addons/pos_restaurant/static/src/xml/TipReceipt.xml
 #, python-format
 msgid "Tip:"
 msgstr "Napojnica:"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/TicketScreen.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/TicketScreen.js
 #, python-format
 msgid "Tipping"
 msgstr "Napojnice"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/TipReceipt.xml:0
+#: code:addons/pos_restaurant/static/src/xml/TipReceipt.xml
 #, python-format
 msgid "Total:"
 msgstr "Ukupno:"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/ProductScreen/ControlButtons/TransferOrderButton.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/ProductScreen/ControlButtons/TransferOrderButton.xml
 #, python-format
 msgid "Transfer"
 msgstr "Prenos"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml
 #, python-format
 msgid "Turquoise"
 msgstr "Tirkizna"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js
 #, python-format
 msgid "Unable to change background color"
 msgstr "Nije moguće promijeniti boju pozadine"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js
 #, python-format
 msgid "Unable to create table because you are offline."
 msgstr "Nije moguće kreirati stol jer ste offline."
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js
 #, python-format
 msgid "Unable to delete table"
 msgstr "Nije moguće obrisati stol"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js
 #, python-format
 msgid "Unable to fetch orders"
 msgstr "Nije moguće dohvatiti narudžbe"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js
 #, python-format
 msgid "Unable to get orders count"
 msgstr "Nije moguće dobiti broj narudžbi"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/ChromeWidgets/TicketButton.js:0
+#: code:addons/pos_restaurant/static/src/js/ChromeWidgets/TicketButton.js
 #, python-format
 msgid "Unknown error"
 msgstr "Nepoznata greška"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/TipScreen.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/TipScreen.js
 #, python-format
 msgid "Unsynced order"
 msgstr "Nesinhronizirana narudžba"
@@ -1314,9 +1351,10 @@ msgstr "Nesinhronizirana narudžba"
 msgid "Uuid"
 msgstr "Uuid"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/TipReceipt.xml:0
+#: code:addons/pos_restaurant/static/src/xml/TipReceipt.xml
 #, python-format
 msgid "VAT:"
 msgstr "PDV:"
@@ -1326,102 +1364,110 @@ msgstr "PDV:"
 msgid "Vegetarian"
 msgstr "Vegetarijanski"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__position_v
 msgid "Vertical Position"
 msgstr "Vertikalna pozicija"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:product.template,name:pos_restaurant.water_product_template
 msgid "Water"
 msgstr "Voda"
 
+# taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__width
 msgid "Width"
 msgstr "Širina"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/SplitBillScreen/SplitOrderline.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/SplitBillScreen/SplitOrderline.xml
 #, python-format
 msgid "With a"
 msgstr "Sa"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml
 #, python-format
 msgid "Yellow"
 msgstr "Žuta"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/js/Screens/ProductScreen/ControlButtons/TableGuestsButton.js:0
+#: code:addons/pos_restaurant/static/src/js/Screens/ProductScreen/ControlButtons/TableGuestsButton.js
 #, python-format
 msgid "You cannot put a number that exceeds %s "
 msgstr "Ne možete staviti broj koji prelazi %s "
 
 #. module: pos_restaurant
 #. odoo-python
-#: code:addons/pos_restaurant/models/pos_restaurant.py:0
+#: code:addons/pos_restaurant/models/pos_restaurant.py
 #, python-format
 msgid ""
 "You cannot remove a floor that is used in a PoS session, close the "
 "session(s) first: \n"
 msgstr ""
+"Ne možete ukloniti sprat koji se koristi u sesiji prodajnog mjesta, prvo "
+"zatvorite sesiju/e: \n"
 
 #. module: pos_restaurant
 #. odoo-python
-#: code:addons/pos_restaurant/models/pos_restaurant.py:0
+#: code:addons/pos_restaurant/models/pos_restaurant.py
 #, python-format
 msgid ""
 "You cannot remove a table that is used in a PoS session, close the "
 "session(s) first."
 msgstr ""
+"Ne možete ukloniti stol koji se koristi u sesiji prodajnog mjesta, prvo "
+"zatvorite sesiju/e."
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/TipReceipt.xml:0
-#: code:addons/pos_restaurant/static/src/xml/TipReceipt.xml:0
+#: code:addons/pos_restaurant/static/src/xml/TipReceipt.xml
 #, python-format
 msgid "________________________"
 msgstr "________________________"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/TipReceipt.xml:0
+#: code:addons/pos_restaurant/static/src/xml/TipReceipt.xml
 #, python-format
 msgid "______________________________________________"
 msgstr "______________________________________________"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/SplitBillScreen/SplitOrderline.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/SplitBillScreen/SplitOrderline.xml
 #, python-format
 msgid "at"
 msgstr "kod"
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/ReceiptScreen/OrderReceipt.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/ReceiptScreen/OrderReceipt.xml
 #, python-format
 msgid "at table"
 msgstr "na stolu"
 
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/FloorScreen.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/FloorScreen.xml
 #, python-format
 msgid "button in the editing toolbar to create new tables."
 msgstr "Morate biti povezani na internet da sačuvate svoje promjene."
 
+# taken from hr.po
 #. module: pos_restaurant
 #. odoo-javascript
-#: code:addons/pos_restaurant/static/src/xml/Screens/SplitBillScreen/SplitOrderline.xml:0
+#: code:addons/pos_restaurant/static/src/xml/Screens/SplitBillScreen/SplitOrderline.xml
 #, python-format
 msgid "discount"
 msgstr "popust"

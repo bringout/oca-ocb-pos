@@ -17,21 +17,24 @@ msgstr ""
 
 #. module: pos_six
 #. odoo-javascript
-#: code:addons/pos_six/static/src/js/payment_six.js:0
+#: code:addons/pos_six/static/src/js/payment_six.js
 #, python-format
 msgid "Balance Failed"
 msgstr "Saldo Neuspješno"
 
+# taken from hr.po
 #. module: pos_six
 #: model:ir.model,name:pos_six.model_pos_config
 msgid "Point of Sale Configuration"
 msgstr "Postavke prodajnog mjesta"
 
+# taken from hr.po
 #. module: pos_six
 #: model:ir.model,name:pos_six.model_pos_payment_method
 msgid "Point of Sale Payment Methods"
 msgstr "Načini plaćanja na prodajnom mjestu"
 
+# taken from hr.po
 #. module: pos_six
 #: model:ir.model,name:pos_six.model_pos_session
 msgid "Point of Sale Session"
@@ -39,7 +42,7 @@ msgstr "Smjena POS-a"
 
 #. module: pos_six
 #. odoo-javascript
-#: code:addons/pos_six/static/src/xml/BalanceButton.xml:0
+#: code:addons/pos_six/static/src/xml/BalanceButton.xml
 #, python-format
 msgid "Send Balance"
 msgstr "Pošalji saldo"
@@ -51,14 +54,14 @@ msgstr "Six Terminal IP"
 
 #. module: pos_six
 #. odoo-javascript
-#: code:addons/pos_six/static/src/js/payment_six.js:0
+#: code:addons/pos_six/static/src/js/payment_six.js
 #, python-format
 msgid "The balance operation failed."
 msgstr "Operacija salda nije uspjela."
 
 #. module: pos_six
 #. odoo-javascript
-#: code:addons/pos_six/static/src/js/payment_six.js:0
+#: code:addons/pos_six/static/src/js/payment_six.js
 #, python-format
 msgid "Transaction was not processed correctly"
 msgstr "Transakcija nije obrađena ispravno"

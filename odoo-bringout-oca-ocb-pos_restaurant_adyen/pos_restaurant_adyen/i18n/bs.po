@@ -20,21 +20,25 @@ msgstr ""
 msgid "Adyen Merchant Account"
 msgstr "Adyen trgovinski račun"
 
+# taken from hr.po
 #. module: pos_restaurant_adyen
 #: model:ir.model,name:pos_restaurant_adyen.model_pos_order
 msgid "Point of Sale Orders"
 msgstr "Nalozi POS-a"
 
+# taken from hr.po
 #. module: pos_restaurant_adyen
 #: model:ir.model,name:pos_restaurant_adyen.model_pos_payment_method
 msgid "Point of Sale Payment Methods"
 msgstr "Načini plaćanja na prodajnom mjestu"
 
+# taken from hr.po
 #. module: pos_restaurant_adyen
 #: model:ir.model,name:pos_restaurant_adyen.model_pos_payment
 msgid "Point of Sale Payments"
 msgstr "Plaćanja na prodajnom mjestu"
 
+# taken from hr.po
 #. module: pos_restaurant_adyen
 #: model:ir.model,name:pos_restaurant_adyen.model_pos_session
 msgid "Point of Sale Session"

@@ -17,16 +17,14 @@ msgstr ""
 
 #. module: pos_stripe
 #. odoo-python
-#: code:addons/pos_stripe/models/pos_payment_method.py:0
+#: code:addons/pos_stripe/models/pos_payment_method.py
 #, python-format
 msgid "Complete the Stripe onboarding for company %s."
 msgstr "Complete the Stripe onboarding for Kompanija %s."
 
 #. module: pos_stripe
 #. odoo-python
-#: code:addons/pos_stripe/models/pos_payment_method.py:0
-#: code:addons/pos_stripe/models/pos_payment_method.py:0
-#: code:addons/pos_stripe/models/pos_payment_method.py:0
+#: code:addons/pos_stripe/models/pos_payment_method.py
 #, python-format
 msgid "Do not have access to fetch token from Stripe"
 msgstr "Do not have access to fetch token from Stripe"
@@ -36,41 +34,43 @@ msgstr "Do not have access to fetch token from Stripe"
 msgid ""
 "Don't forget to complete Stripe connect before using this payment method."
 msgstr ""
+"Don't forget to complete Stripe connect before using this Plaćanje method."
 
 #. module: pos_stripe
 #. odoo-javascript
-#: code:addons/pos_stripe/static/src/js/payment_stripe.js:0
+#: code:addons/pos_stripe/static/src/js/payment_stripe.js
 #, python-format
 msgid "Failed to discover: %s"
 msgstr "Neuspješno to discover: %s"
 
 #. module: pos_stripe
 #. odoo-javascript
-#: code:addons/pos_stripe/static/src/js/payment_stripe.js:0
-#: code:addons/pos_stripe/static/src/js/payment_stripe.js:0
+#: code:addons/pos_stripe/static/src/js/payment_stripe.js
 #, python-format
 msgid "Failed to load resource: net::ERR_INTERNET_DISCONNECTED."
 msgstr "Neuspješno to load resource: net::ERR_INTERNET_DISCONNECTED."
 
 #. module: pos_stripe
 #. odoo-javascript
-#: code:addons/pos_stripe/static/src/js/payment_stripe.js:0
+#: code:addons/pos_stripe/static/src/js/payment_stripe.js
 #, python-format
 msgid "No available Stripe readers."
 msgstr "No Dostupan Stripe readers."
 
 #. module: pos_stripe
 #. odoo-javascript
-#: code:addons/pos_stripe/static/src/js/payment_stripe.js:0
+#: code:addons/pos_stripe/static/src/js/payment_stripe.js
 #, python-format
 msgid "Payment canceled because not reader connected"
 msgstr "Plaćanje canceled because not reader connected"
 
+# taken from hr.po
 #. module: pos_stripe
 #: model:ir.model,name:pos_stripe.model_pos_payment_method
 msgid "Point of Sale Payment Methods"
 msgstr "Načini plaćanja na prodajnom mjestu"
 
+# taken from hr.po
 #. module: pos_stripe
 #: model:ir.model,name:pos_stripe.model_pos_session
 msgid "Point of Sale Session"
@@ -78,21 +78,21 @@ msgstr "Smjena POS-a"
 
 #. module: pos_stripe
 #. odoo-javascript
-#: code:addons/pos_stripe/static/src/js/payment_stripe.js:0
+#: code:addons/pos_stripe/static/src/js/payment_stripe.js
 #, python-format
 msgid "Reader disconnected"
 msgstr "Reader disconnected"
 
 #. module: pos_stripe
 #. odoo-python
-#: code:addons/pos_stripe/models/pos_payment_method.py:0
+#: code:addons/pos_stripe/models/pos_payment_method.py
 #, python-format
 msgid "Stripe"
 msgstr "Stripe"
 
 #. module: pos_stripe
 #. odoo-javascript
-#: code:addons/pos_stripe/static/src/js/payment_stripe.js:0
+#: code:addons/pos_stripe/static/src/js/payment_stripe.js
 #, python-format
 msgid "Stripe Error"
 msgstr "Stripe Error"
@@ -104,29 +104,28 @@ msgstr "Stripe Serial Broj"
 
 #. module: pos_stripe
 #. odoo-python
-#: code:addons/pos_stripe/models/pos_payment_method.py:0
+#: code:addons/pos_stripe/models/pos_payment_method.py
 #, python-format
 msgid "Stripe payment provider for company %s is missing"
 msgstr "Stripe Plaćanje provider for Kompanija %s is missing"
 
 #. module: pos_stripe
 #. odoo-javascript
-#: code:addons/pos_stripe/static/src/js/payment_stripe.js:0
+#: code:addons/pos_stripe/static/src/js/payment_stripe.js
 #, python-format
 msgid "Stripe readers %s not listed in your account"
 msgstr "Stripe readers %s not listed in your Konto"
 
 #. module: pos_stripe
 #. odoo-python
-#: code:addons/pos_stripe/models/pos_payment_method.py:0
+#: code:addons/pos_stripe/models/pos_payment_method.py
 #, python-format
 msgid "Terminal %s is already used on payment method %s."
 msgstr "Terminal %s is already used on payment method %s."
 
 #. module: pos_stripe
 #. odoo-python
-#: code:addons/pos_stripe/models/pos_payment_method.py:0
-#: code:addons/pos_stripe/models/pos_payment_method.py:0
+#: code:addons/pos_stripe/models/pos_payment_method.py
 #, python-format
 msgid "There are some issues between us and Stripe, try again later."
 msgstr "There are some issues between us and Stripe, try again later."

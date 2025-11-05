@@ -17,7 +17,7 @@ msgstr ""
 
 #. module: pos_cache
 #. odoo-javascript
-#: code:addons/pos_cache/static/src/js/Chrome.js:0
+#: code:addons/pos_cache/static/src/js/Chrome.js
 #, python-format
 msgid "All products are loaded."
 msgstr "All products are loaded."
@@ -38,16 +38,19 @@ msgstr "pos.cache"
 msgid "Config"
 msgstr "Config"
 
+# taken from hr.po
 #. module: pos_cache
 #: model:ir.model.fields,field_description:pos_cache.field_pos_cache__create_uid
 msgid "Created by"
 msgstr "Kreirao"
 
+# taken from hr.po
 #. module: pos_cache
 #: model:ir.model.fields,field_description:pos_cache.field_pos_cache__create_date
 msgid "Created on"
 msgstr "Kreirano"
 
+# taken from hr.po
 #. module: pos_cache
 #: model:ir.model.fields,field_description:pos_cache.field_pos_cache__display_name
 msgid "Display Name"
@@ -63,16 +66,19 @@ msgstr "ID"
 msgid "Invalidate cache"
 msgstr "Invalidate cache"
 
+# taken from hr.po
 #. module: pos_cache
 #: model:ir.model.fields,field_description:pos_cache.field_pos_cache____last_update
 msgid "Last Modified on"
 msgstr "Zadnje mijenjano"
 
+# taken from hr.po
 #. module: pos_cache
 #: model:ir.model.fields,field_description:pos_cache.field_pos_cache__write_uid
 msgid "Last Updated by"
 msgstr "Zadnji ažurirao"
 
+# taken from hr.po
 #. module: pos_cache
 #: model:ir.model.fields,field_description:pos_cache.field_pos_cache__write_date
 msgid "Last Updated on"
@@ -99,11 +105,13 @@ msgstr "PoS: refresh cache"
 msgid "Point of Sale Cache"
 msgstr "Point of Sale Cache"
 
+# taken from hr.po
 #. module: pos_cache
 #: model:ir.model,name:pos_cache.model_pos_config
 msgid "Point of Sale Configuration"
 msgstr "Postavke prodajnog mjesta"
 
+# taken from hr.po
 #. module: pos_cache
 #: model:ir.model,name:pos_cache.model_pos_session
 msgid "Point of Sale Session"

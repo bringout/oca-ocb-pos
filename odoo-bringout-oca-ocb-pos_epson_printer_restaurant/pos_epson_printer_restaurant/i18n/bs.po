@@ -25,6 +25,7 @@ msgstr "Epson Printer IP Address"
 msgid "Local IP address of an Epson receipt printer."
 msgstr "Local IP address of an Epson receipt printer."
 
+# taken from hr.po
 #. module: pos_epson_printer_restaurant
 #: model:ir.model,name:pos_epson_printer_restaurant.model_pos_session
 msgid "Point of Sale Session"
