@@ -36,7 +36,7 @@ msgstr "Omogućuje blagajniku odobravanje popusta na cijelu narudžbu."
 #. module: pos_discount
 #: model:ir.model,name:pos_discount.model_res_config_settings
 msgid "Config Settings"
-msgstr "Postavke"
+msgstr "Postavke konfiguracije"
 
 # taken from hr.po
 #. module: pos_discount

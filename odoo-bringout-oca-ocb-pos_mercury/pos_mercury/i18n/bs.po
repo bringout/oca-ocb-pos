@@ -113,13 +113,13 @@ msgstr "Could not read card"
 #. module: pos_mercury
 #: model:ir.model.fields,field_description:pos_mercury.field_pos_mercury_configuration__create_uid
 msgid "Created by"
-msgstr "Mercury referentni broj"
+msgstr "Kreirao"
 
 # taken from hr.po
 #. module: pos_mercury
 #: model:ir.model.fields,field_description:pos_mercury.field_pos_mercury_configuration__create_date
 msgid "Created on"
-msgstr "Mercury broj zapisa"
+msgstr "Kreirano"
 
 # taken from hr.po
 #. module: pos_mercury
@@ -144,7 +144,7 @@ msgstr ""
 #. module: pos_mercury
 #: model:ir.model.fields,field_description:pos_mercury.field_pos_mercury_configuration__display_name
 msgid "Display Name"
-msgstr "Mercury kredencijali"
+msgstr "Prikazani naziv"
 
 #. module: pos_mercury
 #: model_terms:ir.ui.view,arch_db:pos_mercury.view_pos_mercury_configuration_form
@@ -200,19 +200,19 @@ msgstr "Broj fakture iz Vantiv Pay"
 #. module: pos_mercury
 #: model:ir.model.fields,field_description:pos_mercury.field_pos_mercury_configuration____last_update
 msgid "Last Modified on"
-msgstr "Mercury broj fakture"
+msgstr "Zadnja izmjena na"
 
 # taken from hr.po
 #. module: pos_mercury
 #: model:ir.model.fields,field_description:pos_mercury.field_pos_mercury_configuration__write_uid
 msgid "Last Updated by"
-msgstr "Zadnji ažurirao"
+msgstr "Zadnje ažuriranje izvršio"
 
 # taken from hr.po
 #. module: pos_mercury
 #: model:ir.model.fields,field_description:pos_mercury.field_pos_mercury_configuration__write_date
 msgid "Last Updated on"
-msgstr "Zadnje ažurirano"
+msgstr "Zadnje ažuriranje na"
 
 #. module: pos_mercury
 #: model:ir.model.fields,field_description:pos_mercury.field_pos_mercury_configuration__merchant_id

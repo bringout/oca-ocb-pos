@@ -93,7 +93,7 @@ msgstr "Cannot process transactions with negative amount."
 #. module: pos_adyen
 #: model:ir.model,name:pos_adyen.model_res_config_settings
 msgid "Config Settings"
-msgstr "Postavke"
+msgstr "Postavke konfiguracije"
 
 #. module: pos_adyen
 #. odoo-javascript
