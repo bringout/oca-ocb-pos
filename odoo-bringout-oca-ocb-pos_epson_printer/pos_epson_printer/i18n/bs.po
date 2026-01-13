@@ -36,7 +36,7 @@ msgstr ""
 #. module: pos_epson_printer
 #: model:ir.model,name:pos_epson_printer.model_res_config_settings
 msgid "Config Settings"
-msgstr "Postavke konfiguracije"
+msgstr "Postavke"
 
 # taken from hr.po
 #. module: pos_epson_printer

@@ -70,19 +70,19 @@ msgstr "Invalidate cache"
 #. module: pos_cache
 #: model:ir.model.fields,field_description:pos_cache.field_pos_cache____last_update
 msgid "Last Modified on"
-msgstr "Zadnja izmjena na"
+msgstr "Zadnje mijenjano"
 
 # taken from hr.po
 #. module: pos_cache
 #: model:ir.model.fields,field_description:pos_cache.field_pos_cache__write_uid
 msgid "Last Updated by"
-msgstr "Zadnje ažuriranje izvršio"
+msgstr "Zadnji ažurirao"
 
 # taken from hr.po
 #. module: pos_cache
 #: model:ir.model.fields,field_description:pos_cache.field_pos_cache__write_date
 msgid "Last Updated on"
-msgstr "Zadnje ažuriranje na"
+msgstr "Zadnje ažurirano"
 
 #. module: pos_cache
 #: model:ir.model.fields,field_description:pos_cache.field_pos_config__limit_products_per_request

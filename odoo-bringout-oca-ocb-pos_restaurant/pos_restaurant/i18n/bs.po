@@ -314,7 +314,7 @@ msgstr "Boja"
 #. module: pos_restaurant
 #: model:ir.model,name:pos_restaurant.model_res_config_settings
 msgid "Config Settings"
-msgstr "Postavke konfiguracije"
+msgstr "Postavke"
 
 # taken from hr.po
 #. module: pos_restaurant
@@ -578,19 +578,19 @@ msgstr "Štampači kuhinje"
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor____last_update
 msgid "Last Modified on"
-msgstr "Zadnja izmjena na"
+msgstr "Zadnje mijenjano"
 
 # taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__write_uid
 msgid "Last Updated by"
-msgstr "Zadnje ažuriranje izvršio"
+msgstr "Zadnji ažurirao"
 
 # taken from hr.po
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__write_date
 msgid "Last Updated on"
-msgstr "Zadnje ažuriranje na"
+msgstr "Zadnje ažurirano"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_pos_order__multiprint_resume
