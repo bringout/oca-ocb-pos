@@ -63,7 +63,7 @@
         <field name="weight">0.01</field>
         <field name="default_code">CONS_0002</field>
         <field name="uom_id" ref="uom.product_uom_unit" />
-        <field name="uom_po_id" ref="uom.product_uom_unit" />
+         <field name="categ_id" ref="product.product_category_goods"/>
         <field name="image_1920" type="base64" file="pos_loyalty/static/img/simple_pen.png"/>
     </record>
 
@@ -79,19 +79,19 @@
 
     <record id="loyalty_program_rule" model="loyalty.rule">
         <field name="reward_point_mode">money</field>
-        <field name="reward_point_amount">10</field>
+        <field name="reward_point_amount">1</field>
         <field name="program_id" ref="pos_loyalty.loyalty_program"/>
     </record>
 
     <record id="loyalty_program_reward" model="loyalty.reward">
         <field name="reward_type">product</field>
-        <field name="required_points">5</field>
+        <field name="required_points">50</field>
         <field name="reward_product_id" ref="pos_loyalty.simple_pen"/>
         <field name="program_id" ref="pos_loyalty.loyalty_program"/>
     </record>
 
-     <!-- Gift Cards -->
-    <record id="loyalty.gift_card_program" model="loyalty.program">
-        <field name="pos_report_print_id" ref="loyalty.report_gift_card"/>
+    <record id="product.product_product_6" model="product.product">
+        <field name="available_in_pos">True</field>
     </record>
+
 </odoo>

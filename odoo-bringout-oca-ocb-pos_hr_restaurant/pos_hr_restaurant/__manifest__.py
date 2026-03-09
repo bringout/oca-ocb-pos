@@ -3,9 +3,9 @@
 
 
 {
-    'name': 'PoS HR Restaurant',
+    'name': 'POS HR Restaurant',
     'version': '1.0',
-    'category': 'Hidden',
+    'category': 'Sales/Point of Sale',
     'summary': 'Link module between pos_hr and pos_restaurant',
     'description': """
 This module adapts the behavior of the PoS when the pos_hr and pos_restaurant are installed.
@@ -13,9 +13,13 @@ This module adapts the behavior of the PoS when the pos_hr and pos_restaurant ar
     'depends': ['pos_hr', 'pos_restaurant'],
     'auto_install': True,
     'assets': {
-        'point_of_sale.assets': [
-            'pos_hr_restaurant/static/src/js/**/*.js',
+        'point_of_sale._assets_pos': [
+            'pos_hr_restaurant/static/src/**/*',
+        ],
+        'web.assets_tests': [
+            'pos_hr_restaurant/static/tests/**/*',
         ],
     },
+    'author': 'Odoo S.A.',
     'license': 'LGPL-3',
 }

@@ -1,14 +1,16 @@
 [project]
 name = "odoo-bringout-oca-ocb-pos_restaurant_adyen"
 version = "16.0.0"
-description = "POS Restaurant Adyen - Adds American style tipping to Adyen"
+description = "POS Restaurant Adyen - 
+        Adds American style tipping to Adyen
+        "
 authors = [
     { name = "Ernad Husremovic", email = "hernad@bring.out.ba" }
 ]
 dependencies = [
-    "odoo-bringout-oca-ocb-pos_adyen>=16.0.0",
-    "odoo-bringout-oca-ocb-pos_restaurant>=16.0.0",
-    "odoo-bringout-oca-ocb-payment_adyen>=16.0.0",
+    "odoo-bringout-oca-ocb-pos_adyen>=19.0.0",
+    "odoo-bringout-oca-ocb-pos_restaurant>=19.0.0",
+    "TODO_MAP-payment_adyen>=19.0.0",
     "requests>=2.25.1"
 ]
 readme = "README.md"
@@ -18,7 +20,7 @@ classifiers = [
     "Intended Audience :: Developers",
     "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.11", 
+    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Topic :: Office/Business",
 ]

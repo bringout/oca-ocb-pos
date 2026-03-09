@@ -13,9 +13,13 @@
         ],
     'auto_install': True,
     'assets': {
-        'point_of_sale.assets': [
-            'pos_restaurant_adyen/static/**/*',
+        'point_of_sale._assets_pos': [
+            'pos_restaurant_adyen/static/src/**/*',
+        ],
+        'web.assets_unit_tests': [
+            'pos_restaurant_adyen/static/tests/unit/data/**/*'
         ],
     },
+    'author': 'Odoo S.A.',
     'license': 'LGPL-3',
 }

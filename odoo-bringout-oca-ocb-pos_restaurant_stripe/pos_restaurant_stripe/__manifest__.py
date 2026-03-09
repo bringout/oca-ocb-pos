@@ -10,9 +10,10 @@
     'depends': ['pos_stripe', 'pos_restaurant', 'payment_stripe'],
     'auto_install': True,
     'assets': {
-        'point_of_sale.assets': [
+        'point_of_sale._assets_pos': [
             'pos_restaurant_stripe/static/**/*',
         ],
     },
+    'author': 'Odoo S.A.',
     'license': 'LGPL-3',
 }

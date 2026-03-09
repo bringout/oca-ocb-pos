@@ -1,45 +1,51 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* pos_loyalty
-# 
-# Translators:
-# Friederike Fasterling-Nesselbosch, 2022
-# Martin Trigaux, 2022
-# Marianna Ciofani, 2024
-# Wil Odoo, 2024
-# Sergio Zanchetta <primes2h@gmail.com>, 2024
-# 
+# * pos_loyalty
+#
+# "Tiffany Chang (tic)" <tic@odoo.com>, 2025.
+# "Marianna Ciofani (cima)" <cima@odoo.com>, 2025, 2026.
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0\n"
+"Project-Id-Version: Odoo Server saas~18.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 13:31+0000\n"
-"PO-Revision-Date: 2022-09-22 05:54+0000\n"
-"Last-Translator: Sergio Zanchetta <primes2h@gmail.com>, 2024\n"
-"Language-Team: Italian (https://app.transifex.com/odoo/teams/41243/it/)\n"
+"POT-Creation-Date: 2026-03-06 18:36+0000\n"
+"PO-Revision-Date: 2026-02-11 17:42+0000\n"
+"Last-Translator: \"Marianna Ciofani (cima)\" <cima@odoo.com>\n"
+"Language-Team: Italian <https://translate.odoo.com/projects/odoo-19/"
+"pos_loyalty/it/>\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: it\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. module: pos_loyalty
 #: model:ir.model.fields,help:pos_loyalty.field_pos_order_line__reward_identifier_code
 msgid ""
 "\n"
-"        Technical field used to link multiple reward lines from the same reward together.\n"
+"        Technical field used to link multiple reward lines from the same "
+"reward together.\n"
 "    "
 msgstr ""
 "\n"
-"        Campo tecnico utilizzato per collegare tra loro più righe dello stesso premio.\n"
+"        Campo tecnico utilizzato per collegare tra loro più righe dello "
+"stesso premio.\n"
 "    "
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/PartnerLine.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/partner_list_screen/partner_line/partner_line.js:0
 msgid "%s Points"
 msgstr "%s punti"
+
+#. module: pos_loyalty
+#. odoo-javascript
+#: code:addons/pos_loyalty/static/src/app/services/pos_store.js:0
+msgid ""
+"%s: %s\n"
+"Balance: %s"
+msgstr ""
 
 #. module: pos_loyalty
 #: model:loyalty.program,name:pos_loyalty.15_pc_on_next_order
@@ -53,15 +59,19 @@ msgstr "15% sull'ordine"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/Loyalty.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/models/pos_order.js:0
 msgid "A better global discount is already applied."
 msgstr "Viene già applicato uno sconto globale migliore."
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/Loyalty.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/order_summary/order_summary.js:0
+msgid "A coupon/loyalty card must have a unique code."
+msgstr "Buono sconto/carta fedeltà deve avere un codice identificativo."
+
+#. module: pos_loyalty
+#. odoo-javascript
+#: code:addons/pos_loyalty/static/src/app/services/pos_store.js:0
 msgid "A reward could not be loaded"
 msgstr "Impossibile caricare un premio"
 
@@ -75,9 +85,39 @@ msgstr ""
 "generato automaticamente quando il codice della promo viene modificato."
 
 #. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_res_partner__loyalty_card_count
+#: model:ir.model.fields,field_description:pos_loyalty.field_res_users__loyalty_card_count
+msgid "Active loyalty cards"
+msgstr "Carte fedeltà attive"
+
+#. module: pos_loyalty
+#. odoo-javascript
+#: code:addons/pos_loyalty/static/src/app/components/popups/manage_giftcard_popup/manage_giftcard_popup.xml:0
+msgid "Add Balance"
+msgstr "Aggiungi saldo"
+
+#. module: pos_loyalty
+#. odoo-javascript
+#: code:addons/pos_loyalty/static/src/app/components/popups/manage_giftcard_popup/manage_giftcard_popup.xml:0
+msgid "Add existing Gift Card"
+msgstr "Aggiungi carta regalo esistente"
+
+#. module: pos_loyalty
 #: model_terms:ir.ui.view,arch_db:pos_loyalty.loyalty_program_view_form_inherit_pos_loyalty
 msgid "All PoS"
 msgstr "Tutti i POS"
+
+#. module: pos_loyalty
+#. odoo-javascript
+#: code:addons/pos_loyalty/static/src/app/components/popups/manage_giftcard_popup/manage_giftcard_popup.xml:0
+msgid "Amount"
+msgstr "Importo"
+
+#. module: pos_loyalty
+#. odoo-javascript
+#: code:addons/pos_loyalty/static/src/app/components/popups/manage_giftcard_popup/manage_giftcard_popup.js:0
+msgid "An error occurred while checking the gift card."
+msgstr "Si è verificato un errore durante la verifica della carta regalo."
 
 #. module: pos_loyalty
 #: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_rule__any_product
@@ -86,8 +126,7 @@ msgstr "Qualsiasi prodotto"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ProductScreen.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/order_summary/order_summary.js:0
 msgid ""
 "Are you sure you want to remove %s from this order?\n"
 " You will still be able to claim it through the reward button."
@@ -96,17 +135,33 @@ msgstr ""
 "Sarai ancora in grado di richiederlo attraverso il pulsante ricompensa."
 
 #. module: pos_loyalty
+#. odoo-python
+#: code:addons/pos_loyalty/models/pos_order.py:0
+msgid "Assigning order %s"
+msgstr "Ordine %s in fase di assegnazione"
+
+#. module: pos_loyalty
+#. odoo-python
+#: code:addons/pos_loyalty/models/pos_order.py:0
+msgid "Assigning partner %s"
+msgstr "Partner %s in fase di assegnazione"
+
+#. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/xml/OrderReceipt.xml:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/control_buttons/control_buttons.js:0
+msgid "Available rewards"
+msgstr "Ricompense disponibili"
+
+#. module: pos_loyalty
+#. odoo-javascript
+#: code:addons/pos_loyalty/static/src/app/screens/receipt_screen/order_receipt/order_receipt.xml:0
 msgid "Balance"
 msgstr "Saldo"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/xml/OrderReceipt.xml:0
+#: code:addons/pos_loyalty/static/src/app/screens/receipt_screen/order_receipt/order_receipt.xml:0
 #: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_rule__promo_barcode
-#, python-format
 msgid "Barcode"
 msgstr "Codice a barre"
 
@@ -116,9 +171,9 @@ msgid "Barcode Rule"
 msgstr "Regola codice a barre"
 
 #. module: pos_loyalty
-#: model:ir.model,name:pos_loyalty.model_res_config_settings
-msgid "Config Settings"
-msgstr "Impostazioni di configurazione"
+#: model:ir.model,name:pos_loyalty.model_res_partner
+msgid "Contact"
+msgstr "Contatto"
 
 #. module: pos_loyalty
 #: model:ir.model.fields,field_description:pos_loyalty.field_pos_order_line__coupon_id
@@ -127,50 +182,32 @@ msgid "Coupon"
 msgstr "Buono sconto"
 
 #. module: pos_loyalty
-#. odoo-javascript
-#: code:addons/pos_loyalty/static/src/xml/OrderReceipt.xml:0
-#, python-format
-msgid "Coupon Codes"
-msgstr "Codici buono sconto"
-
-#. module: pos_loyalty
 #: model:loyalty.program,portal_point_name:pos_loyalty.15_pc_on_next_order
 msgid "Coupon point(s)"
 msgstr "Punto/i buono sconto"
 
 #. module: pos_loyalty
+#: model:ir.model,website_form_label:pos_loyalty.model_res_partner
+msgid "Create a Customer"
+msgstr "Crea cliente"
+
+#. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/xml/Orderline.xml:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/order_summary/order_summary.xml:0
 msgid "Current Balance:"
 msgstr "Saldo attuale:"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/xml/OrderReceipt.xml:0
-#, python-format
-msgid "Customer"
-msgstr "Cliente"
-
-#. module: pos_loyalty
-#. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ProductScreen.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/services/pos_store.js:0
 msgid "Customer needed"
 msgstr "Cliente necessario"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ProductScreen.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/order_summary/order_summary.js:0
 msgid "Deactivating reward"
 msgstr "Disattivazione della ricompensa"
-
-#. module: pos_loyalty
-#: model:ir.model.fields,help:pos_loyalty.field_pos_config__gift_card_settings
-#: model:ir.model.fields,help:pos_loyalty.field_res_config_settings__pos_gift_card_settings
-msgid "Defines the way you want to set your gift cards."
-msgstr "Definisce il modo in cui vuoi impostare le tue carte regalo."
 
 #. module: pos_loyalty
 #: model:ir.ui.menu,name:pos_loyalty.menu_discount_loyalty_type_config
@@ -179,33 +216,58 @@ msgid "Discount & Loyalty"
 msgstr "Sconto e fedeltà"
 
 #. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_barcode_rule__display_name
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_card__display_name
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_mail__display_name
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_program__display_name
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_reward__display_name
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_rule__display_name
+#: model:ir.model.fields,field_description:pos_loyalty.field_pos_config__display_name
+#: model:ir.model.fields,field_description:pos_loyalty.field_pos_order__display_name
+#: model:ir.model.fields,field_description:pos_loyalty.field_pos_order_line__display_name
+#: model:ir.model.fields,field_description:pos_loyalty.field_pos_session__display_name
+#: model:ir.model.fields,field_description:pos_loyalty.field_product_product__display_name
+#: model:ir.model.fields,field_description:pos_loyalty.field_product_template__display_name
+#: model:ir.model.fields,field_description:pos_loyalty.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ControlButtons/PromoCodeButton.js:0
-#: code:addons/pos_loyalty/static/src/xml/ControlButtons/PromoCodeButton.xml:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/control_buttons/control_buttons.js:0
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/control_buttons/control_buttons.xml:0
 msgid "Enter Code"
 msgstr "Inserire codice"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ProductScreen.js:0
-#, python-format
-msgid "Enter the gift card code"
-msgstr "Inserisci il codice della carta regalo"
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/order_summary/order_summary.js:0
+msgid "Enter Gift Card Number"
+msgstr "Inserisci numero carta regalo"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ControlButtons/eWalletButton.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/components/popups/manage_giftcard_popup/manage_giftcard_popup.xml:0
+msgid "Enter amount"
+msgstr "Inserisci importo"
+
+#. module: pos_loyalty
+#. odoo-javascript
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/control_buttons/control_buttons.js:0
 msgid "Error"
 msgstr "Errore"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/PaymentScreen.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/utils/order_payment_validation.js:0
 msgid "Error validating rewards"
 msgstr "Errore durante la convalida delle ricompense"
+
+#. module: pos_loyalty
+#. odoo-javascript
+#: code:addons/pos_loyalty/static/src/app/components/popups/manage_giftcard_popup/manage_giftcard_popup.xml:0
+msgid "Expiration"
+msgstr "Scadenza"
 
 #. module: pos_loyalty
 #: model:loyalty.reward,description:pos_loyalty.loyalty_program_reward
@@ -213,27 +275,14 @@ msgid "Free Product - Simple Pen"
 msgstr "Prodotto gratuito - Penna semplice"
 
 #. module: pos_loyalty
-#: model:ir.model.fields.selection,name:pos_loyalty.selection__pos_config__gift_card_settings__create_set
-msgid "Generate PDF cards"
-msgstr "Genera carte in PDF"
+#. odoo-javascript
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/order_summary/order_summary.js:0
+msgid "Gift Card"
+msgstr "Carta regalo"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ProductScreen.js:0
-#, python-format
-msgid "Generate a Gift Card"
-msgstr "Genera una carta regalo"
-
-#. module: pos_loyalty
-#: model:ir.model.fields,field_description:pos_loyalty.field_pos_config__gift_card_settings
-#: model:ir.model.fields,field_description:pos_loyalty.field_res_config_settings__pos_gift_card_settings
-msgid "Gift Cards settings"
-msgstr "Impostazioni carte regalo"
-
-#. module: pos_loyalty
-#. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ControlButtons/PromoCodeButton.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/control_buttons/control_buttons.js:0
 msgid "Gift card or Discount code"
 msgstr "Carta regalo o codice sconto"
 
@@ -249,18 +298,39 @@ msgid "How many point this reward cost on the coupon."
 msgstr "Valore in punti della ricompensa nel buono sconto."
 
 #. module: pos_loyalty
-#. odoo-python
-#: code:addons/pos_loyalty/models/pos_config.py:0
-#, python-format
-msgid "Invalid gift card program reward. Use 1 currency per point discount."
-msgstr ""
-"Ricompensa programma carta regalo non valida. Utilizza 1 valuta per punto di"
-" sconto."
+#: model:ir.model.fields,field_description:pos_loyalty.field_barcode_rule__id
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_card__id
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_mail__id
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_program__id
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_reward__id
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_rule__id
+#: model:ir.model.fields,field_description:pos_loyalty.field_pos_config__id
+#: model:ir.model.fields,field_description:pos_loyalty.field_pos_order__id
+#: model:ir.model.fields,field_description:pos_loyalty.field_pos_order_line__id
+#: model:ir.model.fields,field_description:pos_loyalty.field_pos_session__id
+#: model:ir.model.fields,field_description:pos_loyalty.field_product_product__id
+#: model:ir.model.fields,field_description:pos_loyalty.field_product_template__id
+#: model:ir.model.fields,field_description:pos_loyalty.field_res_partner__id
+msgid "ID"
+msgstr "ID"
+
+#. module: pos_loyalty
+#. odoo-javascript
+#: code:addons/pos_loyalty/static/src/app/components/popups/manage_giftcard_popup/manage_giftcard_popup.js:0
+msgid "Invalid Gift Card Code"
+msgstr "Codice carta regalo non valido"
 
 #. module: pos_loyalty
 #. odoo-python
 #: code:addons/pos_loyalty/models/pos_config.py:0
-#, python-format
+msgid "Invalid gift card program reward. Use 1 currency per point discount."
+msgstr ""
+"Ricompensa programma carta regalo non valida. Utilizza 1 valuta per punto di "
+"sconto."
+
+#. module: pos_loyalty
+#. odoo-python
+#: code:addons/pos_loyalty/models/pos_config.py:0
 msgid "Invalid gift card program rule. Use 1 point per currency spent."
 msgstr ""
 "Regola programma carta regalo non valida. Utilizza 1 punto per valuta spesa."
@@ -268,14 +338,12 @@ msgstr ""
 #. module: pos_loyalty
 #. odoo-python
 #: code:addons/pos_loyalty/models/pos_config.py:0
-#, python-format
 msgid "Invalid gift card program. More than one reward."
 msgstr "Programma carta regalo non valido, Più di una ricompensa."
 
 #. module: pos_loyalty
 #. odoo-python
 #: code:addons/pos_loyalty/models/pos_config.py:0
-#, python-format
 msgid "Invalid gift card program. More than one rule."
 msgstr "Programma carta regalo non valido. Più di una regola."
 
@@ -317,45 +385,39 @@ msgstr "Regola fedeltà"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ProductScreen.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/order_summary/order_summary.js:0
 msgid "No"
 msgstr "No"
 
 #. module: pos_loyalty
 #. odoo-python
 #: code:addons/pos_loyalty/models/pos_config.py:0
-#, python-format
 msgid "No reward can be claimed with this coupon."
 msgstr "Non è possibile richiedere una ricompensa con questo buono sconto."
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ControlButtons/RewardButton.js:0
-#, python-format
-msgid "No rewards available."
-msgstr "Nessun premio disponibile."
-
-#. module: pos_loyalty
-#. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ControlButtons/eWalletButton.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/control_buttons/control_buttons.js:0
 msgid "No valid eWallet found"
 msgstr "Nessun portafoglio elettronico valido trovato"
 
 #. module: pos_loyalty
-#. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ControlButtons/RewardButton.js:0
-#, python-format
-msgid "Please select a product for this reward"
-msgstr "Seleziona un prodotto per questa ricompensa"
+#. odoo-python
+#: code:addons/pos_loyalty/models/pos_order.py:0
+msgid "Onsite %s"
+msgstr "Sul posto %s"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ControlButtons/RewardButton.js:0
-#, python-format
-msgid "Please select a reward"
-msgstr "Selezionare un premio"
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/control_buttons/control_buttons.js:0
+msgid "Please select a customer and a valid eWallet."
+msgstr "Seleziona un cliente e un portafoglio elettronico valido."
+
+#. module: pos_loyalty
+#. odoo-javascript
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/control_buttons/control_buttons.js:0
+msgid "Please select a product for this reward"
+msgstr "Seleziona un prodotto per questa ricompensa"
 
 #. module: pos_loyalty
 #: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_program__pos_order_count
@@ -363,16 +425,14 @@ msgid "PoS Order Count"
 msgstr "Numero ordini POS"
 
 #. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_card__source_pos_order_partner_id
+msgid "PoS Order Customer"
+msgstr "Cliente ordine POS"
+
+#. module: pos_loyalty
 #: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_card__source_pos_order_id
 msgid "PoS Order Reference"
 msgstr "Riferimento ordine POS"
-
-#. module: pos_loyalty
-#. odoo-python
-#: code:addons/pos_loyalty/models/loyalty_program.py:0
-#, python-format
-msgid "PoS Orders"
-msgstr "Ordini POS"
 
 #. module: pos_loyalty
 #: model:ir.model.fields,help:pos_loyalty.field_loyalty_card__source_pos_order_id
@@ -412,8 +472,7 @@ msgstr "Punti vendita"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/Loyalty.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/models/pos_order.js:0
 msgid "Points"
 msgstr "Punti"
 
@@ -429,30 +488,36 @@ msgid "Print Report"
 msgstr "Stampa rendiconto"
 
 #. module: pos_loyalty
+#: model:ir.model,name:pos_loyalty.model_product_template
+msgid "Product"
+msgstr "Prodotto"
+
+#. module: pos_loyalty
+#: model:ir.model,name:pos_loyalty.model_product_product
+msgid "Product Variant"
+msgstr "Variante prodotto"
+
+#. module: pos_loyalty
 #. odoo-python
 #: code:addons/pos_loyalty/models/pos_config.py:0
-#, python-format
 msgid "Program: %(name)s, Reward Product: `%(reward_product)s`"
 msgstr "Programma: %(name)s, Prodotto ricompensa: `%(reward_product)s`"
 
 #. module: pos_loyalty
 #. odoo-python
 #: code:addons/pos_loyalty/models/pos_config.py:0
-#, python-format
 msgid "Program: %(name)s, Rule Product: `%(rule_product)s`"
 msgstr "Programma: %(name)s, Prodotto regola: `%(rule_product)s`"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ControlButtons/eWalletButton.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/control_buttons/control_buttons.js:0
 msgid "Refund with eWallet"
 msgstr "Rimborsa con portafoglio elettronico"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/TicketScreen.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/ticket_screen/ticket_screen.js:0
 msgid ""
 "Refunding a top up or reward product for an eWallet or gift card program is "
 "not allowed."
@@ -462,21 +527,23 @@ msgstr ""
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/xml/ControlButtons/ResetProgramsButton.xml:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/control_buttons/control_buttons.xml:0
 msgid "Reset Programs"
 msgstr "Ripristina programmi"
 
 #. module: pos_loyalty
 #: model:ir.model.fields,help:pos_loyalty.field_loyalty_program__pos_config_ids
-msgid "Restrict publishing to those shops."
-msgstr "Limita la pubblicazione a questi negozi."
+msgid ""
+"Restrict publishing to those shops. Note: A program will only be used in the "
+"shops using the same currency as the program."
+msgstr ""
+"Limita la pubblicazione a quei negozi. Nota: un programma verrà utilizzato "
+"solo nei negozi che utilizzano la stessa valuta del programma."
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/xml/ControlButtons/RewardButton.xml:0
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/control_buttons/control_buttons.xml:0
 #: model:ir.model.fields,field_description:pos_loyalty.field_pos_order_line__reward_id
-#, python-format
 msgid "Reward"
 msgstr "Premio"
 
@@ -486,16 +553,22 @@ msgid "Reward Identifier Code"
 msgstr "Codice identificativo premio"
 
 #. module: pos_loyalty
-#: model:ir.model.fields.selection,name:pos_loyalty.selection__pos_config__gift_card_settings__scan_use
-msgid "Scan existing cards"
-msgstr "Scansiona carte esistenti"
+#. odoo-javascript
+#: code:addons/pos_loyalty/static/src/app/services/pos_store.js:0
+msgid "Select program"
+msgstr "Seleziona programma"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ProductScreen.js:0
-#, python-format
-msgid "Select program"
-msgstr "Seleziona programma"
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/order_summary/order_summary.xml:0
+msgid "Sell physical gift card?"
+msgstr "Vendere carta regalo fisica?"
+
+#. module: pos_loyalty
+#. odoo-javascript
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/order_summary/order_summary.js:0
+msgid "Sell/Manage physical gift card"
+msgstr "Vendi/gestisci carta regalo fisica"
 
 #. module: pos_loyalty
 #: model:product.template,name:pos_loyalty.simple_pen_product_template
@@ -505,7 +578,6 @@ msgstr "Penna semplice"
 #. module: pos_loyalty
 #. odoo-python
 #: code:addons/pos_loyalty/models/pos_order.py:0
-#, python-format
 msgid ""
 "Some coupons are invalid. The applied coupons have been updated. Please "
 "check the order."
@@ -515,8 +587,7 @@ msgstr ""
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/xml/OrderReceipt.xml:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/receipt_screen/order_receipt/order_receipt.xml:0
 msgid "Spent:"
 msgstr "Spesi:"
 
@@ -527,17 +598,34 @@ msgstr "Campo tecnico, indica se tutti i prodotti corrispondono"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/Loyalty.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/services/pos_store.js:0
 msgid "That coupon code has already been scanned and activated."
 msgstr "Questo codice buono sconto è stato già scansionato e attivato."
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/Loyalty.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/services/pos_store.js:0
 msgid "That promo code program has already been activated."
 msgstr "Questo codice del programma promozionale è stato già attivato."
+
+#. module: pos_loyalty
+#. odoo-javascript
+#: code:addons/pos_loyalty/static/src/app/services/pos_store.js:0
+msgid "That promo code program is expired."
+msgstr "Questo codice del programma promozionale è scaduto."
+
+#. module: pos_loyalty
+#. odoo-javascript
+#: code:addons/pos_loyalty/static/src/app/services/pos_store.js:0
+msgid "That promo code program is not yet valid."
+msgstr "Questo codice del programma promozionale non è ancora valido."
+
+#. module: pos_loyalty
+#. odoo-javascript
+#: code:addons/pos_loyalty/static/src/app/services/pos_store.js:0
+msgid "That promo code program requires a specific pricelist."
+msgstr ""
+"Il codice del programma promozionale richiede un listino prezzi specifico."
 
 #. module: pos_loyalty
 #: model:ir.model.fields,help:pos_loyalty.field_pos_order_line__coupon_id
@@ -547,9 +635,9 @@ msgstr "Buono sconto utilizzato per richiedere la ricompensa."
 #. module: pos_loyalty
 #. odoo-python
 #: code:addons/pos_loyalty/models/pos_order.py:0
-#, python-format
 msgid ""
-"The following codes already exist in the database, perhaps they were already sold?\n"
+"The following codes already exist in the database, perhaps they were already "
+"sold?\n"
 "%s"
 msgstr ""
 "I seguenti codici esistono già nel database, forse sono stati già venduti?\n"
@@ -566,8 +654,7 @@ msgstr ""
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/Loyalty.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/services/pos_store.js:0
 msgid ""
 "The reward \"%s\" contain an error in its domain, your domain must be "
 "compatible with the PoS client"
@@ -582,43 +669,31 @@ msgstr "Premio associato alla riga."
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/Loyalty.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/models/pos_order.js:0
 msgid "The reward could not be applied."
 msgstr "Impossibile applicare il premio."
 
 #. module: pos_loyalty
-#. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ControlButtons/RewardButton.js:0
-#, python-format
-msgid "There are no rewards claimable for this customer."
-msgstr "Nessuna ricompensa disponibile per questo cliente."
-
-#. module: pos_loyalty
 #. odoo-python
 #: code:addons/pos_loyalty/models/pos_order.py:0
-#, python-format
 msgid "There are not enough points for the coupon: %s."
 msgstr "Punti non sufficienti per il buono sconto: %s."
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/Loyalty.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/models/pos_order.js:0
 msgid "There are not enough points on the coupon to claim this reward."
 msgstr "Punti sul buono sconto non sufficienti per richiedere il premio."
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/Loyalty.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/models/pos_order.js:0
 msgid "There are not enough products in the basket to claim this reward."
 msgstr "Prodotti nel carrello non sufficienti per richiedere il premio."
 
 #. module: pos_loyalty
 #. odoo-python
 #: code:addons/pos_loyalty/models/pos_config.py:0
-#, python-format
 msgid ""
 "There is no email template on the gift card program and your pos is set to "
 "print them."
@@ -629,7 +704,6 @@ msgstr ""
 #. module: pos_loyalty
 #. odoo-python
 #: code:addons/pos_loyalty/models/pos_config.py:0
-#, python-format
 msgid ""
 "There is no print report on the gift card program and your pos is set to "
 "print them."
@@ -643,30 +717,41 @@ msgid "These are the products that are valid for this rule."
 msgstr "Questi sono i prodotti validi per la regola."
 
 #. module: pos_loyalty
+#. odoo-javascript
+#: code:addons/pos_loyalty/static/src/app/components/popups/manage_giftcard_popup/manage_giftcard_popup.js:0
+msgid ""
+"This code seems to be invalid, please check the Gift Card code and try again."
+msgstr ""
+"Questo codice sembra non essere valido, controlla il codice della carta "
+"regalo e prova di nuovo."
+
+#. module: pos_loyalty
 #. odoo-python
 #: code:addons/pos_loyalty/models/pos_config.py:0
-#, python-format
 msgid "This coupon is expired (%s)."
 msgstr "Buono sconto scaduto (%s)."
 
 #. module: pos_loyalty
 #. odoo-python
 #: code:addons/pos_loyalty/models/pos_config.py:0
-#, python-format
 msgid "This coupon is invalid (%s)."
 msgstr "Buono sconto non valido (%s)."
 
 #. module: pos_loyalty
-#. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ProductScreen.js:0
-#, python-format
-msgid "This gift card has already been sold"
-msgstr "Questa carta regalo è già stata venduta"
+#. odoo-python
+#: code:addons/pos_loyalty/models/pos_config.py:0
+msgid "This coupon is not available with the current pricelist."
+msgstr "Il buono sconto non è disponibile con il listino prezzi attuale."
+
+#. module: pos_loyalty
+#. odoo-python
+#: code:addons/pos_loyalty/models/pos_config.py:0
+msgid "This coupon is not yet valid (%s)."
+msgstr "Il buono sconto non è ancora valido (%s)."
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/Loyalty.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/services/pos_store.js:0
 msgid ""
 "This gift card is not linked to any order. Do you really want to apply its "
 "reward?"
@@ -682,7 +767,12 @@ msgstr "Viene utilizzato per stampare le carte regalo generate dal POS."
 #. module: pos_loyalty
 #. odoo-python
 #: code:addons/pos_loyalty/models/pos_config.py:0
-#, python-format
+msgid "This programs requires a code to be applied."
+msgstr "Il programma richiede un codice da applicare."
+
+#. module: pos_loyalty
+#. odoo-python
+#: code:addons/pos_loyalty/models/pos_config.py:0
 msgid ""
 "To continue, make the following reward products available in Point of Sale."
 msgstr ""
@@ -696,29 +786,31 @@ msgstr "Tipologia"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/Loyalty.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/models/pos_order.js:0
 msgid "Unknown discount type"
 msgstr "Tipo di sconto sconosciuto"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/Loyalty.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/services/pos_store.js:0
 msgid "Unpaid gift card"
 msgstr "Carta regalo non pagata"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/Loyalty.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/services/pos_store.js:0
 msgid "Unpaid gift card rejected."
 msgstr "Carta regalo non pagata rifiutata."
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ControlButtons/eWalletButton.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/receipt_screen/order_receipt/order_receipt.xml:0
+msgid "Until:"
+msgstr "Fino al:"
+
+#. module: pos_loyalty
+#. odoo-javascript
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/control_buttons/control_buttons.js:0
 msgid "Use eWallet to pay"
 msgstr "Utilizza portafoglio elettronico per pagare."
 
@@ -729,10 +821,9 @@ msgstr "Prodotto valido"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/xml/OrderReceipt.xml:0
-#, python-format
-msgid "Valid until:"
-msgstr "Valido fino al:"
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/order_summary/order_summary.js:0
+msgid "Validation Error"
+msgstr "Errore di validazione"
 
 #. module: pos_loyalty
 #: model:ir.model.fields,help:pos_loyalty.field_pos_order_line__is_reward_line
@@ -741,80 +832,84 @@ msgstr "Se la riga è parte della ricompensa o meno."
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/xml/OrderReceipt.xml:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/receipt_screen/order_receipt/order_receipt.xml:0
 msgid "Won:"
-msgstr "Vinti:"
+msgstr "Guadagnati:"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ProductScreen.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/order_summary/order_summary.js:0
 msgid "Yes"
 msgstr "Sì"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ProductScreen.js:0
-#, python-format
-msgid "You cannot sell a gift card that has already been sold."
-msgstr "Non è possibile vendere una carta regalo che è già stata venduta."
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/order_summary/order_summary.js:0
+msgid "You cannot change the quantity or price of a physical gift card."
+msgstr ""
+"Non è possibile modificare la quantità o il prezzo di una carta regalo "
+"fisica."
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ProductScreen.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/order_summary/order_summary.js:0
 msgid "You cannot set negative quantity or price to gift card or ewallet."
 msgstr ""
 "Non è possibile configurare una quantità negativa o un prezzo per una carta "
 "regalo o per un portafoglio elettronico."
 
 #. module: pos_loyalty
-#. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ControlButtons/eWalletButton.js:0
-#, python-format
-msgid ""
-"You either have not created an eWallet or all your eWallets have expired."
-msgstr "Non hai creato un portafoglio elettronico oppure sono tutti scaduti."
-
-#. module: pos_loyalty
 #. odoo-python
 #: code:addons/pos_loyalty/models/loyalty_program.py:0
-#, python-format
-msgid "You must set '%s' before setting '%s'."
-msgstr "Devi configurare \"%s\" prima di configurare \"%s\":"
+msgid "You must set '%(mail_template)s' before setting '%(report)s'."
+msgstr ""
+"Devi configurare \"%(mail_template)s\" prima di configurare \"%(report)s\"."
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ControlButtons/eWalletButton.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/control_buttons/control_buttons.xml:0
 msgid "eWallet"
 msgstr "Portafoglio elettronico"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ControlButtons/eWalletButton.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/control_buttons/control_buttons.xml:0
 msgid "eWallet Pay"
 msgstr "Paga portafoglio elettronico"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ControlButtons/eWalletButton.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/control_buttons/control_buttons.xml:0
 msgid "eWallet Refund"
 msgstr "Rimborsa portafoglio elettronico"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/js/ProductScreen.js:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/services/pos_store.js:0
 msgid "eWallet requires a customer to be selected"
 msgstr "il portafoglio elettronico richiede la selezione di un cliente"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/xml/OrderReceipt.xml:0
-#, python-format
+#: code:addons/pos_loyalty/static/src/app/screens/receipt_screen/order_receipt/order_receipt.xml:0
 msgid "no expiration"
 msgstr "senza scadenza"
+
+#~ msgid ""
+#~ "Gift Card: %s\n"
+#~ "Balance: %s"
+#~ msgstr ""
+#~ "Carta regalo: %s\n"
+#~ "Saldo: %s"
+
+#~ msgid "Restrict publishing to those shops."
+#~ msgstr "Limita la pubblicazione a questi negozi."
+
+#~ msgid "Customer"
+#~ msgstr "Cliente"
+
+#~ msgid "This Gift card has already been sold."
+#~ msgstr "Questa carta regalo è stata già venduta."
+
+#~ msgid "the gift cards"
+#~ msgstr "le carte regalo"
