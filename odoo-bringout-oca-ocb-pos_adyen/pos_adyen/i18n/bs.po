@@ -15,13 +15,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
 #. module: pos_adyen
 #: model_terms:ir.ui.view,arch_db:pos_adyen.res_config_settings_view_form
 msgid "Add tip through payment terminal (Adyen)"
-msgstr ""
+msgstr "Dodaj napojnicu putem platnog terminala (Adyen)"
 
 #. module: pos_adyen
 #: model:ir.model.fields,field_description:pos_adyen.field_pos_payment_method__adyen_api_key
@@ -31,6 +30,7 @@ msgstr ""
 #. module: pos_adyen
 #. odoo-javascript
 #: code:addons/pos_adyen/static/src/app/utils/payment/payment_adyen.js:0
+#, python-format
 msgid "Adyen Error"
 msgstr ""
 
@@ -52,6 +52,7 @@ msgstr ""
 #. module: pos_adyen
 #. odoo-javascript
 #: code:addons/pos_adyen/static/src/app/utils/payment/payment_adyen.js:0
+#, python-format
 msgid "An unexpected error occurred. Message from Adyen: %s"
 msgstr ""
 
@@ -63,12 +64,14 @@ msgstr ""
 #. module: pos_adyen
 #. odoo-javascript
 #: code:addons/pos_adyen/static/src/app/utils/payment/payment_adyen.js:0
+#, python-format
 msgid "Authentication failed. Please check your Adyen credentials."
 msgstr ""
 
 #. module: pos_adyen
 #. odoo-javascript
 #: code:addons/pos_adyen/static/src/app/utils/payment/payment_adyen.js:0
+#, python-format
 msgid ""
 "Cancelling the payment failed. Please cancel it manually on the payment "
 "terminal."
@@ -77,17 +80,20 @@ msgstr ""
 #. module: pos_adyen
 #. odoo-javascript
 #: code:addons/pos_adyen/static/src/app/utils/payment/payment_adyen.js:0
+#, python-format
 msgid "Cannot process transactions with negative amount."
 msgstr ""
 
+# taken from hr.po
 #. module: pos_adyen
 #: model:ir.model,name:pos_adyen.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Postavke"
 
 #. module: pos_adyen
 #. odoo-javascript
 #: code:addons/pos_adyen/static/src/app/utils/payment/payment_adyen.js:0
+#, python-format
 msgid ""
 "Could not connect to the Odoo server, please check your internet connection "
 "and try again."
@@ -95,51 +101,52 @@ msgstr ""
 
 #. module: pos_adyen
 #: model:ir.model.fields,field_description:pos_adyen.field_pos_config__display_name
-#: model:ir.model.fields,field_description:pos_adyen.field_pos_payment_method__display_name
-#: model:ir.model.fields,field_description:pos_adyen.field_res_config_settings__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Naziv za prikaz"
 
 #. module: pos_adyen
 #: model:ir.model.fields,field_description:pos_adyen.field_pos_payment_method__adyen_event_url
 msgid "Event URL"
-msgstr ""
+msgstr "URL događaja"
 
 #. module: pos_adyen
 #: model:ir.model.fields,field_description:pos_adyen.field_pos_config__id
-#: model:ir.model.fields,field_description:pos_adyen.field_pos_payment_method__id
-#: model:ir.model.fields,field_description:pos_adyen.field_res_config_settings__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: pos_adyen
 #. odoo-python
 #: code:addons/pos_adyen/models/pos_payment_method.py:0
+#, python-format
 msgid "Invalid Adyen request"
 msgstr ""
 
 #. module: pos_adyen
 #. odoo-javascript
 #: code:addons/pos_adyen/static/src/app/utils/payment/payment_adyen.js:0
+#, python-format
 msgid "Message from Adyen: %s"
 msgstr ""
 
 #. module: pos_adyen
 #. odoo-python
 #: code:addons/pos_adyen/models/pos_config.py:0
+#, python-format
 msgid ""
 "Please configure a tip product for POS %s to support tipping with Adyen."
 msgstr ""
 
+# taken from hr.po
 #. module: pos_adyen
 #: model:ir.model,name:pos_adyen.model_pos_config
 msgid "Point of Sale Configuration"
-msgstr ""
+msgstr "Postavke prodajnog mjesta"
 
+# taken from hr.po
 #. module: pos_adyen
 #: model:ir.model,name:pos_adyen.model_pos_payment_method
 msgid "Point of Sale Payment Methods"
-msgstr ""
+msgstr "Načini plaćanja na prodajnom mjestu"
 
 #. module: pos_adyen
 #: model:ir.model.fields,field_description:pos_adyen.field_res_config_settings__pos_adyen_ask_customer_for_tip
@@ -158,6 +165,8 @@ msgid ""
 "Terminal %(terminal)s is already used in company %(company)s on payment "
 "method %(payment_method)s."
 msgstr ""
+"Terminal %(terminal)s se već koristi u kompaniji %(company)s na metodi "
+"plaćanja %(payment_method)s."
 
 #. module: pos_adyen
 #. odoo-python
@@ -165,20 +174,44 @@ msgstr ""
 msgid ""
 "Terminal %(terminal)s is already used on payment method %(payment_method)s."
 msgstr ""
+"Terminal %(terminal)s se već koristi na metodi plaćanja %(payment_method)s."
 
 #. module: pos_adyen
 #: model:ir.model.fields,help:pos_adyen.field_pos_payment_method__adyen_event_url
 msgid "This URL needs to be pasted on Adyen's portal terminal settings."
-msgstr ""
+msgstr "Ovaj URL treba zalijepiti u postavke terminala na Adyen portalu."
 
 #. module: pos_adyen
 #: model:ir.model.fields,help:pos_adyen.field_pos_payment_method__adyen_api_key
 msgid ""
-"Used when connecting to Adyen: https://docs.adyen.com/user-management/how-to-"
-"get-the-api-key/#description"
+"Used when connecting to Adyen: https://docs.adyen.com/user-management/how-"
+"to-get-the-api-key/#description"
 msgstr ""
 
 #. module: pos_adyen
 #: model:ir.model.fields,help:pos_adyen.field_pos_payment_method__adyen_terminal_identifier
 msgid "[Terminal model]-[Serial number], for example: P400Plus-123456789"
+msgstr ""
+
+#. module: pos_adyen
+#: model:ir.model.fields,field_description:pos_adyen.field_pos_payment_method__adyen_latest_diagnosis
+msgid "Adyen Latest Diagnosis"
+msgstr ""
+
+# taken from hr.po
+#. module: pos_adyen
+#: model:ir.model,name:pos_adyen.model_pos_session
+msgid "Point of Sale Session"
+msgstr "Smjena POS-a"
+
+#. module: pos_adyen
+#: code:addons/pos_adyen/models/pos_payment_method.py:0
+#, python-format
+msgid "Terminal %s is already used in company %s on payment method %s."
+msgstr ""
+
+#. module: pos_adyen
+#: code:addons/pos_adyen/models/pos_payment_method.py:0
+#, python-format
+msgid "Terminal %s is already used on payment method %s."
 msgstr ""

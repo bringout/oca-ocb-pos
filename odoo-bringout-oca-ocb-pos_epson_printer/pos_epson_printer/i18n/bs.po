@@ -23,7 +23,7 @@ msgstr "Ladica za novac"
 
 #. module: pos_epson_printer
 #. odoo-javascript
-#: code:addons/pos_epson_printer/static/src/js/printers.js
+#: code:addons/pos_epson_printer/static/src/js/printers.js:0
 #, python-format
 msgid ""
 "Check on the printer configuration for the 'Device ID' setting. It should be"
@@ -41,7 +41,7 @@ msgstr "Postavke"
 # taken from hr.po
 #. module: pos_epson_printer
 #. odoo-javascript
-#: code:addons/pos_epson_printer/static/src/js/printers.js
+#: code:addons/pos_epson_printer/static/src/js/printers.js:0
 #, python-format
 msgid "Connection to the printer failed"
 msgstr "Veza s pisačem nije uspjela"
@@ -55,41 +55,39 @@ msgstr "IP epson printera"
 #. module: pos_epson_printer
 #: model_terms:ir.ui.view,arch_db:pos_epson_printer.pos_iot_config_view_form
 msgid "Epson Receipt Printer IP Address"
-msgstr "Epson Receipt Printer IP Address"
+msgstr ""
 
 #. module: pos_epson_printer
 #. odoo-javascript
-#: code:addons/pos_epson_printer/static/src/js/printers.js
+#: code:addons/pos_epson_printer/static/src/js/printers.js:0
 #, python-format
 msgid ""
 "If you are on a secure server (HTTPS) please make sure you manually accepted"
 " the certificate by accessing %s"
 msgstr ""
-"If you are on a secure server (HTTPS) please make sure you manually accepted"
-" the certificate by accessing %s"
 
 #. module: pos_epson_printer
 #: model:ir.model.fields,help:pos_epson_printer.field_pos_config__epson_printer_ip
 msgid "Local IP address of an Epson receipt printer."
-msgstr "Local IP address of an Epson receipt printer."
+msgstr ""
 
 #. module: pos_epson_printer
 #. odoo-javascript
-#: code:addons/pos_epson_printer/static/src/js/printers.js
+#: code:addons/pos_epson_printer/static/src/js/printers.js:0
 #, python-format
 msgid "No paper was detected by the printer"
-msgstr "No paper was detected by the printer"
+msgstr ""
 
 #. module: pos_epson_printer
 #. odoo-javascript
-#: code:addons/pos_epson_printer/static/src/js/printers.js
+#: code:addons/pos_epson_printer/static/src/js/printers.js:0
 #, python-format
 msgid "Please check if the printer has enough paper and is ready to print."
-msgstr "Please check if the printer has enough paper and is ready to print."
+msgstr ""
 
 #. module: pos_epson_printer
 #. odoo-javascript
-#: code:addons/pos_epson_printer/static/src/js/printers.js
+#: code:addons/pos_epson_printer/static/src/js/printers.js:0
 #, python-format
 msgid ""
 "Please check if the printer is still connected. \n"
@@ -107,14 +105,14 @@ msgstr "Postavke prodajnog mjesta"
 #. module: pos_epson_printer
 #: model:ir.model.fields,field_description:pos_epson_printer.field_res_config_settings__pos_epson_printer_ip
 msgid "Pos Epson Printer Ip"
-msgstr "Pos Epson Printer Ip"
+msgstr ""
 
 #. module: pos_epson_printer
 #. odoo-javascript
-#: code:addons/pos_epson_printer/static/src/js/printers.js
+#: code:addons/pos_epson_printer/static/src/js/printers.js:0
 #, python-format
 msgid "Printing failed"
-msgstr "Printing failed"
+msgstr ""
 
 #. module: pos_epson_printer
 #: model_terms:ir.ui.view,arch_db:pos_epson_printer.pos_iot_config_view_form
@@ -122,26 +120,24 @@ msgid ""
 "The Epson receipt printer will be used instead of the receipt printer "
 "connected to the IoT Box."
 msgstr ""
-"The Epson receipt printer will be used instead of the receipt printer "
-"connected to the IoT Box."
 
 #. module: pos_epson_printer
 #. odoo-javascript
-#: code:addons/pos_epson_printer/static/src/js/printers.js
+#: code:addons/pos_epson_printer/static/src/js/printers.js:0
 #, python-format
 msgid "The following error code was given by the printer:"
-msgstr "The following error code was given by the printer:"
+msgstr ""
 
 #. module: pos_epson_printer
 #. odoo-javascript
-#: code:addons/pos_epson_printer/static/src/js/printers.js
+#: code:addons/pos_epson_printer/static/src/js/printers.js:0
 #, python-format
 msgid "The printer was successfully reached, but it wasn't able to print."
-msgstr "The printer was successfully reached, but it wasn't able to print."
+msgstr ""
 
 #. module: pos_epson_printer
 #. odoo-javascript
-#: code:addons/pos_epson_printer/static/src/js/printers.js
+#: code:addons/pos_epson_printer/static/src/js/printers.js:0
 #, python-format
 msgid "To find more details on the error reason, please search online for:"
-msgstr "To find more details on the error reason, please search online for:"
+msgstr ""
