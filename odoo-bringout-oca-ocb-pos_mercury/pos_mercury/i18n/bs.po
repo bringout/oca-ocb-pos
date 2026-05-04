@@ -18,7 +18,7 @@ msgstr ""
 #. module: pos_mercury
 #: model_terms:ir.ui.view,arch_db:pos_mercury.res_config_settings_view_form_inherit_pos_mercury
 msgid "<i class=\"fa fa-fw fa-arrow-right\"/>Buy a card reader"
-msgstr "<i class=\"fa fa-fw fa-arrow-right\"/>Buy a card reader"
+msgstr ""
 
 #. module: pos_mercury
 #: model_terms:ir.ui.view,arch_db:pos_mercury.view_pos_mercury_configuration_form
@@ -40,12 +40,12 @@ msgstr ""
 #: code:addons/pos_mercury/static/src/xml/OrderReceipt.xml:0
 #, python-format
 msgid "ABOVE AMOUNT PURSUANT"
-msgstr "ABOVE AMOUNT PURSUANT"
+msgstr ""
 
 # taken from hr.po
 #. module: pos_mercury
 #. odoo-javascript
-#: code:addons/pos_mercury/static/src/xml/OrderReceipt.xml
+#: code:addons/pos_mercury/static/src/xml/OrderReceipt.xml:0
 #, python-format
 msgid "APPROVAL CODE:"
 msgstr "&nbsp;&nbsp;KOD ODOBRENJA:"
@@ -61,7 +61,7 @@ msgstr "Barkod pravilo"
 #: code:addons/pos_mercury/static/src/xml/OrderReceipt.xml:0
 #, python-format
 msgid "CARDHOLDER WILL PAY CARD ISSUER"
-msgstr "CARDHOLDER WILL PAY CARD ISSUER"
+msgstr ""
 
 # taken from hr.po
 #. module: pos_mercury
@@ -100,26 +100,26 @@ msgstr ""
 #. module: pos_mercury
 #: model_terms:ir.actions.act_window,help:pos_mercury.action_configuration_form
 msgid "Configure your card reader"
-msgstr "Configure your card reader"
+msgstr ""
 
 #. module: pos_mercury
 #. odoo-javascript
 #: code:addons/pos_mercury/static/src/js/PaymentScreen.js:0
 #, python-format
 msgid "Could not read card"
-msgstr "Could not read card"
+msgstr ""
 
 # taken from hr.po
 #. module: pos_mercury
 #: model:ir.model.fields,field_description:pos_mercury.field_pos_mercury_configuration__create_uid
 msgid "Created by"
-msgstr "Mercury referentni broj"
+msgstr "Kreirao"
 
 # taken from hr.po
 #. module: pos_mercury
 #: model:ir.model.fields,field_description:pos_mercury.field_pos_mercury_configuration__create_date
 msgid "Created on"
-msgstr "Mercury broj zapisa"
+msgstr "Kreirano"
 
 # taken from hr.po
 #. module: pos_mercury
@@ -129,22 +129,19 @@ msgstr "Kreditna kartica"
 
 #. module: pos_mercury
 #. odoo-javascript
-#: code:addons/pos_mercury/static/src/js/PaymentScreen.js
+#: code:addons/pos_mercury/static/src/js/PaymentScreen.js:0
 #, python-format
 msgid ""
 "Credit card refunds are not supported. Instead select your credit card "
 "payment method, click 'Validate' and refund the original charge manually "
 "through the Vantiv backend."
 msgstr ""
-"Credit card refunds are not supported. Instead select your credit card "
-"payment method, click 'Validate' and refund the original charge manually "
-"through the Vantiv backend."
 
 # taken from hr.po
 #. module: pos_mercury
 #: model:ir.model.fields,field_description:pos_mercury.field_pos_mercury_configuration__display_name
 msgid "Display Name"
-msgstr "Mercury kredencijali"
+msgstr "Naziv za prikaz"
 
 #. module: pos_mercury
 #: model_terms:ir.ui.view,arch_db:pos_mercury.view_pos_mercury_configuration_form
@@ -162,18 +159,17 @@ msgstr ""
 #: code:addons/pos_mercury/static/src/js/ProductScreen.js:0
 #, python-format
 msgid "Go to payment screen to use cards"
-msgstr "Go to payment screen to use cards"
+msgstr ""
 
 #. module: pos_mercury
 #. odoo-javascript
 #: code:addons/pos_mercury/static/src/js/PaymentScreen.js:0
 #, python-format
 msgid "Handling transaction..."
-msgstr "Handling transaction..."
+msgstr ""
 
 #. module: pos_mercury
 #: model:ir.model.fields,field_description:pos_mercury.field_pos_mercury_configuration__id
-#: model:ir.model.fields,field_description:pos_mercury.field_pos_mercury_mercury_transaction__id
 msgid "ID"
 msgstr "ID"
 
@@ -200,7 +196,7 @@ msgstr "Broj fakture iz Vantiv Pay"
 #. module: pos_mercury
 #: model:ir.model.fields,field_description:pos_mercury.field_pos_mercury_configuration____last_update
 msgid "Last Modified on"
-msgstr "Mercury broj fakture"
+msgstr "Zadnja izmjena"
 
 # taken from hr.po
 #. module: pos_mercury
@@ -228,7 +224,7 @@ msgstr "Lozinka trgovca"
 #. module: pos_mercury
 #: model:ir.model.fields,field_description:pos_mercury.field_pos_mercury_configuration__name
 msgid "Name"
-msgstr "Naziv:"
+msgstr "Naziv"
 
 #. module: pos_mercury
 #: model:ir.model.fields,help:pos_mercury.field_pos_mercury_configuration__name
@@ -237,29 +233,29 @@ msgstr "Referentni broj plaćanja od Mercury Pay"
 
 #. module: pos_mercury
 #. odoo-python
-#: code:addons/pos_mercury/models/pos_mercury_transaction.py
+#: code:addons/pos_mercury/models/pos_mercury_transaction.py:0
 #, python-format
 msgid "No Vantiv configuration associated with the payment method."
-msgstr "No Vantiv configuration associated with the payment method."
+msgstr ""
 
 #. module: pos_mercury
 #. odoo-python
 #: code:addons/pos_mercury/models/pos_mercury_transaction.py:0
 #, python-format
 msgid "No opened point of sale session for user %s found."
-msgstr "No opened point of sale session for user %s found."
+msgstr ""
 
 #. module: pos_mercury
 #. odoo-javascript
-#: code:addons/pos_mercury/static/src/js/PaymentScreen.js
+#: code:addons/pos_mercury/static/src/js/PaymentScreen.js:0
 #, python-format
 msgid "No response from Vantiv (Vantiv down?)"
-msgstr "No response from Vantiv (Vantiv down?)"
+msgstr ""
 
 # taken from hr.po
 #. module: pos_mercury
 #. odoo-javascript
-#: code:addons/pos_mercury/static/src/js/PaymentScreen.js
+#: code:addons/pos_mercury/static/src/js/PaymentScreen.js:0
 #, python-format
 msgid "No response from server (connected to network?)"
 msgstr "Nema Mercury konfiguracije povezane sa dnevnikom."
@@ -267,15 +263,14 @@ msgstr "Nema Mercury konfiguracije povezane sa dnevnikom."
 #. module: pos_mercury
 #. odoo-javascript
 #: code:addons/pos_mercury/static/src/js/PaymentScreen.js:0
-#: code:addons/pos_mercury/static/src/js/PaymentScreen.js:0
 #, python-format
 msgid "Odoo error while processing transaction."
-msgstr "Odoo error while processing transaction."
+msgstr ""
 
 # taken from hr.po
 #. module: pos_mercury
 #. odoo-javascript
-#: code:addons/pos_mercury/static/src/js/PaymentTransactionPopup.js
+#: code:addons/pos_mercury/static/src/js/PaymentTransactionPopup.js:0
 #, python-format
 msgid "Ok"
 msgstr "U redu"
@@ -283,7 +278,7 @@ msgstr "U redu"
 # taken from hr.po
 #. module: pos_mercury
 #. odoo-javascript
-#: code:addons/pos_mercury/static/src/js/PaymentTransactionPopup.js
+#: code:addons/pos_mercury/static/src/js/PaymentTransactionPopup.js:0
 #, python-format
 msgid "Online Payment"
 msgstr "Online plaćanje"
@@ -291,7 +286,7 @@ msgstr "Online plaćanje"
 # taken from hr.po
 #. module: pos_mercury
 #. odoo-javascript
-#: code:addons/pos_mercury/static/src/js/PaymentScreen.js
+#: code:addons/pos_mercury/static/src/js/PaymentScreen.js:0
 #, python-format
 msgid "Partially approved"
 msgstr "Djelomično odobren"
@@ -304,7 +299,7 @@ msgstr "Lozinka trgovca za autentifikaciju na serveru pružatelja plaćanja"
 
 #. module: pos_mercury
 #. odoo-javascript
-#: code:addons/pos_mercury/static/src/js/PaymentScreen.js
+#: code:addons/pos_mercury/static/src/js/PaymentScreen.js:0
 #, python-format
 msgid "Pay with: "
 msgstr "Pay with:"
@@ -321,7 +316,7 @@ msgstr "Referentni broj plaćanja iz Vantiv Pay"
 
 #. module: pos_mercury
 #. odoo-javascript
-#: code:addons/pos_mercury/static/src/js/PaymentScreen.js
+#: code:addons/pos_mercury/static/src/js/PaymentScreen.js:0
 #, python-format
 msgid "Please setup your Vantiv merchant account."
 msgstr "Jedno povlačenje kreditne kartice već čeka."
@@ -365,18 +360,18 @@ msgstr "Prodajno mjesto Vantiv transakcija"
 #: code:addons/pos_mercury/static/src/js/PaymentScreen.js:0
 #, python-format
 msgid "Refunds not supported"
-msgstr "Refunds not supported"
+msgstr ""
 
 #. module: pos_mercury
 #. odoo-javascript
 #: code:addons/pos_mercury/static/src/js/PaymentScreen.js:0
 #, python-format
 msgid "Reversal failed, sending VoidSale..."
-msgstr "Reversal failed, sending VoidSale..."
+msgstr ""
 
 #. module: pos_mercury
 #. odoo-javascript
-#: code:addons/pos_mercury/static/src/js/PaymentScreen.js
+#: code:addons/pos_mercury/static/src/js/PaymentScreen.js:0
 #, python-format
 msgid "Reversal succeeded"
 msgstr "Molimo podesite vaš Mercury trgovinski račun."
@@ -386,14 +381,14 @@ msgstr "Molimo podesite vaš Mercury trgovinski račun."
 #: code:addons/pos_mercury/static/src/js/PaymentScreen.js:0
 #, python-format
 msgid "Sending reversal..."
-msgstr "Sending reversal..."
+msgstr ""
 
 #. module: pos_mercury
 #. odoo-javascript
 #: code:addons/pos_mercury/static/src/xml/OrderReceipt.xml:0
 #, python-format
 msgid "TO CARDHOLDER AGREEMENT"
-msgstr "TO CARDHOLDER AGREEMENT"
+msgstr ""
 
 # taken from hr.po
 #. module: pos_mercury
@@ -419,19 +414,17 @@ msgstr "Posljednje 4 cifre kartice korišćene za plaćanje"
 
 #. module: pos_mercury
 #. odoo-javascript
-#: code:addons/pos_mercury/static/src/js/PaymentScreen.js
+#: code:addons/pos_mercury/static/src/js/PaymentScreen.js:0
 #, python-format
 msgid ""
 "This can be caused by a badly executed swipe or by not having your keyboard "
 "layout set to US QWERTY (not US International)."
 msgstr ""
-"This can be caused by a badly executed swipe or by not having your keyboard "
-"layout set to US QWERTY (not US International)."
 
 # taken from hr.po
 #. module: pos_mercury
 #. odoo-javascript
-#: code:addons/pos_mercury/static/src/js/PaymentScreen.js
+#: code:addons/pos_mercury/static/src/js/PaymentScreen.js:0
 #, python-format
 msgid "Transaction approved"
 msgstr "Transakcija odobrena"
@@ -487,14 +480,14 @@ msgstr "Vantiv referentni broj"
 
 #. module: pos_mercury
 #. odoo-javascript
-#: code:addons/pos_mercury/static/src/js/PaymentScreen.js
+#: code:addons/pos_mercury/static/src/js/PaymentScreen.js:0
 #, python-format
 msgid "VoidSale succeeded"
 msgstr "Poništavanje prodaje uspješno"
 
 #. module: pos_mercury
 #. odoo-javascript
-#: code:addons/pos_mercury/static/src/xml/PaymentScreenPaymentLines.xml
+#: code:addons/pos_mercury/static/src/xml/PaymentScreenPaymentLines.xml:0
 #, python-format
 msgid "WAITING FOR SWIPE"
 msgstr "ČEKA SE POVLAČENJE"
@@ -513,4 +506,4 @@ msgstr ""
 #: code:addons/pos_mercury/static/src/xml/OrderReceipt.xml:0
 #, python-format
 msgid "X______________________________"
-msgstr "X______________________________"
+msgstr ""

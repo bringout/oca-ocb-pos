@@ -48,3 +48,13 @@ msgstr "Smjena POS-a"
 #: model:ir.model.fields,help:pos_restaurant_adyen.field_pos_payment_method__adyen_merchant_account
 msgid "The POS merchant account code used in Adyen"
 msgstr "Kod trgovinskog računa prodajnog mjesta korišćen u Adyen-u"
+
+#. module: pos_restaurant_adyen
+#: model:ir.model.fields,field_description:pos_restaurant_adyen.field_pos_order__display_name
+msgid "Display Name"
+msgstr "Naziv za prikaz"
+
+#. module: pos_restaurant_adyen
+#: model:ir.model.fields,field_description:pos_restaurant_adyen.field_pos_order__id
+msgid "ID"
+msgstr "ID"

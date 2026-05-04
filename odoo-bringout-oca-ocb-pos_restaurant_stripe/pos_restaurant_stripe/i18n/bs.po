@@ -24,3 +24,13 @@ msgstr "Narudžbe POS-a"
 #: model:ir.model,name:pos_restaurant_stripe.model_pos_payment
 msgid "Point of Sale Payments"
 msgstr "Plaćanja na prodajnom mjestu"
+
+#. module: pos_restaurant_stripe
+#: model:ir.model.fields,field_description:pos_restaurant_stripe.field_pos_payment__display_name
+msgid "Display Name"
+msgstr "Naziv za prikaz"
+
+#. module: pos_restaurant_stripe
+#: model:ir.model.fields,field_description:pos_restaurant_stripe.field_pos_payment__id
+msgid "ID"
+msgstr "ID"

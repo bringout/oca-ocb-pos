@@ -24,3 +24,18 @@ msgstr "Stavke narudžbe na prodajnom mjestu"
 #: model:ir.model,name:pos_mrp.model_pos_order
 msgid "Point of Sale Orders"
 msgstr "Narudžbe POS-a"
+
+#. module: pos_mrp
+#: model:ir.model.fields,field_description:pos_mrp.field_pos_order__display_name
+msgid "Display Name"
+msgstr "Naziv za prikaz"
+
+#. module: pos_mrp
+#: model:ir.model.fields,field_description:pos_mrp.field_pos_order__id
+msgid "ID"
+msgstr "ID"
+
+#. module: pos_mrp
+#: model:ir.model,name:pos_mrp.model_stock_move
+msgid "Stock Move"
+msgstr "Kretanje zaliha"

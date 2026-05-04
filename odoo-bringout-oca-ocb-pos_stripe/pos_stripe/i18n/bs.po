@@ -17,17 +17,17 @@ msgstr ""
 
 #. module: pos_stripe
 #. odoo-python
-#: code:addons/pos_stripe/models/pos_payment_method.py
+#: code:addons/pos_stripe/models/pos_payment_method.py:0
 #, python-format
 msgid "Complete the Stripe onboarding for company %s."
 msgstr "Complete the Stripe onboarding for Kompanija %s."
 
 #. module: pos_stripe
 #. odoo-python
-#: code:addons/pos_stripe/models/pos_payment_method.py
+#: code:addons/pos_stripe/models/pos_payment_method.py:0
 #, python-format
 msgid "Do not have access to fetch token from Stripe"
-msgstr "Do not have access to fetch token from Stripe"
+msgstr ""
 
 #. module: pos_stripe
 #: model_terms:ir.ui.view,arch_db:pos_stripe.pos_payment_method_view_form_inherit_pos_stripe
@@ -38,28 +38,28 @@ msgstr ""
 
 #. module: pos_stripe
 #. odoo-javascript
-#: code:addons/pos_stripe/static/src/js/payment_stripe.js
+#: code:addons/pos_stripe/static/src/app/payment_stripe.js:0
 #, python-format
 msgid "Failed to discover: %s"
 msgstr "Neuspješno to discover: %s"
 
 #. module: pos_stripe
 #. odoo-javascript
-#: code:addons/pos_stripe/static/src/js/payment_stripe.js
+#: code:addons/pos_stripe/static/src/app/payment_stripe.js:0
 #, python-format
 msgid "Failed to load resource: net::ERR_INTERNET_DISCONNECTED."
 msgstr "Neuspješno to load resource: net::ERR_INTERNET_DISCONNECTED."
 
 #. module: pos_stripe
 #. odoo-javascript
-#: code:addons/pos_stripe/static/src/js/payment_stripe.js
+#: code:addons/pos_stripe/static/src/app/payment_stripe.js:0
 #, python-format
 msgid "No available Stripe readers."
 msgstr "No Dostupan Stripe readers."
 
 #. module: pos_stripe
 #. odoo-javascript
-#: code:addons/pos_stripe/static/src/js/payment_stripe.js
+#: code:addons/pos_stripe/static/src/js/payment_stripe.js:0
 #, python-format
 msgid "Payment canceled because not reader connected"
 msgstr "Plaćanje canceled because not reader connected"
@@ -78,24 +78,24 @@ msgstr "Smjena POS-a"
 
 #. module: pos_stripe
 #. odoo-javascript
-#: code:addons/pos_stripe/static/src/js/payment_stripe.js
+#: code:addons/pos_stripe/static/src/app/payment_stripe.js:0
 #, python-format
 msgid "Reader disconnected"
-msgstr "Reader disconnected"
+msgstr ""
 
 #. module: pos_stripe
 #. odoo-python
-#: code:addons/pos_stripe/models/pos_payment_method.py
+#: code:addons/pos_stripe/models/pos_payment_method.py:0
 #, python-format
 msgid "Stripe"
-msgstr "Stripe"
+msgstr ""
 
 #. module: pos_stripe
 #. odoo-javascript
-#: code:addons/pos_stripe/static/src/js/payment_stripe.js
+#: code:addons/pos_stripe/static/src/app/payment_stripe.js:0
 #, python-format
 msgid "Stripe Error"
-msgstr "Stripe Error"
+msgstr ""
 
 #. module: pos_stripe
 #: model:ir.model.fields,field_description:pos_stripe.field_pos_payment_method__stripe_serial_number
@@ -104,33 +104,55 @@ msgstr "Stripe Serial Broj"
 
 #. module: pos_stripe
 #. odoo-python
-#: code:addons/pos_stripe/models/pos_payment_method.py
+#: code:addons/pos_stripe/models/pos_payment_method.py:0
 #, python-format
 msgid "Stripe payment provider for company %s is missing"
 msgstr "Stripe Plaćanje provider for Kompanija %s is missing"
 
 #. module: pos_stripe
 #. odoo-javascript
-#: code:addons/pos_stripe/static/src/js/payment_stripe.js
+#: code:addons/pos_stripe/static/src/app/payment_stripe.js:0
 #, python-format
 msgid "Stripe readers %s not listed in your account"
 msgstr "Stripe readers %s not listed in your Konto"
 
 #. module: pos_stripe
 #. odoo-python
-#: code:addons/pos_stripe/models/pos_payment_method.py
+#: code:addons/pos_stripe/models/pos_payment_method.py:0
 #, python-format
 msgid "Terminal %s is already used on payment method %s."
-msgstr "Terminal %s is already used on payment method %s."
+msgstr ""
 
 #. module: pos_stripe
 #. odoo-python
-#: code:addons/pos_stripe/models/pos_payment_method.py
+#: code:addons/pos_stripe/models/pos_payment_method.py:0
 #, python-format
 msgid "There are some issues between us and Stripe, try again later."
-msgstr "There are some issues between us and Stripe, try again later."
+msgstr ""
 
 #. module: pos_stripe
 #: model:ir.model.fields,help:pos_stripe.field_pos_payment_method__stripe_serial_number
 msgid "[Serial number of the stripe terminal], for example: WSC513105011295"
 msgstr "[Serial Broj of the stripe terminal], for example: WSC513105011295"
+
+#. module: pos_stripe
+#: model:ir.model.fields,field_description:pos_stripe.field_pos_payment_method__display_name
+msgid "Display Name"
+msgstr "Naziv za prikaz"
+
+#. module: pos_stripe
+#: model:ir.model.fields,field_description:pos_stripe.field_pos_payment_method__id
+msgid "ID"
+msgstr "ID"
+
+#. module: pos_stripe
+#: code:addons/pos_stripe/static/src/app/payment_stripe.js:0
+msgid "Payment cancelled because not reader connected"
+msgstr "Plaćanje otkazano jer čitač nije povezan"
+
+#. module: pos_stripe
+#: code:addons/pos_stripe/models/pos_payment_method.py:0
+msgid ""
+"Terminal %(terminal)s is already used on payment method %(payment_method)s."
+msgstr ""
+"Terminal %(terminal)s se već koristi na metodi plaćanja %(payment_method)s."
