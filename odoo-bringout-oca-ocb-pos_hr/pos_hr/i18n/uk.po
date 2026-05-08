@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-25 18:36+0000\n"
+"POT-Creation-Date: 2025-12-16 18:36+0000\n"
 "PO-Revision-Date: 2025-11-08 21:54+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Ukrainian <https://translate.odoo.com/projects/odoo-19/pos_hr/"
@@ -235,6 +235,12 @@ msgstr ""
 
 #. module: pos_hr
 #. odoo-javascript
+#: code:addons/pos_hr/static/src/app/components/popups/cashier_selection_popup/cashier_selection_popup.xml:0
+msgid "More..."
+msgstr ""
+
+#. module: pos_hr
+#. odoo-javascript
 #: code:addons/pos_hr/static/src/app/utils/select_cashier_mixin.js:0
 msgid "No Cashiers"
 msgstr "Немає касирів"
@@ -301,8 +307,8 @@ msgstr "Денний звіт Точки продажу"
 
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_pos_order
-msgid "Point of Sale Orders"
-msgstr "Замовлення точки продажу"
+msgid "Point of Sale Order"
+msgstr ""
 
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_report_pos_order
@@ -311,8 +317,8 @@ msgstr "Звіт замовлень точки продажу"
 
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_pos_payment
-msgid "Point of Sale Payments"
-msgstr "Платежі точки продажу"
+msgid "Point of Sale Payment"
+msgstr ""
 
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_pos_session
@@ -390,39 +396,3 @@ msgid ""
 msgstr ""
 "Ви не можете видалити співробітника, який може бути задіяним в активній "
 "сесії точки продажу, спершу закрийте сесію: \n"
-
-#~ msgid "Allowed Employees"
-#~ msgstr "Дозволені співробітники"
-
-#~ msgid "Change Cashier"
-#~ msgstr "Змінити касира"
-
-#~ msgid "Employee: %s - PoS Config(s): %s \n"
-#~ msgstr "Співробітник: %s - Налашт. точки продажу: %s \n"
-
-#~ msgid "Employees with access"
-#~ msgstr "Співробітники з правом доступу"
-
-#~ msgid "If left empty, all employees can log in to the PoS session"
-#~ msgstr ""
-#~ "Якщо залишити порожнім, всі співробітники можуть увійти до сесії точки "
-#~ "продажу"
-
-#~ msgid "Incorrect Password"
-#~ msgstr "Невірний пароль"
-
-#~ msgid "Log in to"
-#~ msgstr "Увійдіть в"
-
-#~ msgid ""
-#~ "Person who uses the cash register. It can be a reliever, a student or an "
-#~ "interim employee."
-#~ msgstr ""
-#~ "Особа, яка використовує касовий апарат. Це може бути стажер, студент або "
-#~ "тимчасовий працівник."
-
-#~ msgid "Scan your badge"
-#~ msgstr "Відскануйте ваш значок"
-
-#~ msgid "or"
-#~ msgstr "або"

@@ -2,14 +2,13 @@
 import * as PosLoyalty from "@pos_loyalty/../tests/tours/utils/pos_loyalty_util";
 import * as ProductScreen from "@point_of_sale/../tests/pos/tours/utils/product_screen_util";
 import * as TicketScreen from "@point_of_sale/../tests/pos/tours/utils/ticket_screen_util";
-import * as ReceiptScreen from "@point_of_sale/../tests/pos/tours/utils/receipt_screen_util";
+import * as FeedbackScreen from "@point_of_sale/../tests/pos/tours/utils/feedback_screen_util";
 import * as SelectionPopup from "@point_of_sale/../tests/generic_helpers/selection_popup_util";
 import * as PartnerList from "@point_of_sale/../tests/pos/tours/utils/partner_list_util";
 import * as Dialog from "@point_of_sale/../tests/generic_helpers/dialog_util";
 import * as Chrome from "@point_of_sale/../tests/pos/tours/utils/chrome_util";
 import * as PaymentScreen from "@point_of_sale/../tests/pos/tours/utils/payment_screen_util";
 import * as Notification from "@point_of_sale/../tests/generic_helpers/notification_util";
-import * as Utils from "@point_of_sale/../tests/generic_helpers/utils";
 import { registry } from "@web/core/registry";
 import { scan_barcode } from "@point_of_sale/../tests/generic_helpers/utils";
 
@@ -242,11 +241,22 @@ registry.category("web_tour.tours").add("PosLoyaltyTour6", {
             ProductScreen.clickPayButton(),
             PaymentScreen.clickPaymentMethod("Cash"),
             PaymentScreen.clickValidate(),
-            ReceiptScreen.isShown(),
-            PosLoyalty.isLoyaltyPointsAvailable(),
-            Utils.refresh(),
-            ReceiptScreen.isShown(),
-            PosLoyalty.isLoyaltyPointsAvailable(),
+            FeedbackScreen.isShown(),
+            FeedbackScreen.checkTicketData({
+                cssRules: [
+                    {
+                        css: ".loyalty",
+                    },
+                ],
+            }),
+            FeedbackScreen.isShown(),
+            FeedbackScreen.checkTicketData({
+                cssRules: [
+                    {
+                        css: ".loyalty",
+                    },
+                ],
+            }),
         ].flat(),
 });
 
@@ -319,9 +329,10 @@ registry.category("web_tour.tours").add("PosLoyaltyTour10", {
             ProductScreen.selectedOrderlineHas("Product Test", "1"),
             PosLoyalty.isRewardButtonHighlighted(true),
             PosLoyalty.claimReward("Free Product B"),
+            Dialog.is({ title: "Please select a product for this reward" }),
             {
                 content: `click on reward item`,
-                trigger: `.selection-item:contains("Free Product B")`,
+                trigger: `.modal .selection-item:contains("Free Product B")`,
                 run: "click",
             },
             PosLoyalty.hasRewardLine("Free Product B", "-1.00"),
@@ -561,6 +572,7 @@ registry.category("web_tour.tours").add("PosRewardProductScan", {
 });
 
 registry.category("web_tour.tours").add("PosRewardProductScanGS1", {
+    undeterministicTour_doNotCopy: true, // Remove this key to make the tour failed. ( It removes delay between steps )
     steps: () =>
         [
             Chrome.startPoS(),
@@ -589,12 +601,29 @@ registry.category("web_tour.tours").add("RefundRulesProduct", {
             Chrome.startPoS(),
             Dialog.confirm("Open Register"),
             ProductScreen.clickDisplayedProduct("product_a"),
+            ProductScreen.clickDisplayedProduct("Gift Card"),
+            ProductScreen.clickDisplayedProduct("Top-up eWallet"),
+            ProductScreen.clickPartnerButton(),
+            PartnerList.clickPartner("AAAAAAA"),
             PosLoyalty.finalizeOrder("Cash", "1000"),
             ProductScreen.isShown(),
             ...ProductScreen.clickRefund(),
             TicketScreen.filterIs("Paid"),
             TicketScreen.selectOrder("001"),
             ProductScreen.clickNumpad("1"),
+            ProductScreen.clickNumpad("1"),
+            {
+                content: "Notification: not allowed to refund this product",
+                trigger:
+                    ".o_notification .o_notification_content:contains('Refunding a top up or reward product for an eWallet or gift card program is not allowed.')",
+            },
+            ProductScreen.clickLine("Top-up eWallet"),
+            ProductScreen.clickNumpad("1"),
+            {
+                content: "Notification: not allowed to refund this product",
+                trigger:
+                    ".o_notification .o_notification_content:contains('Refunding a top up or reward product for an eWallet or gift card program is not allowed.')",
+            },
             TicketScreen.confirmRefund(),
             PaymentScreen.isShown(),
         ].flat(),
@@ -634,7 +663,6 @@ registry.category("web_tour.tours").add("test_refund_does_not_decrease_points", 
             ProductScreen.clickRefund(),
             TicketScreen.selectOrder("001"),
             ProductScreen.clickNumpad("1"),
-            ProductScreen.clickLine("$ 1 per point on your order"),
             ProductScreen.clickNumpad("1"),
             TicketScreen.confirmRefund(),
             PaymentScreen.totalIs("-200.00"),
@@ -722,7 +750,9 @@ registry.category("web_tour.tours").add("test_confirm_coupon_programs_one_by_one
             ProductScreen.clickPayButton(),
             PaymentScreen.clickPaymentMethod("Bank"),
             PaymentScreen.clickValidate(),
-            ReceiptScreen.isShown(),
+            FeedbackScreen.isShown(),
+            FeedbackScreen.clickNextOrder(),
+            Chrome.isSynced(),
         ].flat(),
 });
 

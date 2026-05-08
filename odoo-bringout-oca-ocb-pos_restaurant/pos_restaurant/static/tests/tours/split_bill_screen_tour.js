@@ -1,6 +1,6 @@
 import * as PaymentScreen from "@point_of_sale/../tests/pos/tours/utils/payment_screen_util";
 import * as Dialog from "@point_of_sale/../tests/generic_helpers/dialog_util";
-import * as ReceiptScreen from "@point_of_sale/../tests/pos/tours/utils/receipt_screen_util";
+import * as FeedbackScreen from "@point_of_sale/../tests/pos/tours/utils/feedback_screen_util";
 import * as ChromePos from "@point_of_sale/../tests/pos/tours/utils/chrome_util";
 import * as ChromeRestaurant from "@pos_restaurant/../tests/tours/utils/chrome";
 const Chrome = { ...ChromePos, ...ChromeRestaurant };
@@ -12,6 +12,7 @@ const ProductScreen = { ...ProductScreenPos, ...ProductScreenResto };
 import * as SplitBillScreen from "@pos_restaurant/../tests/tours/utils/split_bill_screen_util";
 import * as TicketScreen from "@point_of_sale/../tests/pos/tours/utils/ticket_screen_util";
 import * as combo from "@point_of_sale/../tests/pos/tours/utils/combo_popup_util";
+import * as NumberPopup from "@point_of_sale/../tests/generic_helpers/number_popup_util";
 import { registry } from "@web/core/registry";
 
 registry.category("web_tour.tours").add("SplitBillScreenTour", {
@@ -93,13 +94,13 @@ registry.category("web_tour.tours").add("SplitBillScreenTourPay", {
             SplitBillScreen.clickButton("Pay"),
             PaymentScreen.clickPaymentMethod("Bank"),
             PaymentScreen.clickValidate(),
-            ReceiptScreen.clickContinueOrder(),
+            FeedbackScreen.clickNextOrder(),
             SplitBillScreen.clickOrderline("Minute Maid"),
             SplitBillScreen.clickOrderline("Minute Maid"),
             SplitBillScreen.clickButton("Pay"),
             PaymentScreen.clickPaymentMethod("Bank"),
             PaymentScreen.clickValidate(),
-            ReceiptScreen.clickNextOrder(),
+            FeedbackScreen.clickNextOrder(),
         ].flat(),
 });
 
@@ -160,7 +161,7 @@ registry.category("web_tour.tours").add("SplitBillScreenTour3", {
             ProductScreen.clickPayButton(),
             PaymentScreen.clickPaymentMethod("Bank"),
             PaymentScreen.clickValidate(),
-            ReceiptScreen.clickContinueOrder(),
+            FeedbackScreen.clickNextOrder(),
 
             // Check if there is still water in the order
             ProductScreen.isShown(),
@@ -169,7 +170,7 @@ registry.category("web_tour.tours").add("SplitBillScreenTour3", {
             PaymentScreen.clickPaymentMethod("Bank"),
             PaymentScreen.clickValidate(),
             // Check if there is no more order to continue
-            ReceiptScreen.clickNextOrder(),
+            FeedbackScreen.clickNextOrder(),
         ].flat(),
 });
 
@@ -223,7 +224,7 @@ registry.category("web_tour.tours").add("SplitBillScreenTour4ProductCombo", {
             ProductScreen.clickPayButton(),
             ...PaymentScreen.clickPaymentMethod("Bank"),
             ...PaymentScreen.clickValidate(),
-            ...ReceiptScreen.clickContinueOrder(),
+            ...FeedbackScreen.clickNextOrder(),
 
             // Check if there is still water in the order
             ...ProductScreen.isShown(),
@@ -264,7 +265,7 @@ registry.category("web_tour.tours").add("SplitBillScreenTour5Actions", {
             ProductScreen.clickPayButton(),
             PaymentScreen.clickPaymentMethod("Bank"),
             PaymentScreen.clickValidate(),
-            ReceiptScreen.clickNextOrder(),
+            FeedbackScreen.clickNextOrder(),
 
             // Add products in order
             FloorScreen.clickTable("2"),
@@ -281,7 +282,7 @@ registry.category("web_tour.tours").add("SplitBillScreenTour5Actions", {
             PaymentScreen.isShown(),
             PaymentScreen.clickPaymentMethod("Bank"),
             PaymentScreen.clickValidate(),
-            ReceiptScreen.clickContinueOrder(),
+            FeedbackScreen.clickNextOrder(),
 
             // Check if redirect to split bill screen of original order
             SplitBillScreen.orderlineHas("Minute Maid", "1", "0"),
@@ -289,7 +290,7 @@ registry.category("web_tour.tours").add("SplitBillScreenTour5Actions", {
             PaymentScreen.isShown(),
             PaymentScreen.clickPaymentMethod("Bank"),
             PaymentScreen.clickValidate(),
-            ReceiptScreen.clickNextOrder(),
+            FeedbackScreen.clickNextOrder(),
         ].flat(),
 });
 
@@ -305,6 +306,18 @@ registry.category("web_tour.tours").add("SplitBillScreenTourTransfer", {
             ProductScreen.clickControlButton("Discount"),
             Dialog.confirm(),
             ProductScreen.selectedOrderlineHas("discount", 1, "-1.80"),
+            ProductScreen.clickControlButton("Split"),
+
+            SplitBillScreen.globalDiscountIs("With 10% discount"),
+            SplitBillScreen.clickBack(),
+            ProductScreen.clickControlButton("Discount"),
+            NumberPopup.clickType("fixed"),
+            Dialog.confirm(),
+            ProductScreen.clickControlButton("Split"),
+            SplitBillScreen.globalDiscountIs("With $ 10.00 discount"),
+            SplitBillScreen.clickBack(),
+            ProductScreen.clickControlButton("Discount"),
+            Dialog.confirm(),
             ProductScreen.clickControlButton("Split"),
 
             // Check if the screen contains all the orderlines

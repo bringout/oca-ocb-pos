@@ -8,7 +8,7 @@ class LoyaltyCard(models.Model):
     _name = 'loyalty.card'
     _inherit = ['loyalty.card', 'pos.load.mixin']
 
-    source_pos_order_id = fields.Many2one('pos.order', "PoS Order Reference",
+    source_pos_order_id = fields.Many2one('pos.order', "PoS Order Reference", index=True,
         help="PoS order where this coupon was generated.")
     source_pos_order_partner_id = fields.Many2one(
         'res.partner', "PoS Order Customer",
@@ -65,3 +65,17 @@ class LoyaltyCard(models.Model):
             ('code', '=', code),
             ('program_type', '=', 'loyalty'),
         ], limit=1).partner_id or False
+
+    def _send_creation_communication(self, force_send=False):
+        """
+        Override to log gift card emails in pos.order chatter
+        """
+        mail_ids = super()._send_creation_communication(force_send=force_send)
+        for mail in self.env['mail.mail'].browse([mid for mid in mail_ids if mid]).exists():
+            if mail.model != 'loyalty.card' or mail.res_id not in self.ids:
+                continue
+
+            card = self.browse(mail.res_id)
+            if card.program_id.program_type == 'gift_card' and card.source_pos_order_id:
+                card.source_pos_order_id.message_post(body=mail.body_content)
+        return mail_ids

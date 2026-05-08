@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-25 18:36+0000\n"
+"POT-Creation-Date: 2025-12-16 18:36+0000\n"
 "PO-Revision-Date: 2025-09-16 13:41+0000\n"
 "Last-Translator: \"Tiffany Chang (tic)\" <tic@odoo.com>\n"
 "Language-Team: Arabic <https://translate.odoo.com/projects/odoo-19/pos_hr/ar/"
@@ -236,6 +236,12 @@ msgstr "الصلاحيات الأدنى"
 
 #. module: pos_hr
 #. odoo-javascript
+#: code:addons/pos_hr/static/src/app/components/popups/cashier_selection_popup/cashier_selection_popup.xml:0
+msgid "More..."
+msgstr ""
+
+#. module: pos_hr
+#. odoo-javascript
 #: code:addons/pos_hr/static/src/app/utils/select_cashier_mixin.js:0
 msgid "No Cashiers"
 msgstr "لا يوجد كاشير"
@@ -302,8 +308,8 @@ msgstr "التقرير اليومي لنقطة البيع"
 
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_pos_order
-msgid "Point of Sale Orders"
-msgstr "طلبات نقطة البيع"
+msgid "Point of Sale Order"
+msgstr ""
 
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_report_pos_order
@@ -312,8 +318,8 @@ msgstr "تقرير طلبات نقطة البيع"
 
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_pos_payment
-msgid "Point of Sale Payments"
-msgstr "مدفوعات نقطة البيع"
+msgid "Point of Sale Payment"
+msgstr ""
 
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_pos_session
@@ -391,42 +397,3 @@ msgid ""
 msgstr ""
 "لا يمكنك حذف موظف قد يكون مستخدَماً في جلسة نقطة بيع نشطة. قم بإغلاق الجلسة "
 "(الجلسات) أولاً: \n"
-
-#~ msgid "If left empty, only Odoo users have extended rights in PoS"
-#~ msgstr ""
-#~ "إذا تم تركه فارغاً، سيكون لدى مستخدمي أودو فقط صلاحيات إضافية في نقطة البيع"
-
-#~ msgid "Allowed Employees"
-#~ msgstr "مسموح الموظف"
-
-#~ msgid "Change Cashier"
-#~ msgstr "تغيير أمين الصندوق "
-
-#~ msgid "Employee: %s - PoS Config(s): %s \n"
-#~ msgstr "الموظف: %s - تهيئة نقطة البيع: %s \n"
-
-#~ msgid "Employees with access"
-#~ msgstr "موظفون لديهم صلاحيات الوصول"
-
-#~ msgid "If left empty, all employees can log in to the PoS session"
-#~ msgstr ""
-#~ "إذا تم تركه فارغاً، سيتمكن كافة الموظفين من تسجيل الدخول إلى جلسات نقطة "
-#~ "البيع "
-
-#~ msgid "Incorrect Password"
-#~ msgstr "كلمة المرور غير صحيحة"
-
-#~ msgid "Log in to"
-#~ msgstr "تسجيل الدخول إلى"
-
-#~ msgid ""
-#~ "Person who uses the cash register. It can be a reliever, a student or an "
-#~ "interim employee."
-#~ msgstr ""
-#~ "الشخص الذي يستخدم صندوق تسجيل النقد. قد يكون البائع أو طالب أو موظف متدرب."
-
-#~ msgid "Scan your badge"
-#~ msgstr "مسح شارتك"
-
-#~ msgid "or"
-#~ msgstr "أو"

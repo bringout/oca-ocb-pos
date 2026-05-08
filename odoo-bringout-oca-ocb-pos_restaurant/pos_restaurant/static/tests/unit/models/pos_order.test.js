@@ -1,13 +1,15 @@
 import { test, describe, expect } from "@odoo/hoot";
 import { setupPosEnv, getFilledOrder } from "@point_of_sale/../tests/unit/utils";
 import { definePosModels } from "@point_of_sale/../tests/unit/data/generate_model_definitions";
+import { serverState } from "@web/../tests/web_test_helpers";
 
 definePosModels();
 
 describe("pos.order restaurant patches", () => {
     test("customer count and amount per guest", async () => {
         const store = await setupPosEnv();
-        const order = await getFilledOrder(store);
+        const table = store.models["restaurant.table"].get(2);
+        const order = await getFilledOrder(store, { table_id: table });
         order.setCustomerCount(3);
         expect(order.getCustomerCount()).toBe(3);
         order.setCustomerCount(4);
@@ -23,9 +25,9 @@ describe("pos.order restaurant patches", () => {
     test("setPartner", async () => {
         const store = await setupPosEnv();
         const order = store.addNewOrder();
-        const partner = store.models["res.partner"].get(18);
+        const partner = store.models["res.partner"].get(serverState.partnerId);
         order.setPartner(partner);
-        expect(order.floating_order_name).toBe("Public user");
+        expect(order.floating_order_name).toBe("Mitchell Admin");
     });
 
     test("cleanCourses", async () => {
@@ -55,10 +57,10 @@ describe("pos.order restaurant patches", () => {
         const order = store.addNewOrder({ table_id: table });
         const child = store.models["restaurant.table"].get(3);
         let name = order.getName();
-        expect(name).toBe("T 1");
+        expect(name).toBe("T 1 - 1001");
         child.parent_id = table;
         name = order.getName();
-        expect(name).toBe("T 1 & 2");
+        expect(name).toBe("T 1 & 2 - 1001");
     });
 
     test("ensureCourseSelection and getSelectedCourse", async () => {

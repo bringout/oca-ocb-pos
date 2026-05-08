@@ -1,11 +1,13 @@
+import { useState } from "@web/owl2/utils";
 import { registry } from "@web/core/registry";
 import { usePos } from "@point_of_sale/app/hooks/pos_hook";
 import { useService } from "@web/core/utils/hooks";
-import { Component, onWillDestroy, useState } from "@odoo/owl";
+import { Component, onWillDestroy } from "@odoo/owl";
 import { Orderline } from "@point_of_sale/app/components/orderline/orderline";
 import { OrderDisplay } from "@point_of_sale/app/components/order_display/order_display";
 import { useRouterParamsChecker } from "@point_of_sale/app/hooks/pos_router_hook";
 import { PriceFormatter } from "@point_of_sale/app/components/price_formatter/price_formatter";
+import { _t } from "@web/core/l10n/translation";
 
 export class SplitBillScreen extends Component {
     static template = "pos_restaurant.SplitBillScreen";
@@ -118,9 +120,12 @@ export class SplitBillScreen extends Component {
         this.pos.startTransferOrder();
     }
     async handleDiscountLines(originalOrder, newOrder) {
-        const discountPercentage = originalOrder.globalDiscountPc;
-        if (!this.isTransferred && discountPercentage) {
-            await this.pos.applyDiscount(discountPercentage, newOrder);
+        const { value, type } = originalOrder.globalDiscountPc;
+        if (value) {
+            await this.pos.applyDiscount(value, type, originalOrder);
+            if (!this.isTransferred) {
+                await this.pos.applyDiscount(value, type, newOrder);
+            }
         }
     }
     async createSplittedOrder() {
@@ -150,6 +155,7 @@ export class SplitBillScreen extends Component {
                         newCourse = this.pos.models["restaurant.order.course"].create({
                             order_id: newOrder,
                             index: courseIndex,
+                            name: _t("Course ") + courseIndex,
                         });
                         newCourses.set(courseIndex, newCourse);
                     }

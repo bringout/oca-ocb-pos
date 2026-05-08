@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-25 18:36+0000\n"
+"POT-Creation-Date: 2025-12-16 18:36+0000\n"
 "PO-Revision-Date: 2025-11-08 17:50+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Thai <https://translate.odoo.com/projects/odoo-19/pos_hr/th/"
@@ -230,6 +230,12 @@ msgstr ""
 
 #. module: pos_hr
 #. odoo-javascript
+#: code:addons/pos_hr/static/src/app/components/popups/cashier_selection_popup/cashier_selection_popup.xml:0
+msgid "More..."
+msgstr ""
+
+#. module: pos_hr
+#. odoo-javascript
 #: code:addons/pos_hr/static/src/app/utils/select_cashier_mixin.js:0
 msgid "No Cashiers"
 msgstr ""
@@ -296,8 +302,8 @@ msgstr "รายงานการขายหน้าร้านรายว
 
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_pos_order
-msgid "Point of Sale Orders"
-msgstr "คำสั่งขายหน้าร้าน"
+msgid "Point of Sale Order"
+msgstr ""
 
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_report_pos_order
@@ -306,8 +312,8 @@ msgstr "รายงานคำสั่งขายหน้าร้าน"
 
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_pos_payment
-msgid "Point of Sale Payments"
-msgstr "การชำระเงินระบบขายหน้าร้าน"
+msgid "Point of Sale Payment"
+msgstr ""
 
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_pos_session
@@ -383,9 +389,3 @@ msgid ""
 "You cannot delete an employee that may be used in an active PoS session, "
 "close the session(s) first: \n"
 msgstr "คุณไม่สามารถลบพนักงานที่อาจใช้ในเซสชั่น PoS ที่ใช้งานอยู่ ปิดเซสชั่นก่อน: \n"
-
-#~ msgid "If left empty, only Odoo users have extended rights in PoS"
-#~ msgstr "หากเว้นว่างไว้ มีเพียงผู้ใช้ Odoo เท่านั้นที่สามารถขยายสิทธิ์ใน PoS ได้"
-
-#~ msgid "Change Cashier"
-#~ msgstr "เปลี่ยนแคชเชียร์"

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-25 18:36+0000\n"
+"POT-Creation-Date: 2025-12-16 18:36+0000\n"
 "PO-Revision-Date: 2025-09-16 15:27+0000\n"
 "Last-Translator: \"Tiffany Chang (tic)\" <tic@odoo.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://translate.odoo.com/"
@@ -233,6 +233,12 @@ msgstr "最低权限"
 
 #. module: pos_hr
 #. odoo-javascript
+#: code:addons/pos_hr/static/src/app/components/popups/cashier_selection_popup/cashier_selection_popup.xml:0
+msgid "More..."
+msgstr ""
+
+#. module: pos_hr
+#. odoo-javascript
 #: code:addons/pos_hr/static/src/app/utils/select_cashier_mixin.js:0
 msgid "No Cashiers"
 msgstr "没有收银员"
@@ -299,8 +305,8 @@ msgstr "POS每日报表"
 
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_pos_order
-msgid "Point of Sale Orders"
-msgstr "POS订单"
+msgid "Point of Sale Order"
+msgstr ""
 
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_report_pos_order
@@ -309,8 +315,8 @@ msgstr "POS订单报表"
 
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_pos_payment
-msgid "Point of Sale Payments"
-msgstr "POS支付"
+msgid "Point of Sale Payment"
+msgstr ""
 
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_pos_session
@@ -386,38 +392,3 @@ msgid ""
 "You cannot delete an employee that may be used in an active PoS session, "
 "close the session(s) first: \n"
 msgstr "您无法删除可能在有效PoS会话中使用的员工，请先关闭会话： \n"
-
-#~ msgid "If left empty, only Odoo users have extended rights in PoS"
-#~ msgstr "如果为空，则只有 Odoo 用户在 PoS 中拥有扩展权限"
-
-#~ msgid "Allowed Employees"
-#~ msgstr "允许的员工"
-
-#~ msgid "Change Cashier"
-#~ msgstr "更换收银员"
-
-#~ msgid "Employee: %s - PoS Config(s): %s \n"
-#~ msgstr "员工：%s- PoS配置（多个）：%s\n"
-
-#~ msgid "Employees with access"
-#~ msgstr "有权访问的员工"
-
-#~ msgid "If left empty, all employees can log in to the PoS session"
-#~ msgstr "如果保留为空，则所有员工都可以登录PoS会话"
-
-#~ msgid "Incorrect Password"
-#~ msgstr "密码错误"
-
-#~ msgid "Log in to"
-#~ msgstr "登录到"
-
-#~ msgid ""
-#~ "Person who uses the cash register. It can be a reliever, a student or an "
-#~ "interim employee."
-#~ msgstr "使用收银机的人可以是救援者，学生或者临时工"
-
-#~ msgid "Scan your badge"
-#~ msgstr "扫描您的徽标"
-
-#~ msgid "or"
-#~ msgstr "或"

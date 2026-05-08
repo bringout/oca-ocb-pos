@@ -5,7 +5,7 @@ import * as Dialog from "@point_of_sale/../tests/generic_helpers/dialog_util";
 import { registry } from "@web/core/registry";
 import * as TicketScreen from "@point_of_sale/../tests/pos/tours/utils/ticket_screen_util";
 import * as Order from "@point_of_sale/../tests/generic_helpers/order_widget_util";
-import * as ReceiptScreen from "@point_of_sale/../tests/pos/tours/utils/receipt_screen_util";
+import * as FeedbackScreen from "@point_of_sale/../tests/pos/tours/utils/feedback_screen_util";
 import * as PaymentScreen from "@point_of_sale/../tests/pos/tours/utils/payment_screen_util";
 
 registry.category("web_tour.tours").add("GiftCardProgramTour1", {
@@ -65,7 +65,7 @@ registry.category("web_tour.tours").add("GiftCardProgramPriceNoTaxTour", {
             // Use gift card
             ProductScreen.addOrderline("Magnetic Board", "1", "1.98", "1.98"),
             PosLoyalty.enterCode("043123456"),
-            Dialog.confirm(),
+            Dialog.proceed({ title: "unpaid gift card" }),
             ProductScreen.clickOrderline("Gift Card"),
             ProductScreen.selectedOrderlineHas("Gift Card", "1", "-1.00"),
             PosLoyalty.orderTotalIs("0.98"),
@@ -172,7 +172,8 @@ registry.category("web_tour.tours").add("GiftCardProgramInvoice", {
             PaymentScreen.clickPaymentMethod("Bank"),
             PaymentScreen.clickInvoiceButton(),
             PaymentScreen.clickValidate(),
-            ReceiptScreen.isShown(),
+            FeedbackScreen.isShown(),
+            FeedbackScreen.clickNextOrder(),
         ].flat(),
 });
 
@@ -202,7 +203,8 @@ registry.category("web_tour.tours").add("test_physical_gift_card_invoiced", {
             PaymentScreen.clickPaymentMethod("Bank"),
             PaymentScreen.clickInvoiceButton(),
             PaymentScreen.clickValidate(),
-            ReceiptScreen.isShown(),
+            FeedbackScreen.isShown(),
+            FeedbackScreen.clickNextOrder(),
         ].flat(),
 });
 
@@ -232,13 +234,17 @@ registry.category("web_tour.tours").add("test_physical_gift_card", {
 
             // Use gift_card_generated_but_not_sold - Warning is triggered
             PosLoyalty.enterCode("gift_card_generated_but_not_sold"),
-            Dialog.cancel(),
+            Dialog.cancel({ title: "unpaid gift card" }),
 
             // Sell the unsold gift card
             PosLoyalty.useExistingLoyaltyCard("gift_card_generated_but_not_sold", true),
             ProductScreen.selectedOrderlineHas("Gift Card", "1", "60.00"),
             ProductScreen.clickNumpad("2"), // Cannot edit a physical gift card
-            Dialog.confirm(), // Warning is triggered
+            Dialog.proceed({
+                title: "gift card",
+                body: "you cannot change the quantity or the price of a physical gift card.",
+                button: "ok",
+            }), // Warning is triggered
             PosLoyalty.orderTotalIs("60.00"),
             PosLoyalty.finalizeOrder("Cash", "60"),
 

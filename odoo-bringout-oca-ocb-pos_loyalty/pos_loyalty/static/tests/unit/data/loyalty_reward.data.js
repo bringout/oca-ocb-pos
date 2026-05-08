@@ -88,7 +88,7 @@ export class LoyaltyReward extends models.ServerModel {
             all_discount_product_ids: [],
             is_global_discount: true,
             discount_max_amount: 0,
-            discount_line_product_id: 18,
+            discount_line_product_id: 20,
             reward_product_id: 10,
             multi_product: false,
             reward_product_ids: [10],

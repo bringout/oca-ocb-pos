@@ -26,7 +26,7 @@ export function guestNumberIs(num) {
         ...ProductScreen.clickControlButtonMore(),
         {
             content: `guest number is ${num}`,
-            trigger: ProductScreen.controlButtonTrigger("Guests") + `:contains(${num})`,
+            trigger: ProductScreen.controlButtonTrigger("Guest") + `:contains(${num})`,
         },
     ];
 }
@@ -107,6 +107,13 @@ export function releaseTable() {
     ];
 }
 
+export function checkCourseAtIndex(index, courseName) {
+    return {
+        content: `Verify that course "${courseName}" exists at index ${index}`,
+        trigger: `.order-course-name:eq(${index}) > span:contains("${courseName}")`,
+    };
+}
+
 export function addCourse() {
     return {
         content: `click Course button`,
@@ -123,23 +130,5 @@ export function transferCourseTo(destCourse) {
             trigger: `.modal-body button:contains(${destCourse})`,
             run: "click",
         },
-    ];
-}
-
-export function discardOrderWarningDialog() {
-    return [
-        {
-            trigger: `.modal-dialog:contains("It seems that the order has not been sent. Would you like to send it to preparation?")`,
-        },
-        Dialog.discard(),
-    ];
-}
-
-export function confirmOrderWarningDialog() {
-    return [
-        {
-            trigger: `.modal-dialog:contains("It seems that the order has not been sent. Would you like to send it to preparation?")`,
-        },
-        Dialog.confirm(),
     ];
 }

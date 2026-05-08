@@ -1,4 +1,5 @@
-import { Component, useState } from "@odoo/owl";
+import { useState } from "@web/owl2/utils";
+import { Component } from "@odoo/owl";
 import { usePos } from "@point_of_sale/app/hooks/pos_hook";
 import { useService } from "@web/core/utils/hooks";
 import { SIZES, utils } from "@web/core/ui/ui_service";
@@ -47,10 +48,6 @@ export class NumpadDropdown extends Component {
         if (this.state.isValidBuffer) {
             this.pos.searchOrder(this.state.buffer);
         }
-    }
-
-    toggleTableSelector() {
-        this.pos.tableSelectorState = !this.pos.tableSelectorState;
     }
 
     get isSmall() {

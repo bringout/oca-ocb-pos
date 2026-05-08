@@ -1,4 +1,5 @@
-import { Component, onMounted, useRef, useState } from "@odoo/owl";
+import { useRef, useState } from "@web/owl2/utils";
+import { Component, onMounted } from "@odoo/owl";
 import { Dialog } from "@web/core/dialog/dialog";
 import { useService } from "@web/core/utils/hooks";
 import { DateTimeInput } from "@web/core/datetime/datetime_input";
@@ -72,7 +73,7 @@ export class ManageGiftCardPopup extends Component {
                 this.dialog.add(AlertDialog, {
                     title: _t("Invalid Gift Card Code"),
                     body: _t(
-                        "This code seems to be invalid, please check the Gift Card code and try again."
+                        "The code is invalid. Ensure that the spelling is right or if the gift card exists."
                     ),
                 });
                 this.state.error = true;

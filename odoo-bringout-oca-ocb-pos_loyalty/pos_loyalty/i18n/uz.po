@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-20 18:35+0000\n"
+"POT-Creation-Date: 2026-03-12 18:36+0000\n"
 "PO-Revision-Date: 2025-10-08 18:37+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -175,14 +175,11 @@ msgstr "Mavjud mukofotlar"
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/app/screens/receipt_screen/order_receipt/order_receipt.xml:0
-#, fuzzy
-msgid "Balance"
-msgstr "Balans"
+#: code:addons/pos_loyalty/static/src/app/utils/printer/generate_printer_data.js:0
+msgid "Balance:"
+msgstr ""
 
 #. module: pos_loyalty
-#. odoo-javascript
-#: code:addons/pos_loyalty/static/src/app/screens/receipt_screen/order_receipt/order_receipt.xml:0
 #: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_rule__promo_barcode
 #, fuzzy
 msgid "Barcode"
@@ -248,7 +245,6 @@ msgid "Discount & Loyalty"
 msgstr "Chegirma va sodiqlik"
 
 #. module: pos_loyalty
-#: model:ir.model.fields,field_description:pos_loyalty.field_account_move_line__display_name
 #: model:ir.model.fields,field_description:pos_loyalty.field_barcode_rule__display_name
 #: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_card__display_name
 #: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_mail__display_name
@@ -258,6 +254,7 @@ msgstr "Chegirma va sodiqlik"
 #: model:ir.model.fields,field_description:pos_loyalty.field_pos_config__display_name
 #: model:ir.model.fields,field_description:pos_loyalty.field_pos_order__display_name
 #: model:ir.model.fields,field_description:pos_loyalty.field_pos_order_line__display_name
+#: model:ir.model.fields,field_description:pos_loyalty.field_pos_order_receipt__display_name
 #: model:ir.model.fields,field_description:pos_loyalty.field_pos_session__display_name
 #: model:ir.model.fields,field_description:pos_loyalty.field_product_product__display_name
 #: model:ir.model.fields,field_description:pos_loyalty.field_product_template__display_name
@@ -287,13 +284,6 @@ msgstr "Sovg‘a kartasi raqamini kiriting"
 #, fuzzy
 msgid "Enter amount"
 msgstr "Summani kiriting"
-
-#. module: pos_loyalty
-#. odoo-javascript
-#: code:addons/pos_loyalty/static/src/app/screens/product_screen/control_buttons/control_buttons.js:0
-#, fuzzy
-msgid "Error"
-msgstr "Xato"
 
 #. module: pos_loyalty
 #. odoo-javascript
@@ -343,7 +333,6 @@ msgid "How many point this reward cost on the coupon."
 msgstr "Bu mukofot kuponda necha ballga tushishi."
 
 #. module: pos_loyalty
-#: model:ir.model.fields,field_description:pos_loyalty.field_account_move_line__id
 #: model:ir.model.fields,field_description:pos_loyalty.field_barcode_rule__id
 #: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_card__id
 #: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_mail__id
@@ -353,6 +342,7 @@ msgstr "Bu mukofot kuponda necha ballga tushishi."
 #: model:ir.model.fields,field_description:pos_loyalty.field_pos_config__id
 #: model:ir.model.fields,field_description:pos_loyalty.field_pos_order__id
 #: model:ir.model.fields,field_description:pos_loyalty.field_pos_order_line__id
+#: model:ir.model.fields,field_description:pos_loyalty.field_pos_order_receipt__id
 #: model:ir.model.fields,field_description:pos_loyalty.field_pos_session__id
 #: model:ir.model.fields,field_description:pos_loyalty.field_product_product__id
 #: model:ir.model.fields,field_description:pos_loyalty.field_product_template__id
@@ -407,11 +397,6 @@ msgid "Is Reward Line"
 msgstr "Mukofot liniyasi"
 
 #. module: pos_loyalty
-#: model:ir.model,name:pos_loyalty.model_account_move_line
-msgid "Journal Item"
-msgstr ""
-
-#. module: pos_loyalty
 #: model:ir.model,name:pos_loyalty.model_loyalty_mail
 #, fuzzy
 msgid "Loyalty Communication"
@@ -449,6 +434,12 @@ msgid "Loyalty Rule"
 msgstr "Sodiqlik qoidasi"
 
 #. module: pos_loyalty
+#. odoo-python
+#: code:addons/pos_loyalty/models/pos_order.py:0
+msgid "Loyalty coupon sold"
+msgstr ""
+
+#. module: pos_loyalty
 #. odoo-javascript
 #: code:addons/pos_loyalty/static/src/app/screens/product_screen/order_summary/order_summary.js:0
 #, fuzzy
@@ -468,6 +459,12 @@ msgstr "Bu kupon bilan hech qanday mukofot talab qilinmaydi."
 #, fuzzy
 msgid "No valid eWallet found"
 msgstr "Haqiqiy elektron hamyon topilmadi"
+
+#. module: pos_loyalty
+#. odoo-javascript
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/control_buttons/control_buttons.js:0
+msgid "Oh snap !"
+msgstr ""
 
 #. module: pos_loyalty
 #. odoo-python
@@ -528,16 +525,19 @@ msgid "Point of Sale Configuration"
 msgstr "Savdo nuqtasi sozlamalari"
 
 #. module: pos_loyalty
-#: model:ir.model,name:pos_loyalty.model_pos_order_line
-#, fuzzy
-msgid "Point of Sale Order Lines"
-msgstr "Savdo nuqtasi buyurtma qatorlari"
+#: model:ir.model,name:pos_loyalty.model_pos_order
+msgid "Point of Sale Order"
+msgstr ""
 
 #. module: pos_loyalty
-#: model:ir.model,name:pos_loyalty.model_pos_order
-#, fuzzy
-msgid "Point of Sale Orders"
-msgstr "Savdo nuqtasi buyurtmalari"
+#: model:ir.model,name:pos_loyalty.model_pos_order_line
+msgid "Point of Sale Order Line"
+msgstr ""
+
+#. module: pos_loyalty
+#: model:ir.model,name:pos_loyalty.model_pos_order_receipt
+msgid "Point of Sale Order Receipt Generator"
+msgstr ""
 
 #. module: pos_loyalty
 #: model:ir.model,name:pos_loyalty.model_pos_session
@@ -683,7 +683,9 @@ msgstr ""
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/app/screens/receipt_screen/order_receipt/order_receipt.xml:0
+#. odoo-python
+#: code:addons/pos_loyalty/receipt/pos_order_receipt.py:0
+#: code:addons/pos_loyalty/static/src/app/utils/printer/generate_printer_data.js:0
 #, fuzzy
 msgid "Spent:"
 msgstr "Sarflangan:"
@@ -728,6 +730,14 @@ msgstr "Bu promo-kod dasturi hali amal qilmaydi."
 #, fuzzy
 msgid "That promo code program requires a specific pricelist."
 msgstr "Ushbu promo-kod dasturi maxsus narxlar ro‘yxatini talab qiladi."
+
+#. module: pos_loyalty
+#. odoo-javascript
+#: code:addons/pos_loyalty/static/src/app/components/popups/manage_giftcard_popup/manage_giftcard_popup.js:0
+msgid ""
+"The code is invalid. Ensure that the spelling is right or if the gift card "
+"exists."
+msgstr ""
 
 #. module: pos_loyalty
 #: model:ir.model.fields,help:pos_loyalty.field_pos_order_line__coupon_id
@@ -831,16 +841,6 @@ msgid "These are the products that are valid for this rule."
 msgstr "Bular ushbu qoida uchun amal qiladigan mahsulotlardir."
 
 #. module: pos_loyalty
-#. odoo-javascript
-#: code:addons/pos_loyalty/static/src/app/components/popups/manage_giftcard_popup/manage_giftcard_popup.js:0
-#, fuzzy
-msgid ""
-"This code seems to be invalid, please check the Gift Card code and try again."
-msgstr ""
-"Bu kod noto‘g‘ri ko‘rinadi, iltimos, sovg‘a kartasi kodini tekshirib, qayta "
-"urinib ko‘ring."
-
-#. module: pos_loyalty
 #. odoo-python
 #: code:addons/pos_loyalty/models/pos_config.py:0
 #, fuzzy
@@ -931,13 +931,6 @@ msgstr "To‘lanmagan sovg‘a kartasi rad etildi."
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/app/screens/receipt_screen/order_receipt/order_receipt.xml:0
-#, fuzzy
-msgid "Until:"
-msgstr "Gacha:"
-
-#. module: pos_loyalty
-#. odoo-javascript
 #: code:addons/pos_loyalty/static/src/app/screens/product_screen/control_buttons/control_buttons.js:0
 #, fuzzy
 msgid "Use eWallet to pay"
@@ -964,7 +957,9 @@ msgstr "Ushbu satr mukofotning bir qismi yoki yo‘qligi."
 
 #. module: pos_loyalty
 #. odoo-javascript
-#: code:addons/pos_loyalty/static/src/app/screens/receipt_screen/order_receipt/order_receipt.xml:0
+#. odoo-python
+#: code:addons/pos_loyalty/receipt/pos_order_receipt.py:0
+#: code:addons/pos_loyalty/static/src/app/utils/printer/generate_printer_data.js:0
 #, fuzzy
 msgid "Won:"
 msgstr "Yutildi:"
@@ -979,9 +974,8 @@ msgstr "Ha"
 #. module: pos_loyalty
 #. odoo-javascript
 #: code:addons/pos_loyalty/static/src/app/screens/product_screen/order_summary/order_summary.js:0
-#, fuzzy
-msgid "You cannot change the quantity or price of a physical gift card."
-msgstr "Jismoniy sovg‘a kartasining miqdori yoki narxini o‘zgartira olmaysiz."
+msgid "You cannot change the quantity or the price of a physical gift card."
+msgstr ""
 
 #. module: pos_loyalty
 #. odoo-javascript
@@ -1028,20 +1022,3 @@ msgstr "Elektron hamyon qaytarimi"
 #, fuzzy
 msgid "eWallet requires a customer to be selected"
 msgstr "Elektron hamyon mijoz tanlanishini talab qiladi"
-
-#. module: pos_loyalty
-#. odoo-javascript
-#: code:addons/pos_loyalty/static/src/app/screens/receipt_screen/order_receipt/order_receipt.xml:0
-#, fuzzy
-msgid "no expiration"
-msgstr "muddati cheklanmagan"
-
-#, fuzzy
-#~ msgid ""
-#~ "Gift Card: %s\n"
-#~ "Balance: %s"
-#~ msgstr "Sovg‘a kartasi: %s Balans: %s"
-
-#, fuzzy
-#~ msgid "Restrict publishing to those shops."
-#~ msgstr "Nashr qilishni faqat ushbu do‘konlar bilan cheklang."

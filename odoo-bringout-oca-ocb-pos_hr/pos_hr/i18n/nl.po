@@ -11,11 +11,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-25 18:36+0000\n"
-"PO-Revision-Date: 2026-02-25 14:46+0000\n"
+"POT-Creation-Date: 2025-12-16 18:36+0000\n"
+"PO-Revision-Date: 2026-01-31 12:32+0000\n"
 "Last-Translator: Bren Driesen <brdri@odoo.com>\n"
-"Language-Team: Dutch <https://translate.odoo.com/projects/odoo-19/pos_hr/nl/>"
-"\n"
+"Language-Team: Dutch <https://translate.odoo.com/projects/odoo-s19-1/pos_hr/"
+"nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -239,6 +239,12 @@ msgstr "Minimale rechten"
 
 #. module: pos_hr
 #. odoo-javascript
+#: code:addons/pos_hr/static/src/app/components/popups/cashier_selection_popup/cashier_selection_popup.xml:0
+msgid "More..."
+msgstr "Meer..."
+
+#. module: pos_hr
+#. odoo-javascript
 #: code:addons/pos_hr/static/src/app/utils/select_cashier_mixin.js:0
 msgid "No Cashiers"
 msgstr "Geen kassières"
@@ -307,8 +313,8 @@ msgstr "Dagelijks rapport Kassa"
 
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_pos_order
-msgid "Point of Sale Orders"
-msgstr "Kassaorders"
+msgid "Point of Sale Order"
+msgstr "Kassaorder"
 
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_report_pos_order
@@ -317,8 +323,8 @@ msgstr "Kassaorders rapport"
 
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_pos_payment
-msgid "Point of Sale Payments"
-msgstr "Kassa betalingen"
+msgid "Point of Sale Payment"
+msgstr "Kassabetaling"
 
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_pos_session
@@ -373,7 +379,7 @@ msgstr "Er is geen kassier aanwezig."
 #. odoo-javascript
 #: code:addons/pos_hr/static/src/app/screens/login_screen/login_screen.xml:0
 msgid "Unlock Register"
-msgstr "Kassa ontgrendelen"
+msgstr "Register ontgrendelen"
 
 #. module: pos_hr
 #. odoo-javascript
@@ -396,43 +402,3 @@ msgid ""
 msgstr ""
 "Je kunt geen werknemer verwijderen die gebruikt wordt in een actieve "
 "kassasessie, sluit de sessie(s) eerst af: \n"
-
-#~ msgid "If left empty, only Odoo users have extended rights in PoS"
-#~ msgstr ""
-#~ "Indien deze optie leeg blijft hebben alleen Odoo gebruikers uitgebreide "
-#~ "rechten in het kassasysteem"
-
-#~ msgid "Allowed Employees"
-#~ msgstr "Toegestane werknemers"
-
-#~ msgid "Change Cashier"
-#~ msgstr "Wijzig kassamedewerker"
-
-#~ msgid "Employee: %s - PoS Config(s): %s \n"
-#~ msgstr "Werknemer: %s - kassa configuratie(s): %s \n"
-
-#~ msgid "Employees with access"
-#~ msgstr "Werknemers met toegang"
-
-#~ msgid "If left empty, all employees can log in to the PoS session"
-#~ msgstr ""
-#~ "Indien leeggelaten kunen alle werknemers aanmelden in de kassa sessie"
-
-#~ msgid "Incorrect Password"
-#~ msgstr "Foutief wachtwoord"
-
-#~ msgid "Log in to"
-#~ msgstr "Log in op"
-
-#~ msgid ""
-#~ "Person who uses the cash register. It can be a reliever, a student or an "
-#~ "interim employee."
-#~ msgstr ""
-#~ "Persoon die het kassaregister gebruikt. Het kan een helper, een student "
-#~ "of een interim werknemer zijn."
-
-#~ msgid "Scan your badge"
-#~ msgstr "Scan je badge"
-
-#~ msgid "or"
-#~ msgstr "of"

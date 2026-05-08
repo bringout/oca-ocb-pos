@@ -11,6 +11,10 @@ class TestPosHrHttpCommon(TestPointOfSaleHttpCommon):
         super().setUpClass()
 
         cls.env.user.group_ids += cls.env.ref('hr.group_hr_user')
+        cls.env.user.group_ids |= cls.env.ref('hr.group_hr_manager')
+        payroll_user_group = cls.env.ref("hr_payroll.group_hr_payroll_user", raise_if_not_found=False)
+        if payroll_user_group:
+            cls.env.user.group_ids |= payroll_user_group
 
         # Admin employee
         cls.pos_admin.employee_id.name = "Mitchell Admin"
