@@ -323,7 +323,7 @@ msgstr "Sendvič sa piletinom i karijem"
 # code:addons/pos_restaurant/static/src/app/screens/floor_screen/floor_plan_editor/add_decor_popup/add_decor_popup.xml
 #, []
 msgid "Close"
-msgstr "Amortizovano"
+msgstr "Zatvori"
 
 # model:
 # model:product.template,name:pos_restaurant.pos_food_club_product_template
