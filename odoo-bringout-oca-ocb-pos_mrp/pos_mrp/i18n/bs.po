@@ -39,3 +39,13 @@ msgstr "ID"
 #: model:ir.model,name:pos_mrp.model_stock_move
 msgid "Stock Move"
 msgstr "Kretanje zaliha"
+
+#. module: pos_mrp
+#: model:ir.model,name:pos_mrp.model_pos_order
+msgid "Point of Sale Order"
+msgstr ""
+
+#. module: pos_mrp
+#: model:ir.model,name:pos_mrp.model_pos_order_line
+msgid "Point of Sale Order Line"
+msgstr ""

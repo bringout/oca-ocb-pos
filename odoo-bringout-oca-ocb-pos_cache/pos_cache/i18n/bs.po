@@ -53,7 +53,7 @@ msgstr "Kreirano"
 #. module: pos_cache
 #: model:ir.model.fields,field_description:pos_cache.field_pos_cache__display_name
 msgid "Display Name"
-msgstr "Naziv za prikaz"
+msgstr "Naziv prikaza"
 
 #. module: pos_cache
 #: model:ir.model.fields,field_description:pos_cache.field_pos_cache__id
@@ -69,19 +69,19 @@ msgstr ""
 #. module: pos_cache
 #: model:ir.model.fields,field_description:pos_cache.field_pos_cache____last_update
 msgid "Last Modified on"
-msgstr "Zadnja izmjena"
+msgstr "Zadnji put izmijenjeno"
 
 # taken from hr.po
 #. module: pos_cache
 #: model:ir.model.fields,field_description:pos_cache.field_pos_cache__write_uid
 msgid "Last Updated by"
-msgstr "Zadnji ažurirao"
+msgstr "Zadnji put ažurirao"
 
 # taken from hr.po
 #. module: pos_cache
 #: model:ir.model.fields,field_description:pos_cache.field_pos_cache__write_date
 msgid "Last Updated on"
-msgstr "Zadnje ažurirano"
+msgstr "Zadnji put ažurirano"
 
 #. module: pos_cache
 #: model:ir.model.fields,field_description:pos_cache.field_pos_config__limit_products_per_request

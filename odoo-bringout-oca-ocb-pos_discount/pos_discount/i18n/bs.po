@@ -34,7 +34,7 @@ msgstr "Omogućuje blagajniku odobravanje popusta na cijelu narudžbu."
 #. module: pos_discount
 #: model:ir.model,name:pos_discount.model_res_config_settings
 msgid "Config Settings"
-msgstr "Postavke"
+msgstr "Postavke konfiguracije"
 
 # taken from hr.po
 #. module: pos_discount
@@ -160,3 +160,23 @@ msgstr "Proizvod"
 #: code:addons/pos_discount/static/src/app/screens/ticket_screen/ticket_screen.js:0
 msgid "You cannot edit a discount line."
 msgstr "Ne možete urediti liniju popusta."
+
+#. module: pos_discount
+#: model_terms:ir.ui.view,arch_db:pos_discount.pos_session_sales_details
+msgid "<strong>Amount of global discounts</strong>:"
+msgstr ""
+
+#. module: pos_discount
+#: model_terms:ir.ui.view,arch_db:pos_discount.pos_session_sales_details
+msgid "<strong>Number of global discounts</strong>:"
+msgstr ""
+
+#. module: pos_discount
+#: code:addons/pos_discount/static/src/app/screens/ticket_screen/ticket_screen.js:0
+msgid "Oh snap !"
+msgstr ""
+
+#. module: pos_discount
+#: model:ir.model,name:pos_discount.model_report_point_of_sale_report_saledetails
+msgid "Point of Sale Details"
+msgstr ""

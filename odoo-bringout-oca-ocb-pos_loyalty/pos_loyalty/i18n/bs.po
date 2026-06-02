@@ -110,7 +110,7 @@ msgstr "Barkod pravilo"
 #. module: pos_loyalty
 #: model:ir.model,name:pos_loyalty.model_res_config_settings
 msgid "Config Settings"
-msgstr "Postavke"
+msgstr "Postavke konfiguracije"
 
 # taken from hr.po
 #. module: pos_loyalty
@@ -1007,3 +1007,50 @@ msgstr "Ne možete promijeniti količinu ili cijenu fizičke poklon kartice."
 #: code:addons/pos_loyalty/models/loyalty_program.py:0
 msgid "You must set '%(mail_template)s' before setting '%(report)s'."
 msgstr "Morate postaviti '%(mail_template)s' prije postavljanja '%(report)s'."
+
+#. module: pos_loyalty
+#: code:addons/pos_loyalty/receipt/pos_order_receipt.py:0
+msgid "Balance:"
+msgstr ""
+
+#. module: pos_loyalty
+#: code:addons/pos_loyalty/models/pos_order.py:0
+msgid "Loyalty coupon sold"
+msgstr ""
+
+#. module: pos_loyalty
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/control_buttons/control_buttons.js:0
+msgid "Oh snap !"
+msgstr ""
+
+#. module: pos_loyalty
+#: model:ir.model,name:pos_loyalty.model_pos_order
+msgid "Point of Sale Order"
+msgstr ""
+
+#. module: pos_loyalty
+#: model:ir.model,name:pos_loyalty.model_pos_order_line
+msgid "Point of Sale Order Line"
+msgstr ""
+
+#. module: pos_loyalty
+#: model:ir.model,name:pos_loyalty.model_pos_order_receipt
+msgid "Point of Sale Order Receipt Generator"
+msgstr ""
+
+#. module: pos_loyalty
+#: code:addons/pos_loyalty/static/src/app/components/popups/manage_giftcard_popup/manage_giftcard_popup.js:0
+msgid ""
+"The code is invalid. Ensure that the spelling is right or if the gift card "
+"exists."
+msgstr ""
+
+#. module: pos_loyalty
+#: code:addons/pos_loyalty/static/src/app/screens/product_screen/order_summary/order_summary.js:0
+msgid "You cannot change the quantity or the price of a physical gift card."
+msgstr ""
+
+#. module: pos_loyalty
+#: code:addons/pos_loyalty/receipt/pos_order_receipt.py:0
+msgid "used"
+msgstr ""

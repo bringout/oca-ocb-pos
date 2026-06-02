@@ -39,7 +39,7 @@ msgstr "Promijeni blagajnika"
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_res_config_settings
 msgid "Config Settings"
-msgstr "Postavke"
+msgstr "Postavke konfiguracije"
 
 # taken from hr.po
 #. module: pos_hr
@@ -422,3 +422,18 @@ msgstr "Pogrešan PIN"
 #: code:addons/pos_hr/static/src/app/screens/product_screen/order_summary/order_summary.js:0
 msgid "You are not allowed to change the price of a product."
 msgstr "Nije vam dozvoljeno mijenjati cijenu proizvoda."
+
+#. module: pos_hr
+#: code:addons/pos_hr/static/src/app/components/popups/cashier_selection_popup/cashier_selection_popup.xml:0
+msgid "More..."
+msgstr ""
+
+#. module: pos_hr
+#: model:ir.model,name:pos_hr.model_pos_order
+msgid "Point of Sale Order"
+msgstr ""
+
+#. module: pos_hr
+#: model:ir.model,name:pos_hr.model_pos_payment
+msgid "Point of Sale Payment"
+msgstr ""

@@ -91,7 +91,7 @@ msgstr ""
 #. module: pos_adyen
 #: model:ir.model,name:pos_adyen.model_res_config_settings
 msgid "Config Settings"
-msgstr "Postavke"
+msgstr "Postavke konfiguracije"
 
 #. module: pos_adyen
 #. odoo-javascript
@@ -213,3 +213,38 @@ msgstr ""
 #: model:ir.model.fields,help:pos_adyen.field_pos_payment_method__adyen_event_url
 msgid "This URL needs to be pasted on Adyen's portal terminal settings."
 msgstr "Ovaj URL treba zalijepiti u postavke terminala na Adyen portalu."
+
+#. module: pos_adyen
+#: model_terms:ir.ui.view,arch_db:pos_adyen.pos_payment_method_view_form_inherit_pos_adyen
+msgid "Adyen"
+msgstr ""
+
+#. module: pos_adyen
+#: model:ir.model.fields,field_description:pos_adyen.field_pos_payment_method__adyen_merchant_account
+msgid "Adyen Merchant Account"
+msgstr ""
+
+#. module: pos_adyen
+#: code:addons/pos_adyen/static/src/app/utils/payment/payment_adyen.js:0
+msgid "Cannot refund non-Adyen transactions via Adyen."
+msgstr ""
+
+#. module: pos_adyen
+#: model:ir.model,name:pos_adyen.model_pos_order
+msgid "Point of Sale Order"
+msgstr ""
+
+#. module: pos_adyen
+#: model:ir.model,name:pos_adyen.model_pos_payment
+msgid "Point of Sale Payment"
+msgstr ""
+
+#. module: pos_adyen
+#: model:ir.model,name:pos_adyen.model_pos_payment_method
+msgid "Point of Sale Payment Method"
+msgstr ""
+
+#. module: pos_adyen
+#: model:ir.model.fields,help:pos_adyen.field_pos_payment_method__adyen_merchant_account
+msgid "The POS merchant account code used in Adyen"
+msgstr ""
