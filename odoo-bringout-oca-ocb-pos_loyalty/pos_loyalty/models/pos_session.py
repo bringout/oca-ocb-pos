@@ -2,7 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 from odoo import models
-from odoo.osv.expression import AND
+from odoo.osv.expression import OR
 import ast
 import json
 
@@ -23,8 +23,11 @@ class PosSession(models.Model):
         return {
             'search_params': {
                 'domain': [('id', 'in', self.config_id._get_program_ids().ids)],
-                'fields': ['name', 'trigger', 'applies_on', 'program_type', 'date_to', 'total_order_count',
-                    'limit_usage', 'max_usage', 'is_nominative', 'portal_visible', 'portal_point_name', 'trigger_product_ids'],
+                'fields': [
+                    'name', 'trigger', 'applies_on', 'program_type', 'pricelist_ids', 'date_from',
+                    'date_to', 'limit_usage', 'max_usage', 'is_nominative', 'portal_visible',
+                    'portal_point_name', 'trigger_product_ids',
+                ],
             },
         }
 
@@ -39,10 +42,9 @@ class PosSession(models.Model):
         }
 
     def _loader_params_loyalty_reward(self):
-        domain_products = self.env['loyalty.reward']._get_active_products_domain()
         return {
             'search_params': {
-                'domain': AND([[('program_id', 'in', self.config_id._get_program_ids().ids)], domain_products]),
+                'domain': [('program_id', 'in', self.config_id._get_program_ids().ids)],
                 'fields': ['description', 'program_id', 'reward_type', 'required_points', 'clear_wallet', 'currency_id',
                     'discount', 'discount_mode', 'discount_applicability', 'all_discount_product_ids', 'is_global_discount',
                     'discount_max_amount', 'discount_line_product_id',
@@ -66,8 +68,7 @@ class PosSession(models.Model):
         if domain_str == "null":
             return domain_str
 
-        domain = ast.literal_eval(domain_str)
-
+        domain = json.loads(domain_str)
         for index, condition in enumerate(domain):
             if isinstance(condition, (list, tuple)) and len(condition) == 3:
                 field_name, operator, value = condition
@@ -110,15 +111,17 @@ class PosSession(models.Model):
         loyalty_programs = self.config_id._get_program_ids().filtered(lambda p: p.program_type == 'loyalty')
         loyalty_card_fields = ['points', 'code', 'program_id']
         partner_id_to_loyalty_card = {}
-        for group in self.env['loyalty.card'].read_group(
+        for partner, *field_values in self.env['loyalty.card']._read_group(
             domain=[('partner_id', 'in', [p['id'] for p in partners]), ('program_id', 'in', loyalty_programs.ids)],
-            fields=[f"{field_name}:array_agg" for field_name in loyalty_card_fields] + ["ids:array_agg(id)"],
-            groupby=['partner_id']
+            groupby=['partner_id'],
+            aggregates=[f'{field_name}:array_agg' for field_name in loyalty_card_fields] + ['id:array_agg'],
         ):
+            # field_values = [(a1, a2, ...), (b1, b2, ...), ..., (id1, id2, ...)]
             loyalty_cards = {}
-            for i in range(group['partner_id_count']):
-                loyalty_cards[group['ids'][i]] = {field_name: group[field_name][i] for field_name in loyalty_card_fields}
-            partner_id_to_loyalty_card[group['partner_id'][0]] = loyalty_cards
+            for *values, id_ in zip(*field_values):
+                # values = [ak, bk, ...], id_ = idk
+                loyalty_cards[id_] = dict(zip(loyalty_card_fields, values))
+            partner_id_to_loyalty_card[partner.id] = loyalty_cards
 
         # Assign loyalty cards to each partner to load.
         for partner in partners:

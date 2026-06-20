@@ -3,16 +3,16 @@
 # 	* pos_six
 # 
 # Translators:
-# Maidu Targama <m.targama@gmail.com>, 2022
-# Triine Aavik <triine@avalah.ee>, 2022
+# Triine Aavik <triine@avalah.ee>, 2023
+# Maidu Targama <m.targama@gmail.com>, 2023
 # Leaanika Randmets, 2023
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0\n"
+"Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 13:31+0000\n"
-"PO-Revision-Date: 2022-09-22 05:54+0000\n"
+"POT-Creation-Date: 2023-10-26 21:55+0000\n"
+"PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Leaanika Randmets, 2023\n"
 "Language-Team: Estonian (https://app.transifex.com/odoo/teams/41243/et/)\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #. module: pos_six
 #. odoo-javascript
-#: code:addons/pos_six/static/src/js/payment_six.js:0
+#: code:addons/pos_six/static/src/app/payment_six.js:0
 #, python-format
 msgid "Balance Failed"
 msgstr "Saldo ebaõnnestus"
@@ -45,7 +45,7 @@ msgstr "Kassa Sessioon"
 
 #. module: pos_six
 #. odoo-javascript
-#: code:addons/pos_six/static/src/xml/BalanceButton.xml:0
+#: code:addons/pos_six/static/src/app/balance_button/balance_button.xml:0
 #, python-format
 msgid "Send Balance"
 msgstr "Saada saldo"
@@ -57,14 +57,14 @@ msgstr "Six terminali IP"
 
 #. module: pos_six
 #. odoo-javascript
-#: code:addons/pos_six/static/src/js/payment_six.js:0
+#: code:addons/pos_six/static/src/app/payment_six.js:0
 #, python-format
 msgid "The balance operation failed."
 msgstr "Tasakaalustamisoperatsioon ebaõnnestus."
 
 #. module: pos_six
 #. odoo-javascript
-#: code:addons/pos_six/static/src/js/payment_six.js:0
+#: code:addons/pos_six/static/src/app/payment_six.js:0
 #, python-format
 msgid "Transaction was not processed correctly"
 msgstr "Tehingut ei töödeldud korrektselt"

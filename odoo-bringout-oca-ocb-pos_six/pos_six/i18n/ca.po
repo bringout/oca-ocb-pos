@@ -3,17 +3,17 @@
 # 	* pos_six
 # 
 # Translators:
-# Quim - eccit <quim@eccit.com>, 2022
-# Josep Anton Belchi, 2022
-# marcescu, 2022
+# Josep Anton Belchi, 2023
+# Quim - eccit <quim@eccit.com>, 2023
+# marcescu, 2023
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0\n"
+"Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 13:31+0000\n"
-"PO-Revision-Date: 2022-09-22 05:54+0000\n"
-"Last-Translator: marcescu, 2022\n"
+"POT-Creation-Date: 2023-10-26 21:55+0000\n"
+"PO-Revision-Date: 2023-10-26 23:09+0000\n"
+"Last-Translator: marcescu, 2023\n"
 "Language-Team: Catalan (https://app.transifex.com/odoo/teams/41243/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #. module: pos_six
 #. odoo-javascript
-#: code:addons/pos_six/static/src/js/payment_six.js:0
+#: code:addons/pos_six/static/src/app/payment_six.js:0
 #, python-format
 msgid "Balance Failed"
 msgstr "El balanç ha fallat"
@@ -45,7 +45,7 @@ msgstr "Sessió del Punt de Venda"
 
 #. module: pos_six
 #. odoo-javascript
-#: code:addons/pos_six/static/src/xml/BalanceButton.xml:0
+#: code:addons/pos_six/static/src/app/balance_button/balance_button.xml:0
 #, python-format
 msgid "Send Balance"
 msgstr "Envia el balanç"
@@ -57,14 +57,14 @@ msgstr "Sis terminals IP"
 
 #. module: pos_six
 #. odoo-javascript
-#: code:addons/pos_six/static/src/js/payment_six.js:0
+#: code:addons/pos_six/static/src/app/payment_six.js:0
 #, python-format
 msgid "The balance operation failed."
 msgstr "L'operació d'equilibri ha fallat."
 
 #. module: pos_six
 #. odoo-javascript
-#: code:addons/pos_six/static/src/js/payment_six.js:0
+#: code:addons/pos_six/static/src/app/payment_six.js:0
 #, python-format
 msgid "Transaction was not processed correctly"
 msgstr "La transacció no s'ha processat correctament"

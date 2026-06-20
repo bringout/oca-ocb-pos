@@ -1,152 +1,196 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* pos_hr
+# * pos_hr
 #
+# Odoo Translation Bot <c3p@odoo.com>, 2025.
+# Weblate <noreply-mt-weblate@weblate.org>, 2025, 2026.
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0\n"
+"Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-10 08:27+0000\n"
-"PO-Revision-Date: 2025-02-10 08:27+0000\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"POT-Creation-Date: 2025-12-29 18:37+0000\n"
+"PO-Revision-Date: 2026-05-16 08:10+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Bosnian <https://translate.odoo.com/projects/odoo-17/pos_hr/"
+"bs/>\n"
+"Language: bs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.17\n"
 
-# taken from hr.po
 #. module: pos_hr
 #: model_terms:ir.ui.view,arch_db:pos_hr.pos_config_form_view_inherit
-msgid "Allowed Employees"
-msgstr "Dozvoljeni djelatnici"
+#: model_terms:ir.ui.view,arch_db:pos_hr.res_config_settings_view_form
+msgid "Advanced rights"
+msgstr ""
 
-# taken from hr.po
 #. module: pos_hr
-#: model:ir.model.fields,field_description:pos_hr.field_pos_order__employee_id
-msgid "Cashier"
-msgstr "Blagajnik"
+#: model_terms:ir.ui.view,arch_db:pos_hr.res_config_settings_view_form
+msgid "All employees"
+msgstr ""
 
-# taken from hr.po
+#. module: pos_hr
+#: model_terms:ir.ui.view,arch_db:pos_hr.pos_config_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:pos_hr.res_config_settings_view_form
+msgid "Basic rights"
+msgstr ""
+
+#. module: pos_hr
+#: model:ir.model.fields,field_description:pos_hr.field_pos_order__cashier
+#: model_terms:ir.ui.view,arch_db:pos_hr.pos_order_form_inherit
+#: model_terms:ir.ui.view,arch_db:pos_hr.pos_order_list_select_inherit
+msgid "Cashier"
+msgstr "Kaser"
+
 #. module: pos_hr
 #. odoo-javascript
-#: code:addons/pos_hr/static/src/js/SelectCashierMixin.js:0
+#: code:addons/pos_hr/static/src/app/select_cashier_mixin.js:0
 #, python-format
 msgid "Change Cashier"
-msgstr "Promijeni blagajnika"
+msgstr ""
 
-# taken from hr.po
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_res_config_settings
 msgid "Config Settings"
-msgstr "Postavke konfiguracije"
+msgstr "Postavke"
 
-# taken from hr.po
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_hr_employee
+#: model:ir.model.fields,field_description:pos_hr.field_pos_order__employee_id
+#: model:ir.model.fields,field_description:pos_hr.field_report_pos_order__employee_id
+#: model_terms:ir.ui.view,arch_db:pos_hr.view_report_pos_order_search_inherit
 msgid "Employee"
-msgstr "Zaposlenik"
+msgstr "Zaposleni"
 
-# taken from hr.po
 #. module: pos_hr
 #. odoo-python
 #: code:addons/pos_hr/models/hr_employee.py:0
 #, python-format
 msgid "Employee: %s - PoS Config(s): %s \n"
-msgstr "Djelatnik: %s - PoS Config(a): %s \n"
-
-# taken from hr.po
-#. module: pos_hr
-#: model:ir.model.fields,field_description:pos_hr.field_pos_config__employee_ids
-msgid "Employees with access"
-msgstr "Djelatnici sa pristupom"
-
-# taken from hr.po
-#. module: pos_hr
-#: model:ir.model.fields,help:pos_hr.field_pos_config__employee_ids
-msgid "If left empty, all employees can log in to the PoS session"
 msgstr ""
-"Ako je ostavljeno prazno, svi djelatnici se mogu prijaviti u PoS sesiju"
 
-# taken from hr.po
+#. module: pos_hr
+#: model:ir.model.fields,field_description:pos_hr.field_pos_config__basic_employee_ids
+#: model:ir.model.fields,field_description:pos_hr.field_res_config_settings__pos_basic_employee_ids
+msgid "Employees with basic access"
+msgstr ""
+
+#. module: pos_hr
+#: model:ir.model.fields,field_description:pos_hr.field_pos_config__advanced_employee_ids
+#: model:ir.model.fields,field_description:pos_hr.field_res_config_settings__pos_advanced_employee_ids
+msgid "Employees with manager access"
+msgstr ""
+
+#. module: pos_hr
+#: model:ir.model.fields,help:pos_hr.field_pos_config__basic_employee_ids
+#: model:ir.model.fields,help:pos_hr.field_res_config_settings__pos_basic_employee_ids
+msgid "If left empty, all employees can log in to PoS"
+msgstr ""
+
+#. module: pos_hr
+#: model:ir.model.fields,help:pos_hr.field_pos_config__advanced_employee_ids
+#: model:ir.model.fields,help:pos_hr.field_res_config_settings__pos_advanced_employee_ids
+msgid "If left empty, only Odoo users have extended rights in PoS"
+msgstr ""
+
 #. module: pos_hr
 #. odoo-javascript
-#: code:addons/pos_hr/static/src/js/SelectCashierMixin.js:0
+#: code:addons/pos_hr/static/src/app/select_cashier_mixin.js:0
 #, python-format
 msgid "Incorrect Password"
-msgstr "Netočna lozinka"
+msgstr ""
 
-# taken from hr.po
 #. module: pos_hr
 #. odoo-javascript
-#: code:addons/pos_hr/static/src/xml/LoginScreen.xml:0
+#: code:addons/pos_hr/static/src/overrides/components/navbar/navbar.xml:0
+#, python-format
+msgid "Lock"
+msgstr "Zaključaj"
+
+#. module: pos_hr
+#. odoo-javascript
+#: code:addons/pos_hr/static/src/app/login_screen/login_screen.xml:0
 #, python-format
 msgid "Log in to"
-msgstr "Prijava u"
+msgstr ""
 
-# taken from hr.po
 #. module: pos_hr
 #. odoo-javascript
-#: code:addons/pos_hr/static/src/js/SelectCashierMixin.js:0
+#: code:addons/pos_hr/static/src/app/select_cashier_mixin.js:0
 #, python-format
-msgid "Password ?"
-msgstr "Lozinka ?"
+msgid "No Cashiers"
+msgstr ""
 
-# taken from hr.po
+#. module: pos_hr
+#: model_terms:ir.ui.view,arch_db:pos_hr.res_config_settings_view_form
+msgid "No employee"
+msgstr ""
+
+#. module: pos_hr
+#. odoo-javascript
+#: code:addons/pos_hr/static/src/app/select_cashier_mixin.js:0
+#, python-format
+msgid "Password?"
+msgstr ""
+
 #. module: pos_hr
 #: model:ir.model.fields,help:pos_hr.field_pos_order__employee_id
 msgid ""
 "Person who uses the cash register. It can be a reliever, a student or an "
 "interim employee."
-msgstr "Osoba koja koristi blagajnu. To može biti student ili djelatnik."
+msgstr ""
 
-# taken from hr.po
+#. module: pos_hr
+#. odoo-javascript
+#: code:addons/pos_hr/static/src/app/select_cashier_mixin.js:0
+#, python-format
+msgid "Please try again."
+msgstr ""
+
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_pos_config
 msgid "Point of Sale Configuration"
 msgstr "Postavke prodajnog mjesta"
 
-# taken from hr.po
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_pos_order
 msgid "Point of Sale Orders"
-msgstr "Nalozi POS-a"
+msgstr "Narudžbe POS-a"
 
-# taken from hr.po
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_report_pos_order
 msgid "Point of Sale Orders Report"
-msgstr "Izvješće o narudžbama na prodajnim mjestima"
+msgstr ""
 
-# taken from hr.po
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_pos_session
 msgid "Point of Sale Session"
-msgstr "Smjena POS-a"
+msgstr "Sesija POS-a"
 
-# taken from hr.po
-#. module: pos_hr
-#: model:ir.model,name:pos_hr.model_hr_employee_public
-msgid "Public Employee"
-msgstr "Javni djelatnik"
-
-# taken from hr.po
 #. module: pos_hr
 #. odoo-javascript
-#: code:addons/pos_hr/static/src/xml/LoginScreen.xml:0
+#: code:addons/pos_hr/static/src/app/login_screen/login_screen.xml:0
 #, python-format
 msgid "Scan your badge"
-msgstr "Skenirajte svoju značku"
+msgstr ""
 
-# taken from hr.po
 #. module: pos_hr
 #. odoo-javascript
-#: code:addons/pos_hr/static/src/app/components/popups/cashier_selection_popup/cashier_selection_popup.xml:0
+#: code:addons/pos_hr/static/src/app/login_screen/login_screen.xml:0
 #, python-format
 msgid "Select Cashier"
-msgstr "Odaberi blagajnika"
+msgstr ""
 
-# taken from hr.po
+#. module: pos_hr
+#. odoo-javascript
+#: code:addons/pos_hr/static/src/app/select_cashier_mixin.js:0
+#, python-format
+msgid "There are no employees to select as cashier. Please create one."
+msgstr ""
+
 #. module: pos_hr
 #. odoo-python
 #: code:addons/pos_hr/models/hr_employee.py:0
@@ -155,285 +199,10 @@ msgid ""
 "You cannot delete an employee that may be used in an active PoS session, "
 "close the session(s) first: \n"
 msgstr ""
-"Nije moguće brisati djelatnika koji koristi otvorenu PoS sessiju, prvo "
-"zatvorite sesiju(e):\n"
 
-# taken from hr.po
 #. module: pos_hr
 #. odoo-javascript
-#: code:addons/pos_hr/static/src/xml/LoginScreen.xml:0
+#: code:addons/pos_hr/static/src/app/login_screen/login_screen.xml:0
 #, python-format
 msgid "or"
 msgstr "ili"
-
-#. module: pos_hr
-#: model_terms:ir.ui.view,arch_db:pos_hr.single_employee_sales_report
-msgid "Abigal Peterson"
-msgstr "Abigal Peterson"
-
-#. module: pos_hr
-#: code:addons/pos_hr/static/src/app/screens/product_screen/order_summary/order_summary.js:0
-msgid "Access Denied"
-msgstr "Pristup odbijen"
-
-#. module: pos_hr
-#: model:ir.model.fields,field_description:pos_hr.field_pos_daily_sales_reports_wizard__add_report_per_employee
-msgid "Add a report per each employee"
-msgstr "Dodaj izvještaj po svakom uposleniku"
-
-#. module: pos_hr
-#: model_terms:ir.ui.view,arch_db:pos_hr.pos_config_form_view_inherit
-msgid "Advanced rights"
-msgstr "Napredna prava"
-
-#. module: pos_hr
-#: model_terms:ir.ui.view,arch_db:pos_hr.pos_config_form_view_inherit
-msgid "All Employees"
-msgstr "Svi uposlenici"
-
-#. module: pos_hr
-#: model:ir.model,name:pos_hr.model_account_bank_statement_line
-msgid "Bank Statement Line"
-msgstr "Linija bankovnog izvoda"
-
-#. module: pos_hr
-#: model_terms:ir.ui.view,arch_db:pos_hr.pos_config_form_view_inherit
-msgid "Basic rights"
-msgstr "Osnovna prava"
-
-#. module: pos_hr
-#: model_terms:ir.ui.view,arch_db:pos_hr.view_pos_daily_sales_reports_wizard
-msgid ""
-"Cannot generate report per employee: only one employee logged in during this"
-" session."
-msgstr ""
-"Nije moguće generisati izvještaj po uposleniku: samo jedan uposlenik je "
-"prijavljen tokom ove sesije."
-
-#. module: pos_hr
-#: code:addons/pos_hr/static/src/app/components/popups/closing_popup/closing_popup.xml:0
-msgid "Cash in/out"
-msgstr "Uplata/isplata gotovine"
-
-#. module: pos_hr
-#: code:addons/pos_hr/models/pos_order.py:0
-msgid "Cashier %s"
-msgstr "Kasir %s"
-
-#. module: pos_hr
-#: model:ir.model.fields,field_description:pos_hr.field_pos_order__cashier
-msgid "Cashier name"
-msgstr "Ime kasira"
-
-#. module: pos_hr
-#: code:addons/pos_hr/models/pos_session.py:0
-msgid "Closed Register"
-msgstr "Zatvorena kasa"
-
-#. module: pos_hr
-#: code:addons/pos_hr/static/src/app/components/popups/closing_popup/closing_popup.xml:0
-msgid "Counted"
-msgstr "Prebrojeno"
-
-#. module: pos_hr
-#: code:addons/pos_hr/static/src/app/components/popups/closing_popup/closing_popup.xml:0
-msgid "Difference"
-msgstr "Razlika"
-
-#. module: pos_hr
-#: code:addons/pos_hr/static/src/app/screens/login_screen/login_screen.js:0
-msgid "Discard"
-msgstr "Odbaci"
-
-#. module: pos_hr
-#: model:ir.model.fields,field_description:pos_hr.field_account_bank_statement_line__display_name
-msgid "Display Name"
-msgstr "Naziv za prikaz"
-
-#. module: pos_hr
-#: model_terms:ir.ui.view,arch_db:pos_hr.single_employee_sales_report
-msgid "Employee Sales Report"
-msgstr "Izvještaj o prodaji uposlenika"
-
-#. module: pos_hr
-#: model_terms:ir.ui.view,arch_db:pos_hr.single_employee_sales_report
-msgid "Employee:"
-msgstr "Uposlenik:"
-
-#. module: pos_hr
-#: code:addons/pos_hr/models/hr_employee.py:0
-msgid "Employee: %(employee)s - PoS Config(s): %(config_list)s \n"
-msgstr "Uposlenik: %(employee)s - PoS konfiguracija(e): %(config_list)s \n"
-
-#. module: pos_hr
-#: model:ir.model.fields,help:pos_hr.field_pos_config__advanced_employee_ids
-msgid ""
-"Employees linked to users with the PoS Manager role are automatically added "
-"to this list"
-msgstr ""
-"Uposlenici povezani sa korisnicima s ulogom PoS menadžera automatski se "
-"dodaju u ovu listu"
-
-#. module: pos_hr
-#: model:ir.model.fields,field_description:pos_hr.field_pos_config__basic_employee_ids
-msgid "Employees with basic access"
-msgstr "Uposlenici sa osnovnim pristupom"
-
-#. module: pos_hr
-#: model:ir.model.fields,field_description:pos_hr.field_pos_config__advanced_employee_ids
-msgid "Employees with manager access"
-msgstr "Uposlenici sa pristupom menadžera"
-
-#. module: pos_hr
-#: model:ir.model.fields,field_description:pos_hr.field_pos_config__minimal_employee_ids
-msgid "Employees with minimal access"
-msgstr "Uposlenici sa minimalnim pristupom"
-
-#. module: pos_hr
-#: code:addons/pos_hr/static/src/app/screens/login_screen/login_screen.xml:0
-msgid "Enter your PIN"
-msgstr "Unesite svoj PIN"
-
-#. module: pos_hr
-#: model:ir.model.fields,field_description:pos_hr.field_account_bank_statement_line__id
-msgid "ID"
-msgstr "ID"
-
-#. module: pos_hr
-#: model:ir.model.fields,help:pos_hr.field_pos_config__basic_employee_ids
-msgid "If left empty, all employees can log in to PoS"
-msgstr "Ako ostane prazno, svi uposlenici se mogu prijaviti na PoS"
-
-#. module: pos_hr
-#: code:addons/pos_hr/static/src/app/components/navbar/navbar.xml:0
-msgid "Lock"
-msgstr "Zaključaj"
-
-#. module: pos_hr
-#: model_terms:ir.ui.view,arch_db:pos_hr.pos_config_form_view_inherit
-msgid "Minimal rights"
-msgstr "Minimalna prava"
-
-#. module: pos_hr
-#: code:addons/pos_hr/static/src/app/utils/select_cashier_mixin.js:0
-msgid "No Cashiers"
-msgstr "Nema kasira"
-
-#. module: pos_hr
-#: code:addons/pos_hr/static/src/app/screens/login_screen/login_screen.js:0
-msgid ""
-"Only the cashier linked to the logged-in user (%s) can proceed to the "
-"Backend."
-msgstr ""
-"Samo kasir povezan sa prijavljenim korisnikom (%s) može pristupiti "
-"backend-u."
-
-#. module: pos_hr
-#: code:addons/pos_hr/static/src/app/screens/login_screen/login_screen.xml:0
-msgid "Open Register"
-msgstr "Otvori kasu"
-
-#. module: pos_hr
-#: code:addons/pos_hr/models/pos_session.py:0
-msgid "Opened register"
-msgstr "Otvorena kasa"
-
-#. module: pos_hr
-#: code:addons/pos_hr/static/src/app/components/popups/closing_popup/closing_popup.xml:0
-msgid "Opening"
-msgstr "Otvaranje"
-
-#. module: pos_hr
-#: code:addons/pos_hr/models/pos_session.py:0
-msgid "Others"
-msgstr "Ostali"
-
-#. module: pos_hr
-#: code:addons/pos_hr/static/src/app/utils/select_cashier_mixin.js:0
-msgid "PIN not found"
-msgstr "PIN nije pronađen"
-
-#. module: pos_hr
-#: code:addons/pos_hr/static/src/app/utils/select_cashier_mixin.js:0
-msgid "Password?"
-msgstr "Lozinka?"
-
-#. module: pos_hr
-#: code:addons/pos_hr/static/src/app/components/popups/closing_popup/closing_popup.xml:0
-msgid "Payments"
-msgstr "Plaćanja"
-
-#. module: pos_hr
-#: model:ir.model,name:pos_hr.model_pos_daily_sales_reports_wizard
-msgid "Point of Sale Daily Report"
-msgstr "Dnevni izvještaj prodajnog mjesta"
-
-#. module: pos_hr
-#: model:ir.model,name:pos_hr.model_pos_payment
-msgid "Point of Sale Payments"
-msgstr "Plaćanja prodajnog mjesta"
-
-#. module: pos_hr
-#: model:ir.model,name:pos_hr.model_product_product
-msgid "Product Variant"
-msgstr "Varijanta proizvoda"
-
-#. module: pos_hr
-#: model_terms:ir.ui.view,arch_db:pos_hr.pos_config_form_view_inherit
-msgid "Select Employee(s)"
-msgstr "Odaberite uposlenika(e)"
-
-#. module: pos_hr
-#: model:ir.model,name:pos_hr.model_report_pos_hr_single_employee_sales_report
-msgid "Session sales details for a single employee"
-msgstr "Detalji prodaje sesije za jednog uposlenika"
-
-#. module: pos_hr
-#: model:ir.model.fields,help:pos_hr.field_pos_session__employee_id
-msgid "The employee who currently uses the cash register"
-msgstr "Uposlenik koji trenutno koristi kasu"
-
-#. module: pos_hr
-#: model:ir.model.fields,help:pos_hr.field_account_bank_statement_line__employee_id
-msgid "The employee who made the cash move."
-msgstr "Uposlenik koji je izvršio kretanje gotovine."
-
-#. module: pos_hr
-#: model:ir.model.fields,help:pos_hr.field_pos_order__employee_id
-msgid "The employee who uses the cash register."
-msgstr "Uposlenik koji koristi kasu."
-
-#. module: pos_hr
-#: code:addons/pos_hr/static/src/app/utils/select_cashier_mixin.js:0
-msgid "There is no cashier available."
-msgstr "Nema dostupnog kasira."
-
-#. module: pos_hr
-#: code:addons/pos_hr/static/src/app/screens/login_screen/login_screen.xml:0
-msgid "Unlock Register"
-msgstr "Otključaj kasu"
-
-#. module: pos_hr
-#: code:addons/pos_hr/static/src/app/utils/select_cashier_mixin.js:0
-msgid "Wrong PIN"
-msgstr "Pogrešan PIN"
-
-#. module: pos_hr
-#: code:addons/pos_hr/static/src/app/screens/product_screen/order_summary/order_summary.js:0
-msgid "You are not allowed to change the price of a product."
-msgstr "Nije vam dozvoljeno mijenjati cijenu proizvoda."
-
-#. module: pos_hr
-#: code:addons/pos_hr/static/src/app/components/popups/cashier_selection_popup/cashier_selection_popup.xml:0
-msgid "More..."
-msgstr ""
-
-#. module: pos_hr
-#: model:ir.model,name:pos_hr.model_pos_order
-msgid "Point of Sale Order"
-msgstr ""
-
-#. module: pos_hr
-#: model:ir.model,name:pos_hr.model_pos_payment
-msgid "Point of Sale Payment"
-msgstr ""
